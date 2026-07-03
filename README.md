@@ -32,3 +32,8 @@ The paper-style RED/SILSO relationship is reproducible and browsable, and the na
 ## Exploratory SILSO-to-input finding
 
 In the current one-predictor screen, SILSO solar activity most usefully predicts Shiller annual inflation among the displayed inputs: held-out `r ≈ +0.501`, held-out `R² ≈ +0.234`, and same-year `r ≈ +0.274`. This is a mechanism/confounding candidate, not causal proof. It should be followed up with lag tests, inflation controls in revolution models, placebo cycles, and non-U.S. price series before it is used to support the solar-revolution hypothesis. The new `solar_inflation_mechanisms_colab.ipynb` notebook starts that follow-up.
+
+
+## Current falsification readout for solar-inflation
+
+The solar-inflation hypothesis is currently substantially weakened. SILSO remains the strongest one-input predictor of Shiller annual inflation and beats shifted/synthetic placebo cycles, but it fails two stricter checks: it does not generalize to the available non-Shiller inflation outcomes, and rolling-origin validation is unstable with only 2 of 7 positive-R² windows and median rolling R² around -0.394.
