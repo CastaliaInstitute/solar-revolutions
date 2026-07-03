@@ -69,6 +69,13 @@
   </section>
 
   <section>
+    <span class="kicker">PCA/ML screen</span>
+    <h2>All inputs predicting RED revolutions</h2>
+    <p>This screen uses all available non-revolution annual input series, PCA compression, and ridge baselines to test whether expanded inputs predict held-out RED episode counts. It is exploratory prediction, not causal identification.</p>
+    <div id="pca-ml"></div>
+  </section>
+
+  <section>
     <span class="kicker">Exploratory finding</span>
     <h2>SILSO as a predictor of catalog inputs</h2>
     <p>This screen asks which non-solar input series are most predictable from SILSO solar activity alone. It is a mechanism/confounding screen, not causal proof.</p>
@@ -102,6 +109,9 @@ Promise.all([
   document.getElementById('grid-table').innerHTML = `<table><thead><tr><th>Rule</th><th>Window</th><th>Threshold</th><th>Specificity</th><th>Sensitivity</th><th>Balanced accuracy</th></tr></thead><tbody>${rows.map(row => `<tr><td>${row.rule}</td><td>${row.solar_window_radius === 0 ? 'exact' : '±'+row.solar_window_radius+'y'}</td><td>${row.threshold}</td><td>${fmt(row.observed.specificity)}</td><td>${fmt(row.observed.sensitivity)}</td><td>${fmt(row.observed.balanced_accuracy)}</td></tr>`).join('')}</tbody></table>`;
   const model = country.models.event_country_year_fe_solar_geomagnetic_exposure;
   document.getElementById('expanded').innerHTML = `<p>Country + year fixed-effect exposure p-value: <strong>${model.solar_exposure_p_clustered_by_year.toFixed(4)}</strong>. This expanded-input diagnostic does not confirm a robust local solar-exposure effect.</p>`;
+  const modelRows = pca.models || [];
+  const pcRows = (pca.pca?.components || []).slice(0, 3);
+  document.getElementById('pca-ml').innerHTML = `<p>Training period: <strong>${pca.split.train.start}-${pca.split.train.end}</strong>. Held-out test period: <strong>${pca.split.test.start}-${pca.split.test.end}</strong>. Retained inputs: <strong>${pca.features.retained_series}</strong> of ${pca.features.candidate_series}. Current result: PCA-5 has the best RMSE, but all RED prediction models still have negative held-out R², so this does not yet provide operational predictive evidence.</p><table><thead><tr><th>Model</th><th>RMSE</th><th>R²</th><th>Pearson</th><th>Specificity</th><th>Sensitivity</th></tr></thead><tbody>${modelRows.map(row => `<tr><td>${row.label}</td><td>${row.regression.rmse?.toFixed(3) ?? 'n/a'}</td><td>${row.regression.r2?.toFixed(3) ?? 'n/a'}</td><td>${row.regression.pearson?.toFixed(3) ?? 'n/a'}</td><td>${fmt(row.high_revolution_classification.specificity)}</td><td>${fmt(row.high_revolution_classification.sensitivity)}</td></tr>`).join('')}</tbody></table><h3>PCA structure</h3><table><thead><tr><th>Component</th><th>Explained variance</th><th>Top loadings</th></tr></thead><tbody>${pcRows.map(pc => `<tr><td>PC${pc.component}</td><td>${fmt(pc.explained_variance_ratio)}</td><td>${pc.top_loadings.slice(0,4).map(load => `${load.name} (${load.loading.toFixed(2)})`).join('<br>')}</td></tr>`).join('')}</tbody></table>`;
   const silsoRows = (pca.silso_predicts_inputs?.ranked_outcomes || []).slice(0, 8);
   const inflation = silsoRows.find(row => row.id === 'inflation.shiller_annual_pct') || silsoRows[0];
   document.getElementById('silso-inputs').innerHTML = `<p>Current top interpretable result: <strong>${inflation.name}</strong>. SILSO-only held-out prediction has r=<strong>${inflation.silso_ridge.pearson.toFixed(3)}</strong>, R²=<strong>${inflation.silso_ridge.r2.toFixed(3)}</strong>, and same-year r=<strong>${inflation.overlap.r.toFixed(3)}</strong>. Because this is a one-predictor screen, the finding should be treated as a possible mediator/confounder candidate for follow-up, not as evidence that solar activity causes inflation or revolutions.</p><table><thead><tr><th>Rank</th><th>Input outcome</th><th>Held-out r</th><th>Held-out R²</th><th>Same-year r</th></tr></thead><tbody>${silsoRows.map((row, i) => `<tr><td>${i+1}</td><td>${row.name}<br><small>${row.id}</small></td><td>${row.silso_ridge.pearson?.toFixed(3) ?? 'n/a'}</td><td>${row.silso_ridge.r2?.toFixed(3) ?? 'n/a'}</td><td>${row.overlap.r?.toFixed(3) ?? 'n/a'}</td></tr>`).join('')}</tbody></table>`;
