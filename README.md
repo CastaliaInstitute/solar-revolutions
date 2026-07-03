@@ -13,6 +13,7 @@ This repository separates three scopes:
 - Public page: <https://castaliainstitute.github.io/solar-revolutions/>
 - Revolutions Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb>
 - Solar-inflation mechanisms Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_inflation_mechanisms_colab.ipynb>
+- Astrology-input correlation Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/astrology_input_correlations_colab.ipynb>
 - Data artifacts: [`api/`](api/)
 
 ## Key data files
@@ -37,3 +38,11 @@ In the current one-predictor screen, SILSO solar activity most usefully predicts
 ## Current falsification readout for solar-inflation
 
 The solar-inflation hypothesis is currently substantially weakened. SILSO remains the strongest one-input predictor of Shiller annual inflation and beats shifted/synthetic placebo cycles, but it fails two stricter checks: it does not generalize to the available non-Shiller inflation outcomes, and rolling-origin validation is unstable with only 2 of 7 positive-R² windows and median rolling R² around -0.394.
+
+
+## Astrology-input correlation screen
+
+The `astrology_input_correlations_colab.ipynb` notebook answers whether catalog inputs correlate with the exploratory astrology proxies. It reports same-year Pearson/Spearman correlations, lag scans, astrology-family summaries, and circular-shift placebo checks so any apparent association is treated as exploratory rather than causal.
+
+
+Current astrology-correlation readout: 528 same-year pairs were screened. The strongest raw pair was Uranus-Pluto hard-aspect proximity vs NAVCO injury proxy (`r=0.637`, `n=23`), but it did not beat its own circular-shift placebo at `p<0.05`. Seven of the top 25 raw pairs did beat circular-shift placebo; these are exploratory candidates only.
