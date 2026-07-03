@@ -1,0 +1,28 @@
+# Solar Revolutions
+
+Public, reusable data and methods for evaluating whether solar activity is associated with revolutionary episodes.
+
+This repository separates three scopes:
+
+1. **Paper-scoped replication**: RED 1.0 revolutionary episodes and SILSO sunspot activity.
+2. **Paper-scoped follow-on statistics**: RED/SILSO correlations, lag scans, sensitivity grids, split-sample checks, and solar-cycle influence checks.
+3. **Expanded-input follow-on research**: country-year exposure, local geomagnetic/radiation proxies, controls, alternative predictors, and event-history diagnostics.
+
+## Use it
+
+- Public page: <https://castaliainstitute.github.io/solar-revolutions/>
+- Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb>
+- Data artifacts: [`api/`](api/)
+
+## Key data files
+
+- `api/red/annual-summary.json`: RED annual revolution summary.
+- `api/input-data/climate_solar_activity.json`: SILSO monthly sunspot activity.
+- `api/red/primary-specificity-endpoint.json`: headline specificity endpoint and sensitivity grids.
+- `api/red/solar-shape-synchrony.json`: RED/SILSO shape, lag, phase, and event-study diagnostics.
+- `api/red/country-panel-solar-model.json`: country-year exposure and fixed-effect diagnostics.
+- `api/red/science-review-comparative-evidence.json`: expanded-input comparison against alternative predictors.
+
+## Current conclusion
+
+The paper-style RED/SILSO relationship is reproducible and browsable, and the narrow exact-solar-maximum rule has high specificity. It is not sufficient evidence of causal solar influence or operational prediction. Stronger country-year and expanded-input tests remain exploratory / non-confirmatory.

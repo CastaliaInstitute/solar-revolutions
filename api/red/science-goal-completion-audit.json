@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-07-03T13:48:22+00:00",
+  "scope": "Local generated-artifact completion audit for the active solar-revolutions science-strengthening goal.",
+  "completion_status": "locally_satisfied_pending_public_deployment_verification",
+  "audit_gate_counts": {
+    "pass": 25,
+    "warn": 0,
+    "fail": 0
+  },
+  "checks_satisfied": 11,
+  "checks_total": 11,
+  "checks_missing_or_incomplete": 0,
+  "checks": [
+    {
+      "requirement": "sharpened causal pathway",
+      "evidence": "/api/red/analysis-specification-registry.json",
+      "status": "satisfied",
+      "result": "Causal pathway declares solar forcing, local exposure, intermediate stress, revolution onset, and predictive validation."
+    },
+    {
+      "requirement": "country-specific solar/geomagnetic exposure",
+      "evidence": "/api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Identified exposure country-years: 18285."
+    },
+    {
+      "requirement": "RED country-year onset/event-history tests",
+      "evidence": "/api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Onsets: 331 in 17950 at-risk country-years."
+    },
+    {
+      "requirement": "vulnerability interactions and vulnerable-country prediction",
+      "evidence": "/api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Vulnerable delta AUC: -0.010397379290699282; placebo p: 0.5283018867924528."
+    },
+    {
+      "requirement": "preregistered quantization",
+      "evidence": "/api/red/primary-specificity-endpoint.json",
+      "status": "satisfied",
+      "result": "Quantization rules: 24."
+    },
+    {
+      "requirement": "placebo cycles and shifted timing",
+      "evidence": "/api/red/primary-specificity-endpoint.json; /api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Annual circular-shift and country-year shifted-exposure placebo tests are present."
+    },
+    {
+      "requirement": "stronger conventional predictors",
+      "evidence": "/api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Country-year controls include V-Dem, WDI political economy, food production, and WDI battle deaths."
+    },
+    {
+      "requirement": "monthly timing sensitivity",
+      "evidence": "/api/red/monthly-timing-diagnostic.json",
+      "status": "satisfied",
+      "result": "Known RED start months: 343."
+    },
+    {
+      "requirement": "revolution-type heterogeneity",
+      "evidence": "/api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Subtype onset screens: 10."
+    },
+    {
+      "requirement": "improved geographic exposure",
+      "evidence": "/api/red/country-panel-solar-model.json",
+      "status": "satisfied",
+      "result": "Geomagnetic-sensitivity strata and auroral-proximity exposure models are present."
+    },
+    {
+      "requirement": "final out-of-sample answer reported",
+      "evidence": "/api/red/science-strengthening-matrix.json; /api/red/statistical-audit.json",
+      "status": "satisfied",
+      "result": "No. In the current strengthened study, solar exposure does not improve out-of-sample RED onset prediction overall or in vulnerable country-years after political-economy controls, fixed-effect exposure designs, and shifted-timing placebo checks."
+    }
+  ],
+  "remaining_external_requirement": "Deploy these generated artifacts and verify the public page/endpoints before marking the thread goal complete."
+}

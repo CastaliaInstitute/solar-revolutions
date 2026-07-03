@@ -1,0 +1,233 @@
+{
+  "generated_at": "2026-07-03T10:26:32+00:00",
+  "interpretation": "These diagnostics quantify visual shape similarity: smoothed co-movement, lag structure, peak proximity, solar-cycle phase enrichment, and event-study behavior around solar maxima. They remain exploratory unless pre-registered and robust to null models.",
+  "years": {
+    "start": 1900,
+    "end": 2014,
+    "n": 115
+  },
+  "series": {
+    "solar": "annualized SILSO monthly mean total sunspot number",
+    "revolution": "RED activity index = episodes + log10(1 + participants_proxy)"
+  },
+  "smoothed_comovement": {
+    "window_years": 5,
+    "pearson": 0.1558000792039528,
+    "spearman": 0.16825206443776672,
+    "circular_shift_p_two_sided": 0.46956521739130436
+  },
+  "lag_correlations": [
+    {
+      "lag_years": -8,
+      "pearson": -0.11257102285653293,
+      "n": 107
+    },
+    {
+      "lag_years": -7,
+      "pearson": -0.16530021946654633,
+      "n": 108
+    },
+    {
+      "lag_years": -6,
+      "pearson": -0.1639656912838921,
+      "n": 109
+    },
+    {
+      "lag_years": -5,
+      "pearson": -0.10340929461956852,
+      "n": 110
+    },
+    {
+      "lag_years": -4,
+      "pearson": -0.007159376777346589,
+      "n": 111
+    },
+    {
+      "lag_years": -3,
+      "pearson": 0.09227610981432918,
+      "n": 112
+    },
+    {
+      "lag_years": -2,
+      "pearson": 0.16267316900976744,
+      "n": 113
+    },
+    {
+      "lag_years": -1,
+      "pearson": 0.18519274267377345,
+      "n": 114
+    },
+    {
+      "lag_years": 0,
+      "pearson": 0.1558000792039528,
+      "n": 115
+    },
+    {
+      "lag_years": 1,
+      "pearson": 0.07563670107166826,
+      "n": 114
+    },
+    {
+      "lag_years": 2,
+      "pearson": -0.0070411362081063454,
+      "n": 113
+    },
+    {
+      "lag_years": 3,
+      "pearson": -0.05890617289251741,
+      "n": 112
+    },
+    {
+      "lag_years": 4,
+      "pearson": -0.056288219563957964,
+      "n": 111
+    },
+    {
+      "lag_years": 5,
+      "pearson": 0.0026620504499408016,
+      "n": 110
+    },
+    {
+      "lag_years": 6,
+      "pearson": 0.09621770100897485,
+      "n": 109
+    },
+    {
+      "lag_years": 7,
+      "pearson": 0.2009318237773028,
+      "n": 108
+    },
+    {
+      "lag_years": 8,
+      "pearson": 0.2818857498735187,
+      "n": 107
+    }
+  ],
+  "best_absolute_lag": {
+    "lag_years": 8,
+    "pearson": 0.2818857498735187,
+    "n": 107
+  },
+  "peak_distance": {
+    "solar_peak_years": [
+      1906,
+      1918,
+      1928,
+      1938,
+      1948,
+      1958,
+      1969,
+      1980,
+      1990,
+      2001
+    ],
+    "high_revolution_threshold_episodes": 4.0,
+    "high_revolution_years": [
+      1905,
+      1916,
+      1917,
+      1918,
+      1919,
+      1920,
+      1922,
+      1927,
+      1935,
+      1944,
+      1946,
+      1948,
+      1952,
+      1956,
+      1958,
+      1960,
+      1962,
+      1963,
+      1964,
+      1965,
+      1967,
+      1968,
+      1978,
+      1980,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1994,
+      2004,
+      2007,
+      2009,
+      2011,
+      2013,
+      2014
+    ],
+    "mean_distance_years": 3.1621621621621623,
+    "random_high_year_p_lower_or_equal_distance": 0.5344655344655345,
+    "permutations": 1000
+  },
+  "cycle_phase_counts": {
+    "pre-observed-cycle": 1,
+    "rising-to-maximum": 12,
+    "maximum": 5,
+    "declining-from-maximum": 5,
+    "cycle-minimum-neighborhood": 8,
+    "post-observed-cycle": 6
+  },
+  "event_study_around_solar_maxima": [
+    {
+      "offset_years": -5,
+      "mean_revolution_z": -0.47309201684746577,
+      "n": 10
+    },
+    {
+      "offset_years": -4,
+      "mean_revolution_z": -0.33144185303370255,
+      "n": 10
+    },
+    {
+      "offset_years": -3,
+      "mean_revolution_z": -0.08086876532674034,
+      "n": 10
+    },
+    {
+      "offset_years": -2,
+      "mean_revolution_z": 0.4456520319768912,
+      "n": 10
+    },
+    {
+      "offset_years": -1,
+      "mean_revolution_z": 0.23405951635238326,
+      "n": 10
+    },
+    {
+      "offset_years": 0,
+      "mean_revolution_z": 0.5040468238977656,
+      "n": 10
+    },
+    {
+      "offset_years": 1,
+      "mean_revolution_z": -0.546103089011501,
+      "n": 10
+    },
+    {
+      "offset_years": 2,
+      "mean_revolution_z": 0.005121081065793884,
+      "n": 10
+    },
+    {
+      "offset_years": 3,
+      "mean_revolution_z": -0.35986256703055164,
+      "n": 10
+    },
+    {
+      "offset_years": 4,
+      "mean_revolution_z": 0.2286176164166574,
+      "n": 10
+    },
+    {
+      "offset_years": 5,
+      "mean_revolution_z": -0.2864896396597892,
+      "n": 10
+    }
+  ]
+}

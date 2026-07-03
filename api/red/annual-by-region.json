@@ -1,0 +1,1642 @@
+{
+  "points": [
+    {
+      "year": 1900,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1900-01-01"
+    },
+    {
+      "year": 1900,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 12000,
+      "date": "1900-01-01"
+    },
+    {
+      "year": 1901,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 5000,
+      "date": "1901-01-01"
+    },
+    {
+      "year": 1901,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1901-01-01"
+    },
+    {
+      "year": 1903,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 25000,
+      "date": "1903-01-01"
+    },
+    {
+      "year": 1904,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1904-01-01"
+    },
+    {
+      "year": 1904,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 1000,
+      "date": "1904-01-01"
+    },
+    {
+      "year": 1904,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1904-01-01"
+    },
+    {
+      "year": 1905,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 2000000,
+      "date": "1905-01-01"
+    },
+    {
+      "year": 1905,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1905-01-01"
+    },
+    {
+      "year": 1905,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1905-01-01"
+    },
+    {
+      "year": 1905,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1905-01-01"
+    },
+    {
+      "year": 1906,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1906-01-01"
+    },
+    {
+      "year": 1906,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1906-01-01"
+    },
+    {
+      "year": 1908,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1908-01-01"
+    },
+    {
+      "year": 1908,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1908-01-01"
+    },
+    {
+      "year": 1909,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1909-01-01"
+    },
+    {
+      "year": 1909,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 4500,
+      "date": "1909-01-01"
+    },
+    {
+      "year": 1910,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 60000,
+      "date": "1910-01-01"
+    },
+    {
+      "year": 1910,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 90000,
+      "date": "1910-01-01"
+    },
+    {
+      "year": 1911,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1911-01-01"
+    },
+    {
+      "year": 1914,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1914-01-01"
+    },
+    {
+      "year": 1914,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 13000,
+      "date": "1914-01-01"
+    },
+    {
+      "year": 1915,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 8000,
+      "date": "1915-01-01"
+    },
+    {
+      "year": 1915,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1915-01-01"
+    },
+    {
+      "year": 1916,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 1760,
+      "date": "1916-01-01"
+    },
+    {
+      "year": 1916,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1916-01-01"
+    },
+    {
+      "year": 1916,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 21500,
+      "date": "1916-01-01"
+    },
+    {
+      "year": 1917,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1917-01-01"
+    },
+    {
+      "year": 1917,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 3300000,
+      "date": "1917-01-01"
+    },
+    {
+      "year": 1917,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1917-01-01"
+    },
+    {
+      "year": 1917,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 15000,
+      "date": "1917-01-01"
+    },
+    {
+      "year": 1918,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1918-01-01"
+    },
+    {
+      "year": 1918,
+      "worldregion": "Europe",
+      "episodes": 6,
+      "participants_proxy": 570000,
+      "date": "1918-01-01"
+    },
+    {
+      "year": 1918,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1918-01-01"
+    },
+    {
+      "year": 1918,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1918-01-01"
+    },
+    {
+      "year": 1919,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 2000000,
+      "date": "1919-01-01"
+    },
+    {
+      "year": 1919,
+      "worldregion": "Europe",
+      "episodes": 3,
+      "participants_proxy": 59000,
+      "date": "1919-01-01"
+    },
+    {
+      "year": 1919,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 3,
+      "participants_proxy": 1105000,
+      "date": "1919-01-01"
+    },
+    {
+      "year": 1920,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 400000,
+      "date": "1920-01-01"
+    },
+    {
+      "year": 1920,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 350000,
+      "date": "1920-01-01"
+    },
+    {
+      "year": 1920,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1920-01-01"
+    },
+    {
+      "year": 1920,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 90000,
+      "date": "1920-01-01"
+    },
+    {
+      "year": 1921,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 216000,
+      "date": "1921-01-01"
+    },
+    {
+      "year": 1922,
+      "worldregion": "Europe",
+      "episodes": 3,
+      "participants_proxy": 76500,
+      "date": "1922-01-01"
+    },
+    {
+      "year": 1922,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1922-01-01"
+    },
+    {
+      "year": 1922,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1922-01-01"
+    },
+    {
+      "year": 1923,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 22000,
+      "date": "1923-01-01"
+    },
+    {
+      "year": 1923,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 47000,
+      "date": "1923-01-01"
+    },
+    {
+      "year": 1924,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 27000,
+      "date": "1924-01-01"
+    },
+    {
+      "year": 1925,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 55000,
+      "date": "1925-01-01"
+    },
+    {
+      "year": 1926,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 13000,
+      "date": "1926-01-01"
+    },
+    {
+      "year": 1926,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 2000,
+      "date": "1926-01-01"
+    },
+    {
+      "year": 1927,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 400000,
+      "date": "1927-01-01"
+    },
+    {
+      "year": 1927,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 51000,
+      "date": "1927-01-01"
+    },
+    {
+      "year": 1927,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 8000,
+      "date": "1927-01-01"
+    },
+    {
+      "year": 1928,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 11000,
+      "date": "1928-01-01"
+    },
+    {
+      "year": 1928,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 350000,
+      "date": "1928-01-01"
+    },
+    {
+      "year": 1930,
+      "worldregion": "Asia",
+      "episodes": 3,
+      "participants_proxy": 2012000,
+      "date": "1930-01-01"
+    },
+    {
+      "year": 1931,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1931-01-01"
+    },
+    {
+      "year": 1931,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1931-01-01"
+    },
+    {
+      "year": 1932,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 3,
+      "participants_proxy": 95000,
+      "date": "1932-01-01"
+    },
+    {
+      "year": 1933,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1933-01-01"
+    },
+    {
+      "year": 1934,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 70000,
+      "date": "1934-01-01"
+    },
+    {
+      "year": 1935,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 65000,
+      "date": "1935-01-01"
+    },
+    {
+      "year": 1935,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 505000,
+      "date": "1935-01-01"
+    },
+    {
+      "year": 1935,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 1500,
+      "date": "1935-01-01"
+    },
+    {
+      "year": 1936,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 775000,
+      "date": "1936-01-01"
+    },
+    {
+      "year": 1936,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 42000,
+      "date": "1936-01-01"
+    },
+    {
+      "year": 1940,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 18000,
+      "date": "1940-01-01"
+    },
+    {
+      "year": 1942,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 1000000,
+      "date": "1942-01-01"
+    },
+    {
+      "year": 1943,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1943-01-01"
+    },
+    {
+      "year": 1944,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 120000,
+      "date": "1944-01-01"
+    },
+    {
+      "year": 1944,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 3,
+      "participants_proxy": 0,
+      "date": "1944-01-01"
+    },
+    {
+      "year": 1944,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 28500,
+      "date": "1944-01-01"
+    },
+    {
+      "year": 1945,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 785000,
+      "date": "1945-01-01"
+    },
+    {
+      "year": 1945,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1945-01-01"
+    },
+    {
+      "year": 1946,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 4170000,
+      "date": "1946-01-01"
+    },
+    {
+      "year": 1946,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 0,
+      "date": "1946-01-01"
+    },
+    {
+      "year": 1947,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1947-01-01"
+    },
+    {
+      "year": 1947,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 15000,
+      "date": "1947-01-01"
+    },
+    {
+      "year": 1948,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 45500,
+      "date": "1948-01-01"
+    },
+    {
+      "year": 1948,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 1000,
+      "date": "1948-01-01"
+    },
+    {
+      "year": 1948,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1948-01-01"
+    },
+    {
+      "year": 1949,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 20000,
+      "date": "1949-01-01"
+    },
+    {
+      "year": 1950,
+      "worldregion": "Pacific Oceania",
+      "episodes": 1,
+      "participants_proxy": 5000,
+      "date": "1950-01-01"
+    },
+    {
+      "year": 1951,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 27500,
+      "date": "1951-01-01"
+    },
+    {
+      "year": 1952,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1952-01-01"
+    },
+    {
+      "year": 1952,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 3,
+      "participants_proxy": 152500,
+      "date": "1952-01-01"
+    },
+    {
+      "year": 1952,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1952-01-01"
+    },
+    {
+      "year": 1953,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 300000,
+      "date": "1953-01-01"
+    },
+    {
+      "year": 1954,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 61000,
+      "date": "1954-01-01"
+    },
+    {
+      "year": 1955,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 15000,
+      "date": "1955-01-01"
+    },
+    {
+      "year": 1956,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 80000,
+      "date": "1956-01-01"
+    },
+    {
+      "year": 1956,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 200000,
+      "date": "1956-01-01"
+    },
+    {
+      "year": 1956,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 34000,
+      "date": "1956-01-01"
+    },
+    {
+      "year": 1957,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1957-01-01"
+    },
+    {
+      "year": 1958,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 38000,
+      "date": "1958-01-01"
+    },
+    {
+      "year": 1958,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 1000,
+      "date": "1958-01-01"
+    },
+    {
+      "year": 1958,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 5000,
+      "date": "1958-01-01"
+    },
+    {
+      "year": 1960,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1960-01-01"
+    },
+    {
+      "year": 1960,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 9000,
+      "date": "1960-01-01"
+    },
+    {
+      "year": 1960,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 210000,
+      "date": "1960-01-01"
+    },
+    {
+      "year": 1961,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 105000,
+      "date": "1961-01-01"
+    },
+    {
+      "year": 1962,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 24000,
+      "date": "1962-01-01"
+    },
+    {
+      "year": 1962,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 1000,
+      "date": "1962-01-01"
+    },
+    {
+      "year": 1962,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 1800,
+      "date": "1962-01-01"
+    },
+    {
+      "year": 1962,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 1500,
+      "date": "1962-01-01"
+    },
+    {
+      "year": 1963,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 3,
+      "participants_proxy": 117000,
+      "date": "1963-01-01"
+    },
+    {
+      "year": 1963,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 20000,
+      "date": "1963-01-01"
+    },
+    {
+      "year": 1964,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1964-01-01"
+    },
+    {
+      "year": 1964,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 4,
+      "participants_proxy": 100000,
+      "date": "1964-01-01"
+    },
+    {
+      "year": 1965,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 96000,
+      "date": "1965-01-01"
+    },
+    {
+      "year": 1965,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1965-01-01"
+    },
+    {
+      "year": 1965,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 3000,
+      "date": "1965-01-01"
+    },
+    {
+      "year": 1965,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1965-01-01"
+    },
+    {
+      "year": 1966,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 3000,
+      "date": "1966-01-01"
+    },
+    {
+      "year": 1966,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1966-01-01"
+    },
+    {
+      "year": 1966,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 32000,
+      "date": "1966-01-01"
+    },
+    {
+      "year": 1967,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 102000,
+      "date": "1967-01-01"
+    },
+    {
+      "year": 1967,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 3000,
+      "date": "1967-01-01"
+    },
+    {
+      "year": 1967,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1967-01-01"
+    },
+    {
+      "year": 1968,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 92400,
+      "date": "1968-01-01"
+    },
+    {
+      "year": 1968,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 10002000,
+      "date": "1968-01-01"
+    },
+    {
+      "year": 1969,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 26000,
+      "date": "1969-01-01"
+    },
+    {
+      "year": 1969,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1969-01-01"
+    },
+    {
+      "year": 1970,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1970-01-01"
+    },
+    {
+      "year": 1970,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1970-01-01"
+    },
+    {
+      "year": 1971,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1971-01-01"
+    },
+    {
+      "year": 1971,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 1500,
+      "date": "1971-01-01"
+    },
+    {
+      "year": 1972,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 140000,
+      "date": "1972-01-01"
+    },
+    {
+      "year": 1972,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 5000,
+      "date": "1972-01-01"
+    },
+    {
+      "year": 1973,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 305000,
+      "date": "1973-01-01"
+    },
+    {
+      "year": 1973,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1973-01-01"
+    },
+    {
+      "year": 1974,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1974-01-01"
+    },
+    {
+      "year": 1974,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1974-01-01"
+    },
+    {
+      "year": 1975,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 40000,
+      "date": "1975-01-01"
+    },
+    {
+      "year": 1975,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 72000,
+      "date": "1975-01-01"
+    },
+    {
+      "year": 1975,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 77000,
+      "date": "1975-01-01"
+    },
+    {
+      "year": 1976,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 27000,
+      "date": "1976-01-01"
+    },
+    {
+      "year": 1976,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1976-01-01"
+    },
+    {
+      "year": 1977,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1977-01-01"
+    },
+    {
+      "year": 1978,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1978-01-01"
+    },
+    {
+      "year": 1978,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 2015000,
+      "date": "1978-01-01"
+    },
+    {
+      "year": 1978,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1978-01-01"
+    },
+    {
+      "year": 1979,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 250000,
+      "date": "1979-01-01"
+    },
+    {
+      "year": 1979,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 260000,
+      "date": "1979-01-01"
+    },
+    {
+      "year": 1980,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 15500,
+      "date": "1980-01-01"
+    },
+    {
+      "year": 1980,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 10000000,
+      "date": "1980-01-01"
+    },
+    {
+      "year": 1980,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1980-01-01"
+    },
+    {
+      "year": 1980,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 2500,
+      "date": "1980-01-01"
+    },
+    {
+      "year": 1981,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1981-01-01"
+    },
+    {
+      "year": 1981,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 3000,
+      "date": "1981-01-01"
+    },
+    {
+      "year": 1981,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 16000,
+      "date": "1981-01-01"
+    },
+    {
+      "year": 1982,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 2,
+      "participants_proxy": 123000,
+      "date": "1982-01-01"
+    },
+    {
+      "year": 1983,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1983-01-01"
+    },
+    {
+      "year": 1983,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 120000,
+      "date": "1983-01-01"
+    },
+    {
+      "year": 1984,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 17000,
+      "date": "1984-01-01"
+    },
+    {
+      "year": 1984,
+      "worldregion": "Pacific Oceania",
+      "episodes": 1,
+      "participants_proxy": 8000,
+      "date": "1984-01-01"
+    },
+    {
+      "year": 1985,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 60000,
+      "date": "1985-01-01"
+    },
+    {
+      "year": 1985,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 2000000,
+      "date": "1985-01-01"
+    },
+    {
+      "year": 1986,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 1500000,
+      "date": "1986-01-01"
+    },
+    {
+      "year": 1986,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 50000,
+      "date": "1986-01-01"
+    },
+    {
+      "year": 1987,
+      "worldregion": "Asia",
+      "episodes": 3,
+      "participants_proxy": 1017000,
+      "date": "1987-01-01"
+    },
+    {
+      "year": 1987,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1987-01-01"
+    },
+    {
+      "year": 1987,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 150000,
+      "date": "1987-01-01"
+    },
+    {
+      "year": 1988,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 2003500,
+      "date": "1988-01-01"
+    },
+    {
+      "year": 1988,
+      "worldregion": "Europe",
+      "episodes": 4,
+      "participants_proxy": 2400000,
+      "date": "1988-01-01"
+    },
+    {
+      "year": 1988,
+      "worldregion": "Pacific Oceania",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1988-01-01"
+    },
+    {
+      "year": 1988,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 4000,
+      "date": "1988-01-01"
+    },
+    {
+      "year": 1989,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 1040000,
+      "date": "1989-01-01"
+    },
+    {
+      "year": 1989,
+      "worldregion": "Europe",
+      "episodes": 4,
+      "participants_proxy": 2000000,
+      "date": "1989-01-01"
+    },
+    {
+      "year": 1989,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 97000,
+      "date": "1989-01-01"
+    },
+    {
+      "year": 1990,
+      "worldregion": "Asia",
+      "episodes": 5,
+      "participants_proxy": 406000,
+      "date": "1990-01-01"
+    },
+    {
+      "year": 1990,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 600000,
+      "date": "1990-01-01"
+    },
+    {
+      "year": 1990,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 4,
+      "participants_proxy": 28000,
+      "date": "1990-01-01"
+    },
+    {
+      "year": 1991,
+      "worldregion": "Europe",
+      "episodes": 4,
+      "participants_proxy": 600000,
+      "date": "1991-01-01"
+    },
+    {
+      "year": 1991,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 65000,
+      "date": "1991-01-01"
+    },
+    {
+      "year": 1991,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 4,
+      "participants_proxy": 550000,
+      "date": "1991-01-01"
+    },
+    {
+      "year": 1992,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 400000,
+      "date": "1992-01-01"
+    },
+    {
+      "year": 1992,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 40000,
+      "date": "1992-01-01"
+    },
+    {
+      "year": 1992,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "1992-01-01"
+    },
+    {
+      "year": 1993,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 15000,
+      "date": "1993-01-01"
+    },
+    {
+      "year": 1993,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 25000,
+      "date": "1993-01-01"
+    },
+    {
+      "year": 1994,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 15000,
+      "date": "1994-01-01"
+    },
+    {
+      "year": 1994,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1994-01-01"
+    },
+    {
+      "year": 1994,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 2000,
+      "date": "1994-01-01"
+    },
+    {
+      "year": 1994,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 80000,
+      "date": "1994-01-01"
+    },
+    {
+      "year": 1995,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1995-01-01"
+    },
+    {
+      "year": 1996,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 12000,
+      "date": "1996-01-01"
+    },
+    {
+      "year": 1996,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 57000,
+      "date": "1996-01-01"
+    },
+    {
+      "year": 1997,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1997-01-01"
+    },
+    {
+      "year": 1997,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 16000,
+      "date": "1997-01-01"
+    },
+    {
+      "year": 1998,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 500000,
+      "date": "1998-01-01"
+    },
+    {
+      "year": 1999,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 22000,
+      "date": "1999-01-01"
+    },
+    {
+      "year": 1999,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1999-01-01"
+    },
+    {
+      "year": 1999,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 6500,
+      "date": "1999-01-01"
+    },
+    {
+      "year": 2000,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 200000,
+      "date": "2000-01-01"
+    },
+    {
+      "year": 2000,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "2000-01-01"
+    },
+    {
+      "year": 2001,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 600000,
+      "date": "2001-01-01"
+    },
+    {
+      "year": 2001,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 1000000,
+      "date": "2001-01-01"
+    },
+    {
+      "year": 2002,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 200000,
+      "date": "2002-01-01"
+    },
+    {
+      "year": 2002,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 516000,
+      "date": "2002-01-01"
+    },
+    {
+      "year": 2003,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "2003-01-01"
+    },
+    {
+      "year": 2004,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 19000,
+      "date": "2004-01-01"
+    },
+    {
+      "year": 2004,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 1000000,
+      "date": "2004-01-01"
+    },
+    {
+      "year": 2004,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 15000,
+      "date": "2004-01-01"
+    },
+    {
+      "year": 2005,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "2005-01-01"
+    },
+    {
+      "year": 2005,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "2005-01-01"
+    },
+    {
+      "year": 2005,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 3000,
+      "date": "2005-01-01"
+    },
+    {
+      "year": 2006,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 500000,
+      "date": "2006-01-01"
+    },
+    {
+      "year": 2006,
+      "worldregion": "Europe",
+      "episodes": 2,
+      "participants_proxy": 95000,
+      "date": "2006-01-01"
+    },
+    {
+      "year": 2007,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "2007-01-01"
+    },
+    {
+      "year": 2007,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 50000,
+      "date": "2007-01-01"
+    },
+    {
+      "year": 2007,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 42000,
+      "date": "2007-01-01"
+    },
+    {
+      "year": 2008,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 60000,
+      "date": "2008-01-01"
+    },
+    {
+      "year": 2008,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 150000,
+      "date": "2008-01-01"
+    },
+    {
+      "year": 2009,
+      "worldregion": "Asia",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "2009-01-01"
+    },
+    {
+      "year": 2009,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "2009-01-01"
+    },
+    {
+      "year": 2009,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 500000,
+      "date": "2009-01-01"
+    },
+    {
+      "year": 2009,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 3,
+      "participants_proxy": 60000,
+      "date": "2009-01-01"
+    },
+    {
+      "year": 2010,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 175000,
+      "date": "2010-01-01"
+    },
+    {
+      "year": 2010,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 1,
+      "participants_proxy": 300000,
+      "date": "2010-01-01"
+    },
+    {
+      "year": 2011,
+      "worldregion": "Asia",
+      "episodes": 2,
+      "participants_proxy": 28000,
+      "date": "2011-01-01"
+    },
+    {
+      "year": 2011,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 7,
+      "participants_proxy": 2970000,
+      "date": "2011-01-01"
+    },
+    {
+      "year": 2011,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "2011-01-01"
+    },
+    {
+      "year": 2012,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 3,
+      "participants_proxy": 19000,
+      "date": "2012-01-01"
+    },
+    {
+      "year": 2013,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 800000,
+      "date": "2013-01-01"
+    },
+    {
+      "year": 2013,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 3500000,
+      "date": "2013-01-01"
+    },
+    {
+      "year": 2013,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 2,
+      "participants_proxy": 36000,
+      "date": "2013-01-01"
+    },
+    {
+      "year": 2014,
+      "worldregion": "Europe",
+      "episodes": 1,
+      "participants_proxy": 10000,
+      "date": "2014-01-01"
+    },
+    {
+      "year": 2014,
+      "worldregion": "Latin America/Carribean",
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "2014-01-01"
+    },
+    {
+      "year": 2014,
+      "worldregion": "Middle East/North Africa",
+      "episodes": 2,
+      "participants_proxy": 17500,
+      "date": "2014-01-01"
+    },
+    {
+      "year": 2014,
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 1,
+      "participants_proxy": 200000,
+      "date": "2014-01-01"
+    }
+  ]
+}

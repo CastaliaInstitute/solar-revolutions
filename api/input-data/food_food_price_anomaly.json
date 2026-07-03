@@ -1,0 +1,66 @@
+{
+  "series_id": "food.food_price_anomaly",
+  "unit": "index",
+  "source": "FAO / Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/food-price-anomalies",
+  "generated_at": "2026-07-03T11:02:19+00:00",
+  "aggregation_note": "world_or_mean",
+  "points": [
+    {
+      "date": "2010-01-01",
+      "value": -0.7786363636363636
+    },
+    {
+      "date": "2011-01-01",
+      "value": 0.043050000000000005
+    },
+    {
+      "date": "2012-01-01",
+      "value": -0.1516
+    },
+    {
+      "date": "2013-01-01",
+      "value": -0.13675
+    },
+    {
+      "date": "2014-01-01",
+      "value": -0.2876
+    },
+    {
+      "date": "2015-01-01",
+      "value": 0.06570000000000001
+    },
+    {
+      "date": "2016-01-01",
+      "value": -0.21945
+    },
+    {
+      "date": "2017-01-01",
+      "value": -0.43575
+    },
+    {
+      "date": "2018-01-01",
+      "value": -0.3906
+    },
+    {
+      "date": "2019-01-01",
+      "value": 0.0332
+    },
+    {
+      "date": "2020-01-01",
+      "value": 0.5858
+    },
+    {
+      "date": "2021-01-01",
+      "value": -0.11396984924623116
+    },
+    {
+      "date": "2022-01-01",
+      "value": 0.8758291457286431
+    },
+    {
+      "date": "2023-01-01",
+      "value": 0.7057788944723618
+    }
+  ]
+}

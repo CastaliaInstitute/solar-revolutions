@@ -1,0 +1,102 @@
+{
+  "series_id": "resistance.navco_fatality_proxy",
+  "unit": "fatalities/year",
+  "source": "NAVCO 3.0 / Harvard Dataverse",
+  "source_url": "https://doi.org/10.7910/DVN/INNYEO",
+  "generated_at": "2026-07-03T11:02:42+00:00",
+  "coverage_note": "NAVCO 3.0 event-level data for selected resistance campaigns and countries; aggregated by event date year.",
+  "points": [
+    {
+      "date": "1990-01-01",
+      "value": 0.0
+    },
+    {
+      "date": "1991-01-01",
+      "value": 3798.5
+    },
+    {
+      "date": "1992-01-01",
+      "value": 799.5
+    },
+    {
+      "date": "1993-01-01",
+      "value": 2610.5
+    },
+    {
+      "date": "1994-01-01",
+      "value": 5321.0
+    },
+    {
+      "date": "1995-01-01",
+      "value": 6217.0
+    },
+    {
+      "date": "1996-01-01",
+      "value": 3339.0
+    },
+    {
+      "date": "1997-01-01",
+      "value": 11446.5
+    },
+    {
+      "date": "1998-01-01",
+      "value": 6522.0
+    },
+    {
+      "date": "1999-01-01",
+      "value": 5056.5
+    },
+    {
+      "date": "2000-01-01",
+      "value": 3589.0
+    },
+    {
+      "date": "2001-01-01",
+      "value": 2600.5
+    },
+    {
+      "date": "2002-01-01",
+      "value": 1908.5
+    },
+    {
+      "date": "2003-01-01",
+      "value": 1115.0
+    },
+    {
+      "date": "2004-01-01",
+      "value": 1926.5
+    },
+    {
+      "date": "2005-01-01",
+      "value": 2574.5
+    },
+    {
+      "date": "2006-01-01",
+      "value": 1281.0
+    },
+    {
+      "date": "2007-01-01",
+      "value": 4110.5
+    },
+    {
+      "date": "2008-01-01",
+      "value": 8829.5
+    },
+    {
+      "date": "2009-01-01",
+      "value": 13796.0
+    },
+    {
+      "date": "2010-01-01",
+      "value": 9594.5
+    },
+    {
+      "date": "2011-01-01",
+      "value": 17435.0
+    },
+    {
+      "date": "2012-01-01",
+      "value": 27117.5
+    }
+  ]
+}

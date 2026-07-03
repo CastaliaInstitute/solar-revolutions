@@ -1,0 +1,694 @@
+{
+  "points": [
+    {
+      "year": 1900,
+      "episodes": 2,
+      "participants_proxy": 32000,
+      "date": "1900-01-01"
+    },
+    {
+      "year": 1901,
+      "episodes": 2,
+      "participants_proxy": 25000,
+      "date": "1901-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1902-01-01"
+    },
+    {
+      "year": 1903,
+      "episodes": 1,
+      "participants_proxy": 25000,
+      "date": "1903-01-01"
+    },
+    {
+      "year": 1904,
+      "episodes": 3,
+      "participants_proxy": 11000,
+      "date": "1904-01-01"
+    },
+    {
+      "year": 1905,
+      "episodes": 4,
+      "participants_proxy": 2040000,
+      "date": "1905-01-01"
+    },
+    {
+      "year": 1906,
+      "episodes": 2,
+      "participants_proxy": 40000,
+      "date": "1906-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1907-01-01"
+    },
+    {
+      "year": 1908,
+      "episodes": 2,
+      "participants_proxy": 30000,
+      "date": "1908-01-01"
+    },
+    {
+      "year": 1909,
+      "episodes": 2,
+      "participants_proxy": 34500,
+      "date": "1909-01-01"
+    },
+    {
+      "year": 1910,
+      "episodes": 3,
+      "participants_proxy": 150000,
+      "date": "1910-01-01"
+    },
+    {
+      "year": 1911,
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1911-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1912-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1913-01-01"
+    },
+    {
+      "year": 1914,
+      "episodes": 2,
+      "participants_proxy": 13000,
+      "date": "1914-01-01"
+    },
+    {
+      "year": 1915,
+      "episodes": 2,
+      "participants_proxy": 28000,
+      "date": "1915-01-01"
+    },
+    {
+      "year": 1916,
+      "episodes": 4,
+      "participants_proxy": 53260,
+      "date": "1916-01-01"
+    },
+    {
+      "year": 1917,
+      "episodes": 5,
+      "participants_proxy": 3355000,
+      "date": "1917-01-01"
+    },
+    {
+      "year": 1918,
+      "episodes": 9,
+      "participants_proxy": 630000,
+      "date": "1918-01-01"
+    },
+    {
+      "year": 1919,
+      "episodes": 7,
+      "participants_proxy": 3164000,
+      "date": "1919-01-01"
+    },
+    {
+      "year": 1920,
+      "episodes": 7,
+      "participants_proxy": 850000,
+      "date": "1920-01-01"
+    },
+    {
+      "year": 1921,
+      "episodes": 2,
+      "participants_proxy": 216000,
+      "date": "1921-01-01"
+    },
+    {
+      "year": 1922,
+      "episodes": 5,
+      "participants_proxy": 196500,
+      "date": "1922-01-01"
+    },
+    {
+      "year": 1923,
+      "episodes": 3,
+      "participants_proxy": 69000,
+      "date": "1923-01-01"
+    },
+    {
+      "year": 1924,
+      "episodes": 2,
+      "participants_proxy": 27000,
+      "date": "1924-01-01"
+    },
+    {
+      "year": 1925,
+      "episodes": 2,
+      "participants_proxy": 55000,
+      "date": "1925-01-01"
+    },
+    {
+      "year": 1926,
+      "episodes": 2,
+      "participants_proxy": 15000,
+      "date": "1926-01-01"
+    },
+    {
+      "year": 1927,
+      "episodes": 4,
+      "participants_proxy": 459000,
+      "date": "1927-01-01"
+    },
+    {
+      "year": 1928,
+      "episodes": 3,
+      "participants_proxy": 361000,
+      "date": "1928-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1929-01-01"
+    },
+    {
+      "year": 1930,
+      "episodes": 3,
+      "participants_proxy": 2012000,
+      "date": "1930-01-01"
+    },
+    {
+      "year": 1931,
+      "episodes": 2,
+      "participants_proxy": 20000,
+      "date": "1931-01-01"
+    },
+    {
+      "year": 1932,
+      "episodes": 3,
+      "participants_proxy": 95000,
+      "date": "1932-01-01"
+    },
+    {
+      "year": 1933,
+      "episodes": 1,
+      "participants_proxy": 0,
+      "date": "1933-01-01"
+    },
+    {
+      "year": 1934,
+      "episodes": 1,
+      "participants_proxy": 70000,
+      "date": "1934-01-01"
+    },
+    {
+      "year": 1935,
+      "episodes": 4,
+      "participants_proxy": 571500,
+      "date": "1935-01-01"
+    },
+    {
+      "year": 1936,
+      "episodes": 3,
+      "participants_proxy": 817000,
+      "date": "1936-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1937-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1938-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1939-01-01"
+    },
+    {
+      "year": 1940,
+      "episodes": 1,
+      "participants_proxy": 18000,
+      "date": "1940-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1941-01-01"
+    },
+    {
+      "year": 1942,
+      "episodes": 1,
+      "participants_proxy": 1000000,
+      "date": "1942-01-01"
+    },
+    {
+      "year": 1943,
+      "episodes": 1,
+      "participants_proxy": 30000,
+      "date": "1943-01-01"
+    },
+    {
+      "year": 1944,
+      "episodes": 5,
+      "participants_proxy": 148500,
+      "date": "1944-01-01"
+    },
+    {
+      "year": 1945,
+      "episodes": 3,
+      "participants_proxy": 795000,
+      "date": "1945-01-01"
+    },
+    {
+      "year": 1946,
+      "episodes": 4,
+      "participants_proxy": 4170000,
+      "date": "1946-01-01"
+    },
+    {
+      "year": 1947,
+      "episodes": 2,
+      "participants_proxy": 15000,
+      "date": "1947-01-01"
+    },
+    {
+      "year": 1948,
+      "episodes": 5,
+      "participants_proxy": 146500,
+      "date": "1948-01-01"
+    },
+    {
+      "year": 1949,
+      "episodes": 2,
+      "participants_proxy": 20000,
+      "date": "1949-01-01"
+    },
+    {
+      "year": 1950,
+      "episodes": 1,
+      "participants_proxy": 5000,
+      "date": "1950-01-01"
+    },
+    {
+      "year": 1951,
+      "episodes": 1,
+      "participants_proxy": 27500,
+      "date": "1951-01-01"
+    },
+    {
+      "year": 1952,
+      "episodes": 5,
+      "participants_proxy": 182500,
+      "date": "1952-01-01"
+    },
+    {
+      "year": 1953,
+      "episodes": 1,
+      "participants_proxy": 300000,
+      "date": "1953-01-01"
+    },
+    {
+      "year": 1954,
+      "episodes": 1,
+      "participants_proxy": 61000,
+      "date": "1954-01-01"
+    },
+    {
+      "year": 1955,
+      "episodes": 2,
+      "participants_proxy": 15000,
+      "date": "1955-01-01"
+    },
+    {
+      "year": 1956,
+      "episodes": 4,
+      "participants_proxy": 314000,
+      "date": "1956-01-01"
+    },
+    {
+      "year": 1957,
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1957-01-01"
+    },
+    {
+      "year": 1958,
+      "episodes": 5,
+      "participants_proxy": 44000,
+      "date": "1958-01-01"
+    },
+    {
+      "year": null,
+      "episodes": 0,
+      "participants_proxy": 0,
+      "date": "1959-01-01"
+    },
+    {
+      "year": 1960,
+      "episodes": 4,
+      "participants_proxy": 319000,
+      "date": "1960-01-01"
+    },
+    {
+      "year": 1961,
+      "episodes": 2,
+      "participants_proxy": 105000,
+      "date": "1961-01-01"
+    },
+    {
+      "year": 1962,
+      "episodes": 5,
+      "participants_proxy": 28300,
+      "date": "1962-01-01"
+    },
+    {
+      "year": 1963,
+      "episodes": 5,
+      "participants_proxy": 137000,
+      "date": "1963-01-01"
+    },
+    {
+      "year": 1964,
+      "episodes": 5,
+      "participants_proxy": 110000,
+      "date": "1964-01-01"
+    },
+    {
+      "year": 1965,
+      "episodes": 4,
+      "participants_proxy": 119000,
+      "date": "1965-01-01"
+    },
+    {
+      "year": 1966,
+      "episodes": 3,
+      "participants_proxy": 55000,
+      "date": "1966-01-01"
+    },
+    {
+      "year": 1967,
+      "episodes": 4,
+      "participants_proxy": 135000,
+      "date": "1967-01-01"
+    },
+    {
+      "year": 1968,
+      "episodes": 4,
+      "participants_proxy": 10094400,
+      "date": "1968-01-01"
+    },
+    {
+      "year": 1969,
+      "episodes": 2,
+      "participants_proxy": 36000,
+      "date": "1969-01-01"
+    },
+    {
+      "year": 1970,
+      "episodes": 2,
+      "participants_proxy": 50000,
+      "date": "1970-01-01"
+    },
+    {
+      "year": 1971,
+      "episodes": 2,
+      "participants_proxy": 21500,
+      "date": "1971-01-01"
+    },
+    {
+      "year": 1972,
+      "episodes": 3,
+      "participants_proxy": 145000,
+      "date": "1972-01-01"
+    },
+    {
+      "year": 1973,
+      "episodes": 3,
+      "participants_proxy": 405000,
+      "date": "1973-01-01"
+    },
+    {
+      "year": 1974,
+      "episodes": 2,
+      "participants_proxy": 130000,
+      "date": "1974-01-01"
+    },
+    {
+      "year": 1975,
+      "episodes": 3,
+      "participants_proxy": 189000,
+      "date": "1975-01-01"
+    },
+    {
+      "year": 1976,
+      "episodes": 2,
+      "participants_proxy": 57000,
+      "date": "1976-01-01"
+    },
+    {
+      "year": 1977,
+      "episodes": 1,
+      "participants_proxy": 20000,
+      "date": "1977-01-01"
+    },
+    {
+      "year": 1978,
+      "episodes": 4,
+      "participants_proxy": 2065000,
+      "date": "1978-01-01"
+    },
+    {
+      "year": 1979,
+      "episodes": 3,
+      "participants_proxy": 510000,
+      "date": "1979-01-01"
+    },
+    {
+      "year": 1980,
+      "episodes": 5,
+      "participants_proxy": 10028000,
+      "date": "1980-01-01"
+    },
+    {
+      "year": 1981,
+      "episodes": 3,
+      "participants_proxy": 49000,
+      "date": "1981-01-01"
+    },
+    {
+      "year": 1982,
+      "episodes": 2,
+      "participants_proxy": 123000,
+      "date": "1982-01-01"
+    },
+    {
+      "year": 1983,
+      "episodes": 2,
+      "participants_proxy": 150000,
+      "date": "1983-01-01"
+    },
+    {
+      "year": 1984,
+      "episodes": 2,
+      "participants_proxy": 25000,
+      "date": "1984-01-01"
+    },
+    {
+      "year": 1985,
+      "episodes": 2,
+      "participants_proxy": 2060000,
+      "date": "1985-01-01"
+    },
+    {
+      "year": 1986,
+      "episodes": 3,
+      "participants_proxy": 1550000,
+      "date": "1986-01-01"
+    },
+    {
+      "year": 1987,
+      "episodes": 5,
+      "participants_proxy": 1267000,
+      "date": "1987-01-01"
+    },
+    {
+      "year": 1988,
+      "episodes": 8,
+      "participants_proxy": 4427500,
+      "date": "1988-01-01"
+    },
+    {
+      "year": 1989,
+      "episodes": 8,
+      "participants_proxy": 3137000,
+      "date": "1989-01-01"
+    },
+    {
+      "year": 1990,
+      "episodes": 11,
+      "participants_proxy": 1034000,
+      "date": "1990-01-01"
+    },
+    {
+      "year": 1991,
+      "episodes": 9,
+      "participants_proxy": 1215000,
+      "date": "1991-01-01"
+    },
+    {
+      "year": 1992,
+      "episodes": 4,
+      "participants_proxy": 450000,
+      "date": "1992-01-01"
+    },
+    {
+      "year": 1993,
+      "episodes": 2,
+      "participants_proxy": 40000,
+      "date": "1993-01-01"
+    },
+    {
+      "year": 1994,
+      "episodes": 4,
+      "participants_proxy": 127000,
+      "date": "1994-01-01"
+    },
+    {
+      "year": 1995,
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "1995-01-01"
+    },
+    {
+      "year": 1996,
+      "episodes": 2,
+      "participants_proxy": 69000,
+      "date": "1996-01-01"
+    },
+    {
+      "year": 1997,
+      "episodes": 2,
+      "participants_proxy": 16000,
+      "date": "1997-01-01"
+    },
+    {
+      "year": 1998,
+      "episodes": 1,
+      "participants_proxy": 500000,
+      "date": "1998-01-01"
+    },
+    {
+      "year": 1999,
+      "episodes": 3,
+      "participants_proxy": 28500,
+      "date": "1999-01-01"
+    },
+    {
+      "year": 2000,
+      "episodes": 2,
+      "participants_proxy": 200000,
+      "date": "2000-01-01"
+    },
+    {
+      "year": 2001,
+      "episodes": 3,
+      "participants_proxy": 1600000,
+      "date": "2001-01-01"
+    },
+    {
+      "year": 2002,
+      "episodes": 3,
+      "participants_proxy": 716000,
+      "date": "2002-01-01"
+    },
+    {
+      "year": 2003,
+      "episodes": 1,
+      "participants_proxy": 100000,
+      "date": "2003-01-01"
+    },
+    {
+      "year": 2004,
+      "episodes": 4,
+      "participants_proxy": 1034000,
+      "date": "2004-01-01"
+    },
+    {
+      "year": 2005,
+      "episodes": 3,
+      "participants_proxy": 53000,
+      "date": "2005-01-01"
+    },
+    {
+      "year": 2006,
+      "episodes": 3,
+      "participants_proxy": 595000,
+      "date": "2006-01-01"
+    },
+    {
+      "year": 2007,
+      "episodes": 4,
+      "participants_proxy": 192000,
+      "date": "2007-01-01"
+    },
+    {
+      "year": 2008,
+      "episodes": 3,
+      "participants_proxy": 210000,
+      "date": "2008-01-01"
+    },
+    {
+      "year": 2009,
+      "episodes": 6,
+      "participants_proxy": 690000,
+      "date": "2009-01-01"
+    },
+    {
+      "year": 2010,
+      "episodes": 3,
+      "participants_proxy": 475000,
+      "date": "2010-01-01"
+    },
+    {
+      "year": 2011,
+      "episodes": 10,
+      "participants_proxy": 3028000,
+      "date": "2011-01-01"
+    },
+    {
+      "year": 2012,
+      "episodes": 3,
+      "participants_proxy": 19000,
+      "date": "2012-01-01"
+    },
+    {
+      "year": 2013,
+      "episodes": 5,
+      "participants_proxy": 4336000,
+      "date": "2013-01-01"
+    },
+    {
+      "year": 2014,
+      "episodes": 5,
+      "participants_proxy": 327500,
+      "date": "2014-01-01"
+    }
+  ]
+}

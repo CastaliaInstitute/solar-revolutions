@@ -1,0 +1,1891 @@
+{
+  "generated_at": "2026-07-03T13:43:48+00:00",
+  "model_scope": "RED country-year panel, observed RED countries, 1900-2014, global SILSO annualized solar exposure",
+  "identification_warning": "Because SILSO solar activity is global and varies only by year, a country-year panel with year fixed effects cannot estimate a separate solar coefficient. These diagnostics use country fixed effects and polynomial time trends, so unmeasured year-level confounding remains possible.",
+  "panel": {
+    "countries": 159,
+    "years": 115,
+    "country_years": 18285,
+    "event_country_years": 340,
+    "total_episodes": 343.0,
+    "total_participants_proxy": 77659460.0,
+    "event_rate": 0.018594476346732294
+  },
+  "models": {
+    "event_linear_probability_country_fe_trend": {
+      "n": 18285,
+      "parameters": 162,
+      "r_squared": 0.009863194689708199,
+      "solar_beta_per_1sd": 0.0025812878840082393,
+      "solar_se": 0.0010512561388996825,
+      "solar_z": 2.455431924240646,
+      "solar_p_approx": 0.014071540193820953
+    },
+    "episode_count_ols_country_fe_trend": {
+      "n": 18285,
+      "parameters": 162,
+      "r_squared": 0.010217103281264461,
+      "solar_beta_per_1sd": 0.0028129041321217872,
+      "solar_se": 0.0010649745299730084,
+      "solar_z": 2.641287704968005,
+      "solar_p_approx": 0.008259155020436615
+    },
+    "log_participants_ols_country_fe_trend": {
+      "n": 18285,
+      "parameters": 162,
+      "r_squared": 0.011320985301693787,
+      "solar_beta_per_1sd": 0.026957665769565826,
+      "solar_se": 0.01081279736824672,
+      "solar_z": 2.493125955428588,
+      "solar_p_approx": 0.01266239191890306
+    },
+    "event_within_country_fe_trend_year_clustered": {
+      "n": 18285,
+      "countries": 159,
+      "year_clusters": 115,
+      "parameters_after_within_transform": 3,
+      "within_r_squared": 0.0011442231651789259,
+      "solar_beta_per_1sd": 0.0025812878842094104,
+      "solar_se_clustered_by_year": 0.0013857979506392978,
+      "solar_z_clustered_by_year": 1.8626726089604966,
+      "solar_p_clustered_by_year": 0.06250834186996579,
+      "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year"
+    },
+    "episode_count_within_country_fe_trend_year_clustered": {
+      "n": 18285,
+      "countries": 159,
+      "year_clusters": 115,
+      "parameters_after_within_transform": 3,
+      "within_r_squared": 0.0011638482560331065,
+      "solar_beta_per_1sd": 0.002812904132324824,
+      "solar_se_clustered_by_year": 0.0014020812084927358,
+      "solar_z_clustered_by_year": 2.006234813851296,
+      "solar_p_clustered_by_year": 0.044831201144028276,
+      "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year"
+    },
+    "log_participants_within_country_fe_trend_year_clustered": {
+      "n": 18285,
+      "countries": 159,
+      "year_clusters": 115,
+      "parameters_after_within_transform": 3,
+      "within_r_squared": 0.001762450561352713,
+      "solar_beta_per_1sd": 0.02695766577172304,
+      "solar_se_clustered_by_year": 0.01420905337597483,
+      "solar_z_clustered_by_year": 1.8972175737832058,
+      "solar_p_clustered_by_year": 0.05779922837111506,
+      "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year"
+    },
+    "event_country_year_fe_solar_geomagnetic_exposure": {
+      "n": 18285,
+      "countries": 159,
+      "year_clusters": 115,
+      "parameters_after_two_way_demean": 1,
+      "controls": [],
+      "within_r_squared": 7.82657419962085e-06,
+      "solar_exposure_beta": 0.0012262960071563545,
+      "solar_exposure_se_clustered_by_year": 0.004033764524893443,
+      "solar_exposure_z_clustered_by_year": 0.3040078317880364,
+      "solar_exposure_p_clustered_by_year": 0.7611219244789675,
+      "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "episode_count_country_year_fe_solar_geomagnetic_exposure": {
+      "n": 18285,
+      "countries": 159,
+      "year_clusters": 115,
+      "parameters_after_two_way_demean": 1,
+      "controls": [],
+      "within_r_squared": 1.115022673392474e-05,
+      "solar_exposure_beta": 0.001482816686639905,
+      "solar_exposure_se_clustered_by_year": 0.004127206862713706,
+      "solar_exposure_z_clustered_by_year": 0.35927849898585623,
+      "solar_exposure_p_clustered_by_year": 0.7193867573571608,
+      "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "log_participants_country_year_fe_solar_geomagnetic_exposure": {
+      "n": 18285,
+      "countries": 159,
+      "year_clusters": 115,
+      "parameters_after_two_way_demean": 1,
+      "controls": [],
+      "within_r_squared": 6.897796825855451e-05,
+      "solar_exposure_beta": 0.03743871147787104,
+      "solar_exposure_se_clustered_by_year": 0.04251399337212019,
+      "solar_exposure_z_clustered_by_year": 0.8806209087481908,
+      "solar_exposure_p_clustered_by_year": 0.3785230378334652,
+      "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "event_country_year_fe_nasa_power_solar_geomagnetic_exposure": {
+      "n": 4929,
+      "countries": 159,
+      "year_clusters": 31,
+      "parameters_after_two_way_demean": 1,
+      "controls": [],
+      "within_r_squared": 0.00010242311848651653,
+      "solar_exposure_beta": 0.004829933980518246,
+      "solar_exposure_se_clustered_by_year": 0.005582944316580732,
+      "solar_exposure_z_clustered_by_year": 0.8651230796219608,
+      "solar_exposure_p_clustered_by_year": 0.3869712383595091,
+      "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "episode_count_country_year_fe_nasa_power_solar_geomagnetic_exposure": {
+      "n": 4929,
+      "countries": 159,
+      "year_clusters": 31,
+      "parameters_after_two_way_demean": 1,
+      "controls": [],
+      "within_r_squared": 7.088620149953151e-05,
+      "solar_exposure_beta": 0.0040674154296103954,
+      "solar_exposure_se_clustered_by_year": 0.005675578029276344,
+      "solar_exposure_z_clustered_by_year": 0.7166521909538446,
+      "solar_exposure_p_clustered_by_year": 0.4735887324148417,
+      "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "log_participants_country_year_fe_nasa_power_solar_geomagnetic_exposure": {
+      "n": 4929,
+      "countries": 159,
+      "year_clusters": 31,
+      "parameters_after_two_way_demean": 1,
+      "controls": [],
+      "within_r_squared": 0.00016663983918807634,
+      "solar_exposure_beta": 0.0676426853543688,
+      "solar_exposure_se_clustered_by_year": 0.06625081106730481,
+      "solar_exposure_z_clustered_by_year": 1.0210091659957186,
+      "solar_exposure_p_clustered_by_year": 0.3072500960661493,
+      "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "event_country_year_fe_solar_geomagnetic_exposure_with_controls": {
+      "n": 578,
+      "countries": 68,
+      "year_clusters": 26,
+      "parameters_after_two_way_demean": 7,
+      "controls": [
+        "control_vdem_electoral_democracy",
+        "control_vdem_civil_society_participation",
+        "control_wdi_inflation_cpi",
+        "control_wdi_gdp_growth",
+        "control_wdi_food_production_index",
+        "control_wdi_battle_deaths"
+      ],
+      "within_r_squared": 0.03724444404491489,
+      "solar_exposure_beta": 0.0010255124449423895,
+      "solar_exposure_se_clustered_by_year": 0.0168797609685402,
+      "solar_exposure_z_clustered_by_year": 0.060753967242409244,
+      "solar_exposure_p_clustered_by_year": 0.9515551513769613,
+      "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "event_country_year_fe_nasa_power_solar_geomagnetic_exposure_with_controls": {
+      "n": 578,
+      "countries": 68,
+      "year_clusters": 26,
+      "parameters_after_two_way_demean": 7,
+      "controls": [
+        "control_vdem_electoral_democracy",
+        "control_vdem_civil_society_participation",
+        "control_wdi_inflation_cpi",
+        "control_wdi_gdp_growth",
+        "control_wdi_food_production_index",
+        "control_wdi_battle_deaths"
+      ],
+      "within_r_squared": 0.03764080081289767,
+      "solar_exposure_beta": 0.009494525323564035,
+      "solar_exposure_se_clustered_by_year": 0.016946187671946403,
+      "solar_exposure_z_clustered_by_year": 0.5602750015144565,
+      "solar_exposure_p_clustered_by_year": 0.5752918759263802,
+      "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "onset_country_year_fe_solar_geomagnetic_exposure_with_controls": {
+      "n": 550,
+      "countries": 67,
+      "year_clusters": 26,
+      "parameters_after_two_way_demean": 7,
+      "controls": [
+        "control_vdem_electoral_democracy",
+        "control_vdem_civil_society_participation",
+        "control_wdi_inflation_cpi",
+        "control_wdi_gdp_growth",
+        "control_wdi_food_production_index",
+        "control_wdi_battle_deaths"
+      ],
+      "within_r_squared": 0.026967624265033296,
+      "solar_exposure_beta": 0.0006199310441435003,
+      "solar_exposure_se_clustered_by_year": 0.017700457445357587,
+      "solar_exposure_z_clustered_by_year": 0.03502344761751305,
+      "solar_exposure_p_clustered_by_year": 0.9720610438455987,
+      "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+    },
+    "onset_country_year_fe_nasa_power_solar_geomagnetic_exposure_with_controls": {
+      "n": 550,
+      "countries": 67,
+      "year_clusters": 26,
+      "parameters_after_two_way_demean": 7,
+      "controls": [
+        "control_vdem_electoral_democracy",
+        "control_vdem_civil_society_participation",
+        "control_wdi_inflation_cpi",
+        "control_wdi_gdp_growth",
+        "control_wdi_food_production_index",
+        "control_wdi_battle_deaths"
+      ],
+      "within_r_squared": 0.027267931066033424,
+      "solar_exposure_beta": 0.007839050390284262,
+      "solar_exposure_se_clustered_by_year": 0.017503915598537534,
+      "solar_exposure_z_clustered_by_year": 0.4478455318271313,
+      "solar_exposure_p_clustered_by_year": 0.6542646804102217,
+      "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+    }
+  },
+  "event_history": {
+    "definition": "Onset is approximated from RED annual-by-country rows as a country-year with any RED episode after the same country had no RED event in the prior year. Country-years already active in the prior year are excluded from the risk set.",
+    "risk_country_years": 17950,
+    "onsets": 331,
+    "active_continuation_years_excluded": 9,
+    "two_way_fe_models": {
+      "geometry_exposure": {
+        "n": 550,
+        "countries": 67,
+        "year_clusters": 26,
+        "parameters_after_two_way_demean": 7,
+        "controls": [
+          "control_vdem_electoral_democracy",
+          "control_vdem_civil_society_participation",
+          "control_wdi_inflation_cpi",
+          "control_wdi_gdp_growth",
+          "control_wdi_food_production_index",
+          "control_wdi_battle_deaths"
+        ],
+        "within_r_squared": 0.026967624265033296,
+        "solar_exposure_beta": 0.0006199310441435003,
+        "solar_exposure_se_clustered_by_year": 0.017700457445357587,
+        "solar_exposure_z_clustered_by_year": 0.03502344761751305,
+        "solar_exposure_p_clustered_by_year": 0.9720610438455987,
+        "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+      },
+      "nasa_power_exposure": {
+        "n": 550,
+        "countries": 67,
+        "year_clusters": 26,
+        "parameters_after_two_way_demean": 7,
+        "controls": [
+          "control_vdem_electoral_democracy",
+          "control_vdem_civil_society_participation",
+          "control_wdi_inflation_cpi",
+          "control_wdi_gdp_growth",
+          "control_wdi_food_production_index",
+          "control_wdi_battle_deaths"
+        ],
+        "within_r_squared": 0.027267931066033424,
+        "solar_exposure_beta": 0.007839050390284262,
+        "solar_exposure_se_clustered_by_year": 0.017503915598537534,
+        "solar_exposure_z_clustered_by_year": 0.4478455318271313,
+        "solar_exposure_p_clustered_by_year": 0.6542646804102217,
+        "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+      }
+    },
+    "out_of_sample_prediction": {
+      "geometry_exposure": {
+        "exposure": "solar_radiation_geomagnetic_exposure",
+        "split_year": 1970,
+        "train_years": {
+          "start": 1961,
+          "end": 1970
+        },
+        "test_years": {
+          "start": 1971,
+          "end": 2014
+        },
+        "n_train": 453,
+        "events_train": 11,
+        "n_test": 3452,
+        "events_test": 81,
+        "baseline_features": [
+          "intercept",
+          "trend",
+          "trend2",
+          "control_vdem_electoral_democracy",
+          "control_vdem_civil_society_participation",
+          "control_wdi_inflation_cpi",
+          "control_wdi_gdp_growth",
+          "control_wdi_food_production_index",
+          "country_fe:BDI",
+          "country_fe:BFA",
+          "country_fe:BOL",
+          "country_fe:CIV",
+          "country_fe:CMR",
+          "country_fe:COL",
+          "country_fe:DNK",
+          "country_fe:DOM",
+          "country_fe:DZA",
+          "country_fe:ECU",
+          "country_fe:EGY",
+          "country_fe:ESP",
+          "country_fe:FIN",
+          "country_fe:FRA",
+          "country_fe:GHA",
+          "country_fe:GRC",
+          "country_fe:GTM",
+          "country_fe:HTI",
+          "country_fe:IDN",
+          "country_fe:IND",
+          "country_fe:IRL",
+          "country_fe:IRN",
+          "country_fe:IRQ",
+          "country_fe:ISR",
+          "country_fe:ITA",
+          "country_fe:KEN",
+          "country_fe:KOR",
+          "country_fe:LBY",
+          "country_fe:LKA",
+          "country_fe:MAR",
+          "country_fe:MDG",
+          "country_fe:MEX",
+          "country_fe:MMR",
+          "country_fe:MYS",
+          "country_fe:NER",
+          "country_fe:NGA",
+          "country_fe:NPL",
+          "country_fe:PAN",
+          "country_fe:PER",
+          "country_fe:PHL",
+          "country_fe:PRT",
+          "country_fe:PRY",
+          "country_fe:RWA",
+          "country_fe:SAU",
+          "country_fe:SLV",
+          "country_fe:SYR",
+          "country_fe:TGO",
+          "country_fe:THA",
+          "country_fe:TTO",
+          "country_fe:TUR",
+          "country_fe:TZA",
+          "country_fe:URY",
+          "country_fe:ZAF"
+        ],
+        "solar_features": [
+          "intercept",
+          "trend",
+          "trend2",
+          "control_vdem_electoral_democracy",
+          "control_vdem_civil_society_participation",
+          "control_wdi_inflation_cpi",
+          "control_wdi_gdp_growth",
+          "control_wdi_food_production_index",
+          "solar_radiation_geomagnetic_exposure",
+          "country_fe:BDI",
+          "country_fe:BFA",
+          "country_fe:BOL",
+          "country_fe:CIV",
+          "country_fe:CMR",
+          "country_fe:COL",
+          "country_fe:DNK",
+          "country_fe:DOM",
+          "country_fe:DZA",
+          "country_fe:ECU",
+          "country_fe:EGY",
+          "country_fe:ESP",
+          "country_fe:FIN",
+          "country_fe:FRA",
+          "country_fe:GHA",
+          "country_fe:GRC",
+          "country_fe:GTM",
+          "country_fe:HTI",
+          "country_fe:IDN",
+          "country_fe:IND",
+          "country_fe:IRL",
+          "country_fe:IRN",
+          "country_fe:IRQ",
+          "country_fe:ISR",
+          "country_fe:ITA",
+          "country_fe:KEN",
+          "country_fe:KOR",
+          "country_fe:LBY",
+          "country_fe:LKA",
+          "country_fe:MAR",
+          "country_fe:MDG",
+          "country_fe:MEX",
+          "country_fe:MMR",
+          "country_fe:MYS",
+          "country_fe:NER",
+          "country_fe:NGA",
+          "country_fe:NPL",
+          "country_fe:PAN",
+          "country_fe:PER",
+          "country_fe:PHL",
+          "country_fe:PRT",
+          "country_fe:PRY",
+          "country_fe:RWA",
+          "country_fe:SAU",
+          "country_fe:SLV",
+          "country_fe:SYR",
+          "country_fe:TGO",
+          "country_fe:THA",
+          "country_fe:TTO",
+          "country_fe:TUR",
+          "country_fe:TZA",
+          "country_fe:URY",
+          "country_fe:ZAF"
+        ],
+        "baseline": {
+          "n": 3452,
+          "events": 81,
+          "auc": 0.6105489450688699,
+          "brier": 0.17231052330058083,
+          "log_loss": 0.5420885963300746
+        },
+        "with_solar": {
+          "n": 3452,
+          "events": 81,
+          "auc": 0.6003860084746073,
+          "brier": 0.3550456586641729,
+          "log_loss": 1.071368261538542
+        },
+        "incremental": {
+          "delta_auc": -0.010162936594262595,
+          "delta_brier": 0.1827351353635921,
+          "delta_log_loss": 0.5292796652084675
+        },
+        "placebo_shift_auc_delta": {
+          "shifts": 53,
+          "p_greater_or_equal_observed_delta_auc": 0.25925925925925924,
+          "median_delta_auc": -0.022079037470486895,
+          "max_delta_auc": 0.029894176201717748
+        },
+        "vulnerable_country_test": {
+          "definition": "Vulnerable test country-years are those above the first-half p75 vulnerability score: low V-Dem electoral democracy, low V-Dem civil-society participation, weak GDP growth, high inflation, and low food production.",
+          "vulnerability_controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_gdp_growth",
+            "control_wdi_inflation_cpi",
+            "control_wdi_food_production_index"
+          ],
+          "train_threshold_p75": 1.7117607825424592,
+          "n_test_vulnerable": 430,
+          "events_test_vulnerable": 17,
+          "baseline": {
+            "n": 430,
+            "events": 17,
+            "auc": 0.739068508759436,
+            "brier": 0.1364936222340476,
+            "log_loss": 0.5535698501600955
+          },
+          "with_solar": {
+            "n": 430,
+            "events": 17,
+            "auc": 0.7286711294687367,
+            "brier": 0.182739770647702,
+            "log_loss": 0.7378217125667144
+          },
+          "incremental": {
+            "delta_auc": -0.010397379290699282,
+            "delta_brier": 0.0462461484136544,
+            "delta_log_loss": 0.18425186240661884
+          },
+          "placebo_shift_auc_delta": {
+            "shifts": 52,
+            "p_greater_or_equal_observed_delta_auc": 0.5283018867924528,
+            "median_delta_auc": -0.010310754633155617,
+            "max_delta_auc": 0.03490259740259738
+          }
+        },
+        "note": "Ridge-logistic out-of-sample onset screen with country dummies and controls. Lower Brier/log-loss is better; higher AUC is better. This is predictive validation, not causal identification."
+      },
+      "nasa_power_exposure": {
+        "exposure": "nasa_power_solar_geomagnetic_exposure",
+        "split_year": 1970,
+        "n_train": 0,
+        "n_test": 2721,
+        "note": "insufficient train/test onset events for predictive screen"
+      }
+    },
+    "heterogeneity": {
+      "scope": "Subtype-specific onset screens use RED goal/form/outcome fields and the same at-risk definition. They are exploratory multiple-comparison diagnostics, not confirmatory subgroup claims.",
+      "subtype_models": [
+        {
+          "id": "civilresistance",
+          "label": "Civil-resistance revolutions",
+          "count_col": "civilresistance_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 10,
+          "total_episodes": 10,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.005600842543607265,
+            "solar_exposure_beta": -0.005915569821846142,
+            "solar_exposure_se_clustered_by_year": 0.004682466851866543,
+            "solar_exposure_z_clustered_by_year": -1.2633447302436438,
+            "solar_exposure_p_clustered_by_year": 0.20646531764133313,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.007299108190660264,
+            "solar_exposure_beta": -0.006727892643026326,
+            "solar_exposure_se_clustered_by_year": 0.005515058026257702,
+            "solar_exposure_z_clustered_by_year": -1.2199133011827266,
+            "solar_exposure_p_clustered_by_year": 0.22249774296912517,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "old_regime_overthrown",
+          "label": "Old regime overthrown",
+          "count_col": "old_regime_overthrown_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 31,
+          "total_episodes": 33,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.011982468397239043,
+            "solar_exposure_beta": -0.005532078135862197,
+            "solar_exposure_se_clustered_by_year": 0.006296530268520794,
+            "solar_exposure_z_clustered_by_year": -0.8785915257994645,
+            "solar_exposure_p_clustered_by_year": 0.3796227921876536,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.01074637479476559,
+            "solar_exposure_beta": -0.004353266307010991,
+            "solar_exposure_se_clustered_by_year": 0.005111251892501163,
+            "solar_exposure_z_clustered_by_year": -0.8517025571362995,
+            "solar_exposure_p_clustered_by_year": 0.3943792009943392,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "armed",
+          "label": "Armed revolutions",
+          "count_col": "armed_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 243,
+          "total_episodes": 253,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.03645460166870951,
+            "solar_exposure_beta": 0.007213441804054855,
+            "solar_exposure_se_clustered_by_year": 0.016615611605323006,
+            "solar_exposure_z_clustered_by_year": 0.4341363998749191,
+            "solar_exposure_p_clustered_by_year": 0.6641893943112395,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.0375777238878392,
+            "solar_exposure_beta": 0.013951709215021436,
+            "solar_exposure_se_clustered_by_year": 0.016294663959050385,
+            "solar_exposure_z_clustered_by_year": 0.8562133745183726,
+            "solar_exposure_p_clustered_by_year": 0.39187976603788877,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "democrat",
+          "label": "Democratic-goal revolutions",
+          "count_col": "democrat_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 88,
+          "total_episodes": 89,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.04499185072564338,
+            "solar_exposure_beta": -0.007419732909706189,
+            "solar_exposure_se_clustered_by_year": 0.00922614783593485,
+            "solar_exposure_z_clustered_by_year": -0.8042070256892189,
+            "solar_exposure_p_clustered_by_year": 0.4212774219478832,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.04472902766225384,
+            "solar_exposure_beta": -0.005358918363321115,
+            "solar_exposure_se_clustered_by_year": 0.008755504344486952,
+            "solar_exposure_z_clustered_by_year": -0.6120627838755454,
+            "solar_exposure_p_clustered_by_year": 0.5404962192702812,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "successful",
+          "label": "Successful revolutions",
+          "count_col": "success_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 119,
+          "total_episodes": 123,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.032534233690052705,
+            "solar_exposure_beta": -0.0028501914060116203,
+            "solar_exposure_se_clustered_by_year": 0.006389067925359495,
+            "solar_exposure_z_clustered_by_year": -0.446104414495053,
+            "solar_exposure_p_clustered_by_year": 0.6555218241631368,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.032446638041587095,
+            "solar_exposure_beta": 0.0003750915151008822,
+            "solar_exposure_se_clustered_by_year": 0.005156354441787703,
+            "solar_exposure_z_clustered_by_year": 0.07274354766249125,
+            "solar_exposure_p_clustered_by_year": 0.9420101942983031,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "leftist",
+          "label": "Leftist revolutions",
+          "count_col": "leftist_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 77,
+          "total_episodes": 80,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.007590665796993412,
+            "solar_exposure_beta": -0.003686641929992122,
+            "solar_exposure_se_clustered_by_year": 0.012103504764127571,
+            "solar_exposure_z_clustered_by_year": -0.30459292591998727,
+            "solar_exposure_p_clustered_by_year": 0.7606762084612114,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.007223272198109254,
+            "solar_exposure_beta": -0.002271686461707189,
+            "solar_exposure_se_clustered_by_year": 0.01010860627655312,
+            "solar_exposure_z_clustered_by_year": -0.22472795947907862,
+            "solar_exposure_p_clustered_by_year": 0.8221909123685566,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "coupvolution",
+          "label": "Coupvolution episodes",
+          "count_col": "coupvolution_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 43,
+          "total_episodes": 44,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.023096699071618487,
+            "solar_exposure_beta": -0.0014792400674770226,
+            "solar_exposure_se_clustered_by_year": 0.00509965345598632,
+            "solar_exposure_z_clustered_by_year": -0.29006678203605973,
+            "solar_exposure_p_clustered_by_year": 0.771765147893304,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.022963177538794843,
+            "solar_exposure_beta": -0.00042367997569587305,
+            "solar_exposure_se_clustered_by_year": 0.0054438479035826435,
+            "solar_exposure_z_clustered_by_year": -0.07782729848441312,
+            "solar_exposure_p_clustered_by_year": 0.9379654312533455,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "civilwar",
+          "label": "Civil-war revolutions",
+          "count_col": "civilwar_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 172,
+          "total_episodes": 175,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.017509313799342396,
+            "solar_exposure_beta": -0.002447401003653752,
+            "solar_exposure_se_clustered_by_year": 0.009351466697730623,
+            "solar_exposure_z_clustered_by_year": -0.2617130641386637,
+            "solar_exposure_p_clustered_by_year": 0.793542667775329,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.01746209956399969,
+            "solar_exposure_beta": 0.0009820805898433697,
+            "solar_exposure_se_clustered_by_year": 0.009699956215575848,
+            "solar_exposure_z_clustered_by_year": 0.10124587864287256,
+            "solar_exposure_p_clustered_by_year": 0.9193552779124872,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "anticolonial",
+          "label": "Anti-colonial revolutions",
+          "count_col": "anticolonial_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 49,
+          "total_episodes": 49,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": null,
+            "solar_exposure_beta": 0.0,
+            "solar_exposure_se_clustered_by_year": 0.0,
+            "solar_exposure_z_clustered_by_year": null,
+            "solar_exposure_p_clustered_by_year": 1.0,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": null,
+            "solar_exposure_beta": 0.0,
+            "solar_exposure_se_clustered_by_year": 0.0,
+            "solar_exposure_z_clustered_by_year": null,
+            "solar_exposure_p_clustered_by_year": 1.0,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "id": "independence",
+          "label": "Independence revolutions",
+          "count_col": "independence_episodes",
+          "at_risk_country_years": 17950,
+          "onsets": 118,
+          "total_episodes": 118,
+          "geometry_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": null,
+            "solar_exposure_beta": 0.0,
+            "solar_exposure_se_clustered_by_year": 0.0,
+            "solar_exposure_z_clustered_by_year": null,
+            "solar_exposure_p_clustered_by_year": 1.0,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "nasa_power_exposure": {
+            "n": 550,
+            "countries": 67,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": null,
+            "solar_exposure_beta": 0.0,
+            "solar_exposure_se_clustered_by_year": 0.0,
+            "solar_exposure_z_clustered_by_year": null,
+            "solar_exposure_p_clustered_by_year": 1.0,
+            "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        }
+      ]
+    }
+  },
+  "country_year_controls": {
+    "control_scope": "pre-specified country-year political/economic controls merged by ISO3 and year",
+    "controls": [
+      {
+        "id": "regime.electoral_democracy_vdem",
+        "column": "control_vdem_electoral_democracy",
+        "source": "OWID/V-Dem",
+        "available_country_years": 12430,
+        "countries": 115
+      },
+      {
+        "id": "regime.civil_society_participation_vdem",
+        "column": "control_vdem_civil_society_participation",
+        "source": "OWID/V-Dem",
+        "available_country_years": 12464,
+        "countries": 115
+      },
+      {
+        "id": "macro.wdi_inflation_cpi",
+        "column": "control_wdi_inflation_cpi",
+        "source": "World Bank WDI",
+        "available_country_years": 4254,
+        "countries": 112
+      },
+      {
+        "id": "macro.wdi_gdp_growth",
+        "column": "control_wdi_gdp_growth",
+        "source": "World Bank WDI",
+        "available_country_years": 5281,
+        "countries": 116
+      },
+      {
+        "id": "agriculture.wdi_food_production_index",
+        "column": "control_wdi_food_production_index",
+        "source": "World Bank WDI",
+        "available_country_years": 5639,
+        "countries": 116
+      },
+      {
+        "id": "conflict.wdi_battle_deaths",
+        "column": "control_wdi_battle_deaths",
+        "source": "World Bank WDI",
+        "available_country_years": 740,
+        "countries": 80
+      }
+    ],
+    "controlled_model_note": "Controls are included inside the two-way fixed-effect exposure model after standardization. This is still observational and loses years/countries where control data are missing. Out-of-sample prediction uses the denser V-Dem/WDI political-economy controls and reports the conflict-control FE model separately because WDI battle-death coverage is sparse.",
+    "predictive_controls": [
+      "control_vdem_electoral_democracy",
+      "control_vdem_civil_society_participation",
+      "control_wdi_inflation_cpi",
+      "control_wdi_gdp_growth",
+      "control_wdi_food_production_index"
+    ]
+  },
+  "identified_exposure": {
+    "file": "/api/red/country-solar-geomagnetic-exposure.json",
+    "name": "country-specific solar radiation geometry x geomagnetic coupling x SILSO exposure",
+    "available_country_years": 18285,
+    "countries": 159
+  },
+  "nasa_power_exposure": {
+    "file": "/api/red/country-nasa-power-radiation.json",
+    "name": "NASA POWER ALLSKY_SFC_SW_DWN x geomagnetic coupling x SILSO exposure",
+    "available_country_years": 4929,
+    "countries": 159
+  },
+  "regional_models": {
+    "event_within_country_fe_trend_year_clustered": [
+      {
+        "n": 4715,
+        "countries": 41,
+        "year_clusters": 115,
+        "parameters_after_within_transform": 3,
+        "within_r_squared": 0.002142603030749979,
+        "solar_beta_per_1sd": 0.0031940406367856333,
+        "solar_se_clustered_by_year": 0.0022430634504136114,
+        "solar_z_clustered_by_year": 1.423963569196701,
+        "solar_p_clustered_by_year": 0.15445701822324498,
+        "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year",
+        "worldregion": "Asia"
+      },
+      {
+        "n": 3910,
+        "countries": 34,
+        "year_clusters": 115,
+        "parameters_after_within_transform": 3,
+        "within_r_squared": 0.0024450112639540222,
+        "solar_beta_per_1sd": 0.004333181947672556,
+        "solar_se_clustered_by_year": 0.0030579597986452605,
+        "solar_z_clustered_by_year": 1.4170173033642384,
+        "solar_p_clustered_by_year": 0.15647786855403012,
+        "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year",
+        "worldregion": "Europe"
+      },
+      {
+        "n": 2185,
+        "countries": 19,
+        "year_clusters": 115,
+        "parameters_after_within_transform": 3,
+        "within_r_squared": 0.004187300380404935,
+        "solar_beta_per_1sd": 0.005239832698853713,
+        "solar_se_clustered_by_year": 0.00387290804993158,
+        "solar_z_clustered_by_year": 1.3529452884754858,
+        "solar_p_clustered_by_year": 0.1760731096479159,
+        "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year",
+        "worldregion": "Latin America/Carribean"
+      },
+      {
+        "n": 2530,
+        "countries": 22,
+        "year_clusters": 115,
+        "parameters_after_within_transform": 3,
+        "within_r_squared": 0.00364300461139766,
+        "solar_beta_per_1sd": 0.0006045475986687296,
+        "solar_se_clustered_by_year": 0.0029300013873607986,
+        "solar_z_clustered_by_year": 0.20633014075576134,
+        "solar_p_clustered_by_year": 0.836533036111905,
+        "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year",
+        "worldregion": "Middle East/North Africa"
+      },
+      {
+        "n": 4600,
+        "countries": 40,
+        "year_clusters": 115,
+        "parameters_after_within_transform": 3,
+        "within_r_squared": 0.004072691304513265,
+        "solar_beta_per_1sd": 0.0005062561504025308,
+        "solar_se_clustered_by_year": 0.002545997330253797,
+        "solar_z_clustered_by_year": 0.1988439439377043,
+        "solar_p_clustered_by_year": 0.8423848200054211,
+        "note": "country fixed effects via within transform; standard errors clustered by year because solar exposure is common across countries in each year",
+        "worldregion": "Sub-Saharan Africa"
+      }
+    ]
+  },
+  "null_models": {
+    "event_model_circular_shift_solar_by_year": {
+      "shifts": 114,
+      "p_two_sided": 0.2,
+      "null_beta_min": -0.0032628154405537025,
+      "null_beta_max": 0.004847453306849727
+    },
+    "controlled_geometry_exposure_circular_shift_by_country_year": {
+      "shifts": 114,
+      "p_two_sided": 0.9391304347826087,
+      "null_beta_min": -0.030645909326567626,
+      "null_beta_max": 0.04300287184181064,
+      "null_beta_abs_median": 0.00967767947782959
+    },
+    "controlled_nasa_power_exposure_circular_shift_by_country_year": {
+      "shifts": 41,
+      "p_two_sided": 0.6190476190476191,
+      "null_beta_min": -0.06676236663424098,
+      "null_beta_max": 0.05043541402304281,
+      "null_beta_abs_median": 0.01224904206367133
+    }
+  },
+  "exploratory_strengthening_tests": {
+    "scope": "Exploratory screens for stronger versions of the solar hypothesis: delayed effects, vulnerability interactions, exposure quantiles, and country-year circular-shift placebo timing. These are not confirmatory unless preregistered and validated out-of-sample.",
+    "lag_sensitivity": {
+      "geometry_exposure": [
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.03724444404491489,
+          "solar_exposure_beta": 0.0010255124449423895,
+          "solar_exposure_se_clustered_by_year": 0.0168797609685402,
+          "solar_exposure_z_clustered_by_year": 0.060753967242409244,
+          "solar_exposure_p_clustered_by_year": 0.9515551513769613,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning",
+          "lag_years": 0,
+          "predictor": "solar_radiation_geomagnetic_exposure"
+        },
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.037240185181757535,
+          "solar_exposure_beta": -7.456560200227655e-05,
+          "solar_exposure_se_clustered_by_year": 0.020757178684707583,
+          "solar_exposure_z_clustered_by_year": -0.003592280200257234,
+          "solar_exposure_p_clustered_by_year": 0.9971337812546472,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_lag1; controls are standardized before demeaning",
+          "lag_years": 1,
+          "predictor": "solar_radiation_geomagnetic_exposure_lag1"
+        },
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.037242044021413734,
+          "solar_exposure_beta": 0.0007400229590191782,
+          "solar_exposure_se_clustered_by_year": 0.0235184595603613,
+          "solar_exposure_z_clustered_by_year": 0.03146562202000826,
+          "solar_exposure_p_clustered_by_year": 0.9748982082153078,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_lag2; controls are standardized before demeaning",
+          "lag_years": 2,
+          "predictor": "solar_radiation_geomagnetic_exposure_lag2"
+        },
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.037333078838580835,
+          "solar_exposure_beta": -0.005080395686219593,
+          "solar_exposure_se_clustered_by_year": 0.021424436943943095,
+          "solar_exposure_z_clustered_by_year": -0.2371308846768023,
+          "solar_exposure_p_clustered_by_year": 0.8125552530569207,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_lag3; controls are standardized before demeaning",
+          "lag_years": 3,
+          "predictor": "solar_radiation_geomagnetic_exposure_lag3"
+        }
+      ],
+      "nasa_power_exposure": [
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.03764080081289767,
+          "solar_exposure_beta": 0.009494525323564035,
+          "solar_exposure_se_clustered_by_year": 0.016946187671946403,
+          "solar_exposure_z_clustered_by_year": 0.5602750015144565,
+          "solar_exposure_p_clustered_by_year": 0.5752918759263802,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure; controls are standardized before demeaning",
+          "lag_years": 0,
+          "predictor": "nasa_power_solar_geomagnetic_exposure"
+        },
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.03734183092663723,
+          "solar_exposure_beta": 0.005019923887960744,
+          "solar_exposure_se_clustered_by_year": 0.023082029037560674,
+          "solar_exposure_z_clustered_by_year": 0.21748191546730908,
+          "solar_exposure_p_clustered_by_year": 0.827832799099328,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_lag1; controls are standardized before demeaning",
+          "lag_years": 1,
+          "predictor": "nasa_power_solar_geomagnetic_exposure_lag1"
+        },
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.03728522258590361,
+          "solar_exposure_beta": 0.003421934828381442,
+          "solar_exposure_se_clustered_by_year": 0.025937127481813288,
+          "solar_exposure_z_clustered_by_year": 0.13193191230527937,
+          "solar_exposure_p_clustered_by_year": 0.8950381468776899,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_lag2; controls are standardized before demeaning",
+          "lag_years": 2,
+          "predictor": "nasa_power_solar_geomagnetic_exposure_lag2"
+        },
+        {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.03727122975842023,
+          "solar_exposure_beta": -0.0027914698501626464,
+          "solar_exposure_se_clustered_by_year": 0.023450543570520916,
+          "solar_exposure_z_clustered_by_year": -0.11903646675686155,
+          "solar_exposure_p_clustered_by_year": 0.9052464648707734,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_lag3; controls are standardized before demeaning",
+          "lag_years": 3,
+          "predictor": "nasa_power_solar_geomagnetic_exposure_lag3"
+        }
+      ]
+    },
+    "vulnerability_interactions": {
+      "geometry_exposure": [
+        {
+          "n": 12430,
+          "countries": 115,
+          "year_clusters": 115,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "solar_radiation_geomagnetic_exposure",
+            "control_vdem_electoral_democracy"
+          ],
+          "within_r_squared": 0.001236853801266924,
+          "solar_exposure_beta": -0.00048664505120498775,
+          "solar_exposure_se_clustered_by_year": 0.0014524883365121513,
+          "solar_exposure_z_clustered_by_year": -0.33504231254177547,
+          "solar_exposure_p_clustered_by_year": 0.737593168138295,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_x_control_vdem_electoral_democracy; controls are standardized before demeaning",
+          "interaction_control": "control_vdem_electoral_democracy",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 12464,
+          "countries": 115,
+          "year_clusters": 115,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "solar_radiation_geomagnetic_exposure",
+            "control_vdem_civil_society_participation"
+          ],
+          "within_r_squared": 1.640525472546006e-05,
+          "solar_exposure_beta": 0.00033527059482641423,
+          "solar_exposure_se_clustered_by_year": 0.0014741455492009324,
+          "solar_exposure_z_clustered_by_year": 0.22743384804041178,
+          "solar_exposure_p_clustered_by_year": 0.8200864028815391,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_x_control_vdem_civil_society_participation; controls are standardized before demeaning",
+          "interaction_control": "control_vdem_civil_society_participation",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 4254,
+          "countries": 112,
+          "year_clusters": 55,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "solar_radiation_geomagnetic_exposure",
+            "control_wdi_inflation_cpi"
+          ],
+          "within_r_squared": 0.00014217888795997613,
+          "solar_exposure_beta": -0.00028759597509091857,
+          "solar_exposure_se_clustered_by_year": 0.0008459200813828697,
+          "solar_exposure_z_clustered_by_year": -0.3399800778115711,
+          "solar_exposure_p_clustered_by_year": 0.7338715308673315,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_x_control_wdi_inflation_cpi; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_inflation_cpi",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 5281,
+          "countries": 116,
+          "year_clusters": 54,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "solar_radiation_geomagnetic_exposure",
+            "control_wdi_gdp_growth"
+          ],
+          "within_r_squared": 0.013135596144874251,
+          "solar_exposure_beta": -0.00887852522739098,
+          "solar_exposure_se_clustered_by_year": 0.004301974495183522,
+          "solar_exposure_z_clustered_by_year": -2.0638256310750682,
+          "solar_exposure_p_clustered_by_year": 0.03903425196023025,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_x_control_wdi_gdp_growth; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_gdp_growth",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 5639,
+          "countries": 116,
+          "year_clusters": 54,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "solar_radiation_geomagnetic_exposure",
+            "control_wdi_food_production_index"
+          ],
+          "within_r_squared": 0.00047871113352671024,
+          "solar_exposure_beta": 0.0002628955365541241,
+          "solar_exposure_se_clustered_by_year": 0.002018009280480951,
+          "solar_exposure_z_clustered_by_year": 0.13027469154724025,
+          "solar_exposure_p_clustered_by_year": 0.8963491026313131,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_x_control_wdi_food_production_index; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_food_production_index",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 740,
+          "countries": 80,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "solar_radiation_geomagnetic_exposure",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.004233181644159978,
+          "solar_exposure_beta": 0.01905945096276857,
+          "solar_exposure_se_clustered_by_year": 0.01665967586412991,
+          "solar_exposure_z_clustered_by_year": 1.1440469261353179,
+          "solar_exposure_p_clustered_by_year": 0.2526041764640582,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure_x_control_wdi_battle_deaths; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_battle_deaths",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        }
+      ],
+      "nasa_power_exposure": [
+        {
+          "n": 3537,
+          "countries": 115,
+          "year_clusters": 31,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "nasa_power_solar_geomagnetic_exposure",
+            "control_vdem_electoral_democracy"
+          ],
+          "within_r_squared": 0.006994223276200584,
+          "solar_exposure_beta": -0.0027482708421476066,
+          "solar_exposure_se_clustered_by_year": 0.003766247802044822,
+          "solar_exposure_z_clustered_by_year": -0.7297105731214708,
+          "solar_exposure_p_clustered_by_year": 0.46556711686449037,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_x_control_vdem_electoral_democracy; controls are standardized before demeaning",
+          "interaction_control": "control_vdem_electoral_democracy",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 3537,
+          "countries": 115,
+          "year_clusters": 31,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "nasa_power_solar_geomagnetic_exposure",
+            "control_vdem_civil_society_participation"
+          ],
+          "within_r_squared": 0.004396614559853407,
+          "solar_exposure_beta": -0.0035791951650909685,
+          "solar_exposure_se_clustered_by_year": 0.0035037545994255374,
+          "solar_exposure_z_clustered_by_year": -1.0215313497348815,
+          "solar_exposure_p_clustered_by_year": 0.30700276403372995,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_x_control_vdem_civil_society_participation; controls are standardized before demeaning",
+          "interaction_control": "control_vdem_civil_society_participation",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 2890,
+          "countries": 112,
+          "year_clusters": 31,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "nasa_power_solar_geomagnetic_exposure",
+            "control_wdi_inflation_cpi"
+          ],
+          "within_r_squared": 0.000145412762709074,
+          "solar_exposure_beta": -0.00044017024094081925,
+          "solar_exposure_se_clustered_by_year": 0.0009006073129526886,
+          "solar_exposure_z_clustered_by_year": -0.4887482420031633,
+          "solar_exposure_p_clustered_by_year": 0.6250199452372873,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_x_control_wdi_inflation_cpi; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_inflation_cpi",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 3406,
+          "countries": 116,
+          "year_clusters": 31,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "nasa_power_solar_geomagnetic_exposure",
+            "control_wdi_gdp_growth"
+          ],
+          "within_r_squared": 0.01773229899299089,
+          "solar_exposure_beta": -0.011492503064308511,
+          "solar_exposure_se_clustered_by_year": 0.005503382223423266,
+          "solar_exposure_z_clustered_by_year": -2.0882618356752687,
+          "solar_exposure_p_clustered_by_year": 0.03677422208519254,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_x_control_wdi_gdp_growth; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_gdp_growth",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 3408,
+          "countries": 116,
+          "year_clusters": 31,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "nasa_power_solar_geomagnetic_exposure",
+            "control_wdi_food_production_index"
+          ],
+          "within_r_squared": 0.0006501445146361862,
+          "solar_exposure_beta": -0.0005398576830966179,
+          "solar_exposure_se_clustered_by_year": 0.0030440743030383257,
+          "solar_exposure_z_clustered_by_year": -0.1773470780781467,
+          "solar_exposure_p_clustered_by_year": 0.8592357738608581,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_x_control_wdi_food_production_index; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_food_production_index",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        },
+        {
+          "n": 740,
+          "countries": 80,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 3,
+          "controls": [
+            "nasa_power_solar_geomagnetic_exposure",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.004214895827771903,
+          "solar_exposure_beta": 0.0190716862164863,
+          "solar_exposure_se_clustered_by_year": 0.01700182610615292,
+          "solar_exposure_z_clustered_by_year": 1.1217433996448358,
+          "solar_exposure_p_clustered_by_year": 0.26197155796451743,
+          "note": "two-way fixed effects via country and year demeaning; exposure is nasa_power_solar_geomagnetic_exposure_x_control_wdi_battle_deaths; controls are standardized before demeaning",
+          "interaction_control": "control_wdi_battle_deaths",
+          "interpretation": "Coefficient is the two-way-FE association for solar exposure multiplied by the standardized country-year control. This screens whether the solar association is conditional on political-economic vulnerability."
+        }
+      ]
+    },
+    "exposure_quartile_event_rates": {
+      "geometry_exposure": [
+        {
+          "quartile": 1,
+          "n": 145,
+          "countries": 38,
+          "years": 10,
+          "event_rate": 0.06206896551724138,
+          "mean_exposure": -0.27719967486956226
+        },
+        {
+          "quartile": 2,
+          "n": 144,
+          "countries": 46,
+          "years": 12,
+          "event_rate": 0.05555555555555555,
+          "mean_exposure": -0.1006544483463633
+        },
+        {
+          "quartile": 3,
+          "n": 144,
+          "countries": 44,
+          "years": 8,
+          "event_rate": 0.04861111111111111,
+          "mean_exposure": 0.04833524240266655
+        },
+        {
+          "quartile": 4,
+          "n": 145,
+          "countries": 49,
+          "years": 8,
+          "event_rate": 0.06206896551724138,
+          "mean_exposure": 0.30972846315097785
+        }
+      ],
+      "nasa_power_exposure": [
+        {
+          "quartile": 1,
+          "n": 145,
+          "countries": 33,
+          "years": 10,
+          "event_rate": 0.06896551724137931,
+          "mean_exposure": -1.6748913086186825
+        },
+        {
+          "quartile": 2,
+          "n": 144,
+          "countries": 43,
+          "years": 14,
+          "event_rate": 0.04861111111111111,
+          "mean_exposure": -0.558578498220422
+        },
+        {
+          "quartile": 3,
+          "n": 144,
+          "countries": 45,
+          "years": 10,
+          "event_rate": 0.04861111111111111,
+          "mean_exposure": 0.2750856642714701
+        },
+        {
+          "quartile": 4,
+          "n": 145,
+          "countries": 48,
+          "years": 9,
+          "event_rate": 0.06206896551724138,
+          "mean_exposure": 1.802621053716841
+        }
+      ]
+    },
+    "geographic_exposure": {
+      "scope": "Geographic exposure refinement: compare high versus lower geomagnetic-coupling country-years, test an exposure x high-sensitivity interaction, and test an auroral-oval proximity exposure proxy.",
+      "high_sensitivity_threshold": 0.4260404874382575,
+      "strata": [
+        {
+          "stratum": "high_geomagnetic_sensitivity",
+          "countries": 53,
+          "country_years": 4572,
+          "event_rate": 0.017716535433070866,
+          "onsets": 78,
+          "mean_abs_magnetic_latitude": 42.18351286356352,
+          "mean_geomagnetic_coupling": 0.5336105175022186,
+          "event_model": {
+            "n": 68,
+            "countries": 16,
+            "year_clusters": 25,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.19132159295446338,
+            "solar_exposure_beta": 0.00824871905932241,
+            "solar_exposure_se_clustered_by_year": 0.019031739472664556,
+            "solar_exposure_z_clustered_by_year": 0.4334190824317511,
+            "solar_exposure_p_clustered_by_year": 0.6647103398719217,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "onset_model": {
+            "n": 65,
+            "countries": 15,
+            "year_clusters": 25,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.2130615183480854,
+            "solar_exposure_beta": 0.0159763033106369,
+            "solar_exposure_se_clustered_by_year": 0.021764247813887517,
+            "solar_exposure_z_clustered_by_year": 0.7340618176770898,
+            "solar_exposure_p_clustered_by_year": 0.46291106306178154,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        },
+        {
+          "stratum": "lower_geomagnetic_sensitivity",
+          "countries": 129,
+          "country_years": 13713,
+          "event_rate": 0.018887187340479835,
+          "onsets": 253,
+          "mean_abs_magnetic_latitude": 15.73649165816087,
+          "mean_geomagnetic_coupling": 0.2342735032633573,
+          "event_model": {
+            "n": 510,
+            "countries": 53,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.05071990649327407,
+            "solar_exposure_beta": -0.00639325018349335,
+            "solar_exposure_se_clustered_by_year": 0.02177833960210224,
+            "solar_exposure_z_clustered_by_year": -0.2935600371883363,
+            "solar_exposure_p_clustered_by_year": 0.7690941165757536,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          },
+          "onset_model": {
+            "n": 485,
+            "countries": 53,
+            "year_clusters": 26,
+            "parameters_after_two_way_demean": 7,
+            "controls": [
+              "control_vdem_electoral_democracy",
+              "control_vdem_civil_society_participation",
+              "control_wdi_inflation_cpi",
+              "control_wdi_gdp_growth",
+              "control_wdi_food_production_index",
+              "control_wdi_battle_deaths"
+            ],
+            "within_r_squared": 0.03423199571074642,
+            "solar_exposure_beta": -0.004067003541612284,
+            "solar_exposure_se_clustered_by_year": 0.023700656589552886,
+            "solar_exposure_z_clustered_by_year": -0.17159877095578002,
+            "solar_exposure_p_clustered_by_year": 0.8637529737563803,
+            "note": "two-way fixed effects via country and year demeaning; exposure is solar_radiation_geomagnetic_exposure; controls are standardized before demeaning"
+          }
+        }
+      ],
+      "interaction_model": {
+        "n": 550,
+        "countries": 67,
+        "year_clusters": 26,
+        "parameters_after_two_way_demean": 8,
+        "controls": [
+          "control_vdem_electoral_democracy",
+          "control_vdem_civil_society_participation",
+          "control_wdi_inflation_cpi",
+          "control_wdi_gdp_growth",
+          "control_wdi_food_production_index",
+          "control_wdi_battle_deaths",
+          "solar_radiation_geomagnetic_exposure"
+        ],
+        "within_r_squared": 0.02702756138736795,
+        "solar_exposure_beta": -0.0023504801249379973,
+        "solar_exposure_se_clustered_by_year": 0.01044555096674199,
+        "solar_exposure_z_clustered_by_year": -0.22502212974899893,
+        "solar_exposure_p_clustered_by_year": 0.8219620586535878,
+        "note": "two-way fixed effects via country and year demeaning; exposure is solar_exposure_x_high_geomagnetic_sensitivity; controls are standardized before demeaning"
+      },
+      "auroral_proximity_models": {
+        "event": {
+          "n": 578,
+          "countries": 68,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.03724597888976999,
+          "solar_exposure_beta": 0.0009683561438649704,
+          "solar_exposure_se_clustered_by_year": 0.013517059785422173,
+          "solar_exposure_z_clustered_by_year": 0.07163955469881989,
+          "solar_exposure_p_clustered_by_year": 0.9428887608318317,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_auroral_proximity_exposure; controls are standardized before demeaning"
+        },
+        "onset": {
+          "n": 550,
+          "countries": 67,
+          "year_clusters": 26,
+          "parameters_after_two_way_demean": 7,
+          "controls": [
+            "control_vdem_electoral_democracy",
+            "control_vdem_civil_society_participation",
+            "control_wdi_inflation_cpi",
+            "control_wdi_gdp_growth",
+            "control_wdi_food_production_index",
+            "control_wdi_battle_deaths"
+          ],
+          "within_r_squared": 0.02697995249068974,
+          "solar_exposure_beta": 0.0014369995221081965,
+          "solar_exposure_se_clustered_by_year": 0.014071993164620121,
+          "solar_exposure_z_clustered_by_year": 0.10211769614279718,
+          "solar_exposure_p_clustered_by_year": 0.9186632549512836,
+          "note": "two-way fixed effects via country and year demeaning; exposure is solar_auroral_proximity_exposure; controls are standardized before demeaning"
+        }
+      },
+      "note": "Magnetic latitude and auroral proximity are coarse centroid-based proxies; they improve geographic specificity but are not full IGRF/WMM or storm-time auroral boundary modeling."
+    }
+  },
+  "non_estimable_model": {
+    "country_and_year_fixed_effects": "not estimable for solar coefficient",
+    "reason": "Solar activity is identical for every country in a given year, so year fixed effects absorb all solar variation."
+  },
+  "top_countries_by_red_episodes": [
+    {
+      "country": "IRN",
+      "isoabb": "IRN",
+      "location": "Iran",
+      "worldregion": "Middle East/North Africa",
+      "episodes": 7.0,
+      "participants_proxy": 2812500.0
+    },
+    {
+      "country": "CHN",
+      "isoabb": "CHN",
+      "location": "China",
+      "worldregion": "Asia",
+      "episodes": 6.0,
+      "participants_proxy": 5540000.0
+    },
+    {
+      "country": "THA",
+      "isoabb": "THA",
+      "location": "Thailand",
+      "worldregion": "Asia",
+      "episodes": 6.0,
+      "participants_proxy": 826000.0
+    },
+    {
+      "country": "PHL",
+      "isoabb": "PHL",
+      "location": "Philippines",
+      "worldregion": "Asia",
+      "episodes": 5.0,
+      "participants_proxy": 2296000.0
+    },
+    {
+      "country": "DEU",
+      "isoabb": "DEU",
+      "location": "Germany",
+      "worldregion": "Europe",
+      "episodes": 5.0,
+      "participants_proxy": 902000.0
+    },
+    {
+      "country": "CUB",
+      "isoabb": "CUB",
+      "location": "Cuba",
+      "worldregion": "Latin America/Carribean",
+      "episodes": 5.0,
+      "participants_proxy": 539000.0
+    },
+    {
+      "country": "VEN",
+      "isoabb": "VEN",
+      "location": "Venezuela",
+      "worldregion": "Latin America/Carribean",
+      "episodes": 5.0,
+      "participants_proxy": 321000.0
+    },
+    {
+      "country": "IRQ",
+      "isoabb": "IRQ",
+      "location": "Iraq",
+      "worldregion": "Middle East/North Africa",
+      "episodes": 5.0,
+      "participants_proxy": 187000.0
+    },
+    {
+      "country": "Turkish-controlled Kurdistan",
+      "isoabb": "UNK",
+      "location": "Turkish-controlled Kurdistan",
+      "worldregion": "Middle East/North Africa",
+      "episodes": 5.0,
+      "participants_proxy": 70000.0
+    },
+    {
+      "country": "ARG",
+      "isoabb": "ARG",
+      "location": "Argentina",
+      "worldregion": "Latin America/Carribean",
+      "episodes": 4.0,
+      "participants_proxy": 1035000.0
+    },
+    {
+      "country": "MDG",
+      "isoabb": "MDG",
+      "location": "Madagascar",
+      "worldregion": "Sub-Saharan Africa",
+      "episodes": 4.0,
+      "participants_proxy": 921500.0
+    },
+    {
+      "country": "HUN",
+      "isoabb": "HUN",
+      "location": "Hungary",
+      "worldregion": "Europe",
+      "episodes": 4.0,
+      "participants_proxy": 290000.0
+    }
+  ]
+}

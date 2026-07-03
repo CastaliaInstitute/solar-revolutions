@@ -1,0 +1,102 @@
+{
+  "series_id": "resistance.navco_nonviolent_event_count",
+  "unit": "events/year",
+  "source": "NAVCO 3.0 / Harvard Dataverse",
+  "source_url": "https://doi.org/10.7910/DVN/INNYEO",
+  "generated_at": "2026-07-03T11:02:42+00:00",
+  "coverage_note": "NAVCO 3.0 event-level data for selected resistance campaigns and countries; aggregated by event date year.",
+  "points": [
+    {
+      "date": "1990-01-01",
+      "value": 0.0
+    },
+    {
+      "date": "1991-01-01",
+      "value": 796.0
+    },
+    {
+      "date": "1992-01-01",
+      "value": 284.0
+    },
+    {
+      "date": "1993-01-01",
+      "value": 499.0
+    },
+    {
+      "date": "1994-01-01",
+      "value": 1042.0
+    },
+    {
+      "date": "1995-01-01",
+      "value": 986.0
+    },
+    {
+      "date": "1996-01-01",
+      "value": 1015.0
+    },
+    {
+      "date": "1997-01-01",
+      "value": 1215.0
+    },
+    {
+      "date": "1998-01-01",
+      "value": 640.0
+    },
+    {
+      "date": "1999-01-01",
+      "value": 1042.0
+    },
+    {
+      "date": "2000-01-01",
+      "value": 720.0
+    },
+    {
+      "date": "2001-01-01",
+      "value": 1212.0
+    },
+    {
+      "date": "2002-01-01",
+      "value": 1102.0
+    },
+    {
+      "date": "2003-01-01",
+      "value": 912.0
+    },
+    {
+      "date": "2004-01-01",
+      "value": 937.0
+    },
+    {
+      "date": "2005-01-01",
+      "value": 1149.0
+    },
+    {
+      "date": "2006-01-01",
+      "value": 1055.0
+    },
+    {
+      "date": "2007-01-01",
+      "value": 1055.0
+    },
+    {
+      "date": "2008-01-01",
+      "value": 699.0
+    },
+    {
+      "date": "2009-01-01",
+      "value": 839.0
+    },
+    {
+      "date": "2010-01-01",
+      "value": 1477.0
+    },
+    {
+      "date": "2011-01-01",
+      "value": 5402.0
+    },
+    {
+      "date": "2012-01-01",
+      "value": 4666.0
+    }
+  ]
+}

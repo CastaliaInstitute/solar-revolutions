@@ -1,0 +1,1238 @@
+{
+  "generated_at": "2026-07-03T13:33:29+00:00",
+  "method": "Annual global descriptive screen. Outcomes are RED and NAVCO annual aggregates. Predictors are SILSO and non-solar political-economy/mobilization controls. Incremental tests use standardized OLS over overlapping years with the top non-solar controls. This is not causal identification and does not replace country-year fixed-effect exposure models.",
+  "interpretation": "If many stronger non-solar controls outperform SILSO and solar adds little R2 after those controls, the solar hypothesis should remain exploratory even when narrow specificity diagnostics look visually interesting.",
+  "outcomes": [
+    {
+      "id": "red_episodes",
+      "label": "RED annual episode count",
+      "kind": "RED",
+      "years": {
+        "start": 1900,
+        "end": 2014,
+        "n": 115
+      },
+      "solar_univariate": {
+        "n": 115,
+        "r": 0.20138791599212022,
+        "r2": 0.04055709270764927
+      },
+      "non_solar_controls_ranked": [
+        {
+          "id": "protest.mass_mobilization_violent_count",
+          "name": "Mass Mobilization violent protest count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 25,
+          "years": {
+            "start": 1990,
+            "end": 2014
+          },
+          "r": 0.5737917491812585,
+          "abs_r": 0.5737917491812585,
+          "r_with_solar": 0.10372433913412817
+        },
+        {
+          "id": "protest.mass_mobilization_repression_count",
+          "name": "Mass Mobilization repressive state response count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 25,
+          "years": {
+            "start": 1990,
+            "end": 2014
+          },
+          "r": 0.549339409747503,
+          "abs_r": 0.549339409747503,
+          "r_with_solar": -0.003986236852089676
+        },
+        {
+          "id": "protest.mass_mobilization_event_count",
+          "name": "Mass Mobilization protest event count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 25,
+          "years": {
+            "start": 1990,
+            "end": 2014
+          },
+          "r": 0.4452306766145419,
+          "abs_r": 0.4452306766145419,
+          "r_with_solar": -0.025419122056903203
+        },
+        {
+          "id": "communications.wdi_internet_users",
+          "name": "WDI internet users",
+          "source": "World Bank World Development Indicators",
+          "n": 10,
+          "years": {
+            "start": 2005,
+            "end": 2014
+          },
+          "r": 0.38063135221589667,
+          "abs_r": 0.38063135221589667,
+          "r_with_solar": 0.4593068810615157
+        },
+        {
+          "id": "resistance.navco_injury_proxy",
+          "name": "NAVCO injury proxy",
+          "source": "NAVCO 3.0 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.32323362389928817,
+          "abs_r": 0.32323362389928817,
+          "r_with_solar": -0.19067330117117187
+        },
+        {
+          "id": "finance.rr_inflation_crisis_count",
+          "name": "Reinhart-Rogoff inflation crisis country count",
+          "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.3063831269781165,
+          "abs_r": 0.3063831269781165,
+          "r_with_solar": 0.20066847516771985
+        },
+        {
+          "id": "food.long_term_food_price_index",
+          "name": "Long-term global food commodity price index",
+          "source": "Our World in Data long-term food prices",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": -0.28963965116700335,
+          "abs_r": 0.28963965116700335,
+          "r_with_solar": 0.029432128462673617
+        },
+        {
+          "id": "regime.civil_society_participation_vdem",
+          "name": "Civil society participation index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.2795320397436453,
+          "abs_r": 0.2795320397436453,
+          "r_with_solar": 0.06640727900526944
+        },
+        {
+          "id": "regime.electoral_democracy_vdem",
+          "name": "Electoral democracy index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.2769295302120138,
+          "abs_r": 0.2769295302120138,
+          "r_with_solar": 0.08339385447052275
+        },
+        {
+          "id": "market.shiller_dividend",
+          "name": "Shiller S&P composite dividend",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.276022092203556,
+          "abs_r": 0.276022092203556,
+          "r_with_solar": -0.11938493598838676
+        },
+        {
+          "id": "labor.wdi_unemployment",
+          "name": "WDI unemployment rate",
+          "source": "World Bank World Development Indicators",
+          "n": 24,
+          "years": {
+            "start": 1991,
+            "end": 2014
+          },
+          "r": -0.27433367675626763,
+          "abs_r": 0.27433367675626763,
+          "r_with_solar": -0.3045522290289511
+        },
+        {
+          "id": "regime.liberal_democracy_vdem",
+          "name": "Liberal democracy index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.2725843124645511,
+          "abs_r": 0.2725843124645511,
+          "r_with_solar": 0.06881503946282712
+        }
+      ],
+      "controls_better_than_solar": 26,
+      "incremental_solar_after_top_controls": {
+        "n": 23,
+        "years": {
+          "start": 1990,
+          "end": 2012
+        },
+        "selected_controls": [
+          {
+            "id": "protest.mass_mobilization_violent_count",
+            "name": "Mass Mobilization violent protest count",
+            "abs_r": 0.5737917491812585
+          },
+          {
+            "id": "protest.mass_mobilization_repression_count",
+            "name": "Mass Mobilization repressive state response count",
+            "abs_r": 0.549339409747503
+          },
+          {
+            "id": "protest.mass_mobilization_event_count",
+            "name": "Mass Mobilization protest event count",
+            "abs_r": 0.4452306766145419
+          },
+          {
+            "id": "resistance.navco_injury_proxy",
+            "name": "NAVCO injury proxy",
+            "abs_r": 0.32323362389928817
+          },
+          {
+            "id": "finance.rr_inflation_crisis_count",
+            "name": "Reinhart-Rogoff inflation crisis country count",
+            "abs_r": 0.3063831269781165
+          },
+          {
+            "id": "food.long_term_food_price_index",
+            "name": "Long-term global food commodity price index",
+            "abs_r": 0.28963965116700335
+          }
+        ],
+        "baseline_r2": 0.49050640793110056,
+        "with_solar_r2": 0.5116679536460893,
+        "delta_r2": 0.02116154571498874,
+        "note": "standardized OLS on overlapping annual global series; descriptive screen, not causal identification"
+      }
+    },
+    {
+      "id": "red_log_participants",
+      "label": "RED log participant proxy",
+      "kind": "RED",
+      "years": {
+        "start": 1900,
+        "end": 2014,
+        "n": 115
+      },
+      "solar_univariate": {
+        "n": 115,
+        "r": 0.05025372873439841,
+        "r2": 0.0025254372517105003
+      },
+      "non_solar_controls_ranked": [
+        {
+          "id": "hazard.volcanic_damage_costs",
+          "name": "Global damage costs from volcanic activity",
+          "source": "EM-DAT / Our World in Data",
+          "n": 35,
+          "years": {
+            "start": 1980,
+            "end": 2014
+          },
+          "r": 0.3630110418023719,
+          "abs_r": 0.3630110418023719,
+          "r_with_solar": -0.0684865841250242
+        },
+        {
+          "id": "regime.electoral_democracy_vdem",
+          "name": "Electoral democracy index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.34276682365902916,
+          "abs_r": 0.34276682365902916,
+          "r_with_solar": 0.08339385447052275
+        },
+        {
+          "id": "regime.democracy_lexical_mean",
+          "name": "Mean lexical democracy indicator",
+          "source": "Lexical Index of Electoral Democracy / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.336206198267036,
+          "abs_r": 0.336206198267036,
+          "r_with_solar": 0.08642078012226621
+        },
+        {
+          "id": "regime.participatory_democracy_vdem",
+          "name": "Participatory democracy index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.3356054173930682,
+          "abs_r": 0.3356054173930682,
+          "r_with_solar": 0.06487018333915368
+        },
+        {
+          "id": "regime.liberal_democracy_vdem",
+          "name": "Liberal democracy index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.3335626450890137,
+          "abs_r": 0.3335626450890137,
+          "r_with_solar": 0.06881503946282712
+        },
+        {
+          "id": "regime.political_corruption_vdem",
+          "name": "Political corruption index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.33306902816454537,
+          "abs_r": 0.33306902816454537,
+          "r_with_solar": -0.09326174990525889
+        },
+        {
+          "id": "regime.civil_society_participation_vdem",
+          "name": "Civil society participation index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.32934187414532157,
+          "abs_r": 0.32934187414532157,
+          "r_with_solar": 0.06640727900526944
+        },
+        {
+          "id": "food.long_term_food_price_index",
+          "name": "Long-term global food commodity price index",
+          "source": "Our World in Data long-term food prices",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": -0.3166375240668834,
+          "abs_r": 0.3166375240668834,
+          "r_with_solar": 0.029432128462673617
+        },
+        {
+          "id": "finance.rr_inflation_crisis_count",
+          "name": "Reinhart-Rogoff inflation crisis country count",
+          "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.31119305849143303,
+          "abs_r": 0.31119305849143303,
+          "r_with_solar": 0.20066847516771985
+        },
+        {
+          "id": "regime.human_rights_vdem",
+          "name": "Human rights index",
+          "source": "V-Dem / Our World in Data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.29500141664529034,
+          "abs_r": 0.29500141664529034,
+          "r_with_solar": 0.058408374543833304
+        },
+        {
+          "id": "resistance.navco_participant_proxy",
+          "name": "NAVCO participant proxy",
+          "source": "NAVCO 3.0 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": -0.2947850829556858,
+          "abs_r": 0.2947850829556858,
+          "r_with_solar": -0.04969263518424804
+        },
+        {
+          "id": "market.shiller_dividend",
+          "name": "Shiller S&P composite dividend",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 115,
+          "years": {
+            "start": 1900,
+            "end": 2014
+          },
+          "r": 0.28477214407324997,
+          "abs_r": 0.28477214407324997,
+          "r_with_solar": -0.11938493598838676
+        }
+      ],
+      "controls_better_than_solar": 45,
+      "incremental_solar_after_top_controls": {
+        "n": 35,
+        "years": {
+          "start": 1980,
+          "end": 2014
+        },
+        "selected_controls": [
+          {
+            "id": "hazard.volcanic_damage_costs",
+            "name": "Global damage costs from volcanic activity",
+            "abs_r": 0.3630110418023719
+          },
+          {
+            "id": "regime.electoral_democracy_vdem",
+            "name": "Electoral democracy index",
+            "abs_r": 0.34276682365902916
+          },
+          {
+            "id": "regime.democracy_lexical_mean",
+            "name": "Mean lexical democracy indicator",
+            "abs_r": 0.336206198267036
+          },
+          {
+            "id": "regime.participatory_democracy_vdem",
+            "name": "Participatory democracy index",
+            "abs_r": 0.3356054173930682
+          },
+          {
+            "id": "regime.liberal_democracy_vdem",
+            "name": "Liberal democracy index",
+            "abs_r": 0.3335626450890137
+          },
+          {
+            "id": "regime.political_corruption_vdem",
+            "name": "Political corruption index",
+            "abs_r": 0.33306902816454537
+          }
+        ],
+        "baseline_r2": 0.25772752120878273,
+        "with_solar_r2": 0.30566558864130566,
+        "delta_r2": 0.047938067432522935,
+        "note": "standardized OLS on overlapping annual global series; descriptive screen, not causal identification"
+      }
+    },
+    {
+      "id": "navco_events",
+      "label": "NAVCO annual resistance event count",
+      "kind": "NAVCO",
+      "years": {
+        "start": 1990,
+        "end": 2012,
+        "n": 23
+      },
+      "solar_univariate": {
+        "n": 23,
+        "r": -0.14832183768094137,
+        "r2": 0.02199936753305152
+      },
+      "non_solar_controls_ranked": [
+        {
+          "id": "finance.jst_public_debt_gdp_mean",
+          "name": "JST mean public debt-to-GDP",
+          "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.825143186373638,
+          "abs_r": 0.825143186373638,
+          "r_with_solar": -0.12125513921233434
+        },
+        {
+          "id": "food.daily_caloric_supply",
+          "name": "Daily per-capita caloric supply",
+          "source": "FAO / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7987587710045362,
+          "abs_r": 0.7987587710045362,
+          "r_with_solar": -0.17919819055783365
+        },
+        {
+          "id": "communications.wdi_mobile_subscriptions",
+          "name": "WDI mobile subscriptions",
+          "source": "World Bank World Development Indicators",
+          "n": 18,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7537568767828696,
+          "abs_r": 0.7537568767828696,
+          "r_with_solar": -0.2624996988435634
+        },
+        {
+          "id": "protest.mass_mobilization_repression_count",
+          "name": "Mass Mobilization repressive state response count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6916452339784899,
+          "abs_r": 0.6916452339784899,
+          "r_with_solar": -0.003986236852089676
+        },
+        {
+          "id": "rates.shiller_long_rate_gs10",
+          "name": "Shiller long interest rate GS10",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": -0.6858314448243366,
+          "abs_r": 0.6858314448243366,
+          "r_with_solar": 0.2160311318702674
+        },
+        {
+          "id": "hazard.natural_disaster_damage_costs",
+          "name": "Global damage costs from natural disasters",
+          "source": "EM-DAT / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6769169706100429,
+          "abs_r": 0.6769169706100429,
+          "r_with_solar": -0.2425990908747539
+        },
+        {
+          "id": "agriculture.output_constant_usd",
+          "name": "Agricultural output",
+          "source": "FAO / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6738143188378776,
+          "abs_r": 0.6738143188378776,
+          "r_with_solar": -0.20918541641655686
+        },
+        {
+          "id": "demographics.wdi_urban_share",
+          "name": "WDI urban population share",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.667529458832919,
+          "abs_r": 0.667529458832919,
+          "r_with_solar": -0.19274494428441138
+        },
+        {
+          "id": "agriculture.wdi_cereal_yield",
+          "name": "WDI cereal yield",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6669981754890937,
+          "abs_r": 0.6669981754890937,
+          "r_with_solar": -0.16394768950325617
+        },
+        {
+          "id": "market.shiller_earnings",
+          "name": "Shiller S&P composite earnings",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6652359879804897,
+          "abs_r": 0.6652359879804897,
+          "r_with_solar": -0.10366538184204861
+        },
+        {
+          "id": "demographics.wdi_population",
+          "name": "WDI total population",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6580766842597509,
+          "abs_r": 0.6580766842597509,
+          "r_with_solar": -0.176705179361098
+        },
+        {
+          "id": "protest.mass_mobilization_event_count",
+          "name": "Mass Mobilization protest event count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6555390709542833,
+          "abs_r": 0.6555390709542833,
+          "r_with_solar": -0.025419122056903203
+        }
+      ],
+      "controls_better_than_solar": 41,
+      "incremental_solar_after_top_controls": {
+        "n": 18,
+        "years": {
+          "start": 1990,
+          "end": 2012
+        },
+        "selected_controls": [
+          {
+            "id": "finance.jst_public_debt_gdp_mean",
+            "name": "JST mean public debt-to-GDP",
+            "abs_r": 0.825143186373638
+          },
+          {
+            "id": "food.daily_caloric_supply",
+            "name": "Daily per-capita caloric supply",
+            "abs_r": 0.7987587710045362
+          },
+          {
+            "id": "communications.wdi_mobile_subscriptions",
+            "name": "WDI mobile subscriptions",
+            "abs_r": 0.7537568767828696
+          },
+          {
+            "id": "protest.mass_mobilization_repression_count",
+            "name": "Mass Mobilization repressive state response count",
+            "abs_r": 0.6916452339784899
+          },
+          {
+            "id": "rates.shiller_long_rate_gs10",
+            "name": "Shiller long interest rate GS10",
+            "abs_r": 0.6858314448243366
+          },
+          {
+            "id": "hazard.natural_disaster_damage_costs",
+            "name": "Global damage costs from natural disasters",
+            "abs_r": 0.6769169706100429
+          }
+        ],
+        "baseline_r2": 0.8858607121892429,
+        "with_solar_r2": 0.9042862966143841,
+        "delta_r2": 0.018425584425141195,
+        "note": "standardized OLS on overlapping annual global series; descriptive screen, not causal identification"
+      }
+    },
+    {
+      "id": "navco_nonviolent_events",
+      "label": "NAVCO annual nonviolent event count",
+      "kind": "NAVCO",
+      "years": {
+        "start": 1990,
+        "end": 2012,
+        "n": 23
+      },
+      "solar_univariate": {
+        "n": 23,
+        "r": -0.10290402564072537,
+        "r2": 0.010589238493067065
+      },
+      "non_solar_controls_ranked": [
+        {
+          "id": "finance.jst_public_debt_gdp_mean",
+          "name": "JST mean public debt-to-GDP",
+          "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7776617217111033,
+          "abs_r": 0.7776617217111033,
+          "r_with_solar": -0.12125513921233434
+        },
+        {
+          "id": "food.daily_caloric_supply",
+          "name": "Daily per-capita caloric supply",
+          "source": "FAO / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7314026869451627,
+          "abs_r": 0.7314026869451627,
+          "r_with_solar": -0.17919819055783365
+        },
+        {
+          "id": "hazard.natural_disaster_damage_costs",
+          "name": "Global damage costs from natural disasters",
+          "source": "EM-DAT / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7005749791959935,
+          "abs_r": 0.7005749791959935,
+          "r_with_solar": -0.2425990908747539
+        },
+        {
+          "id": "protest.mass_mobilization_repression_count",
+          "name": "Mass Mobilization repressive state response count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6911432936382388,
+          "abs_r": 0.6911432936382388,
+          "r_with_solar": -0.003986236852089676
+        },
+        {
+          "id": "protest.mass_mobilization_event_count",
+          "name": "Mass Mobilization protest event count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6768024321219701,
+          "abs_r": 0.6768024321219701,
+          "r_with_solar": -0.025419122056903203
+        },
+        {
+          "id": "communications.wdi_mobile_subscriptions",
+          "name": "WDI mobile subscriptions",
+          "source": "World Bank World Development Indicators",
+          "n": 18,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6766703696129731,
+          "abs_r": 0.6766703696129731,
+          "r_with_solar": -0.2624996988435634
+        },
+        {
+          "id": "market.shiller_earnings",
+          "name": "Shiller S&P composite earnings",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6660789596446884,
+          "abs_r": 0.6660789596446884,
+          "r_with_solar": -0.10366538184204861
+        },
+        {
+          "id": "rates.shiller_long_rate_gs10",
+          "name": "Shiller long interest rate GS10",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": -0.6226220002325903,
+          "abs_r": 0.6226220002325903,
+          "r_with_solar": 0.2160311318702674
+        },
+        {
+          "id": "agriculture.output_constant_usd",
+          "name": "Agricultural output",
+          "source": "FAO / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.610257533736821,
+          "abs_r": 0.610257533736821,
+          "r_with_solar": -0.20918541641655686
+        },
+        {
+          "id": "demographics.wdi_urban_share",
+          "name": "WDI urban population share",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6023879253197222,
+          "abs_r": 0.6023879253197222,
+          "r_with_solar": -0.19274494428441138
+        },
+        {
+          "id": "demographics.wdi_population",
+          "name": "WDI total population",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.594601126446855,
+          "abs_r": 0.594601126446855,
+          "r_with_solar": -0.176705179361098
+        },
+        {
+          "id": "agriculture.wdi_cereal_yield",
+          "name": "WDI cereal yield",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.5891488117145115,
+          "abs_r": 0.5891488117145115,
+          "r_with_solar": -0.16394768950325617
+        }
+      ],
+      "controls_better_than_solar": 47,
+      "incremental_solar_after_top_controls": {
+        "n": 18,
+        "years": {
+          "start": 1990,
+          "end": 2012
+        },
+        "selected_controls": [
+          {
+            "id": "finance.jst_public_debt_gdp_mean",
+            "name": "JST mean public debt-to-GDP",
+            "abs_r": 0.7776617217111033
+          },
+          {
+            "id": "food.daily_caloric_supply",
+            "name": "Daily per-capita caloric supply",
+            "abs_r": 0.7314026869451627
+          },
+          {
+            "id": "hazard.natural_disaster_damage_costs",
+            "name": "Global damage costs from natural disasters",
+            "abs_r": 0.7005749791959935
+          },
+          {
+            "id": "protest.mass_mobilization_repression_count",
+            "name": "Mass Mobilization repressive state response count",
+            "abs_r": 0.6911432936382388
+          },
+          {
+            "id": "protest.mass_mobilization_event_count",
+            "name": "Mass Mobilization protest event count",
+            "abs_r": 0.6768024321219701
+          },
+          {
+            "id": "communications.wdi_mobile_subscriptions",
+            "name": "WDI mobile subscriptions",
+            "abs_r": 0.6766703696129731
+          }
+        ],
+        "baseline_r2": 0.8629727021735601,
+        "with_solar_r2": 0.8912742513144178,
+        "delta_r2": 0.028301549140857696,
+        "note": "standardized OLS on overlapping annual global series; descriptive screen, not causal identification"
+      }
+    },
+    {
+      "id": "navco_violent_events",
+      "label": "NAVCO annual violent event count",
+      "kind": "NAVCO",
+      "years": {
+        "start": 1990,
+        "end": 2012,
+        "n": 23
+      },
+      "solar_univariate": {
+        "n": 23,
+        "r": -0.1663955973591168,
+        "r2": 0.027687494820497316
+      },
+      "non_solar_controls_ranked": [
+        {
+          "id": "finance.jst_public_debt_gdp_mean",
+          "name": "JST mean public debt-to-GDP",
+          "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.8515733027978929,
+          "abs_r": 0.8515733027978929,
+          "r_with_solar": -0.12125513921233434
+        },
+        {
+          "id": "food.daily_caloric_supply",
+          "name": "Daily per-capita caloric supply",
+          "source": "FAO / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7783331805217719,
+          "abs_r": 0.7783331805217719,
+          "r_with_solar": -0.17919819055783365
+        },
+        {
+          "id": "communications.wdi_mobile_subscriptions",
+          "name": "WDI mobile subscriptions",
+          "source": "World Bank World Development Indicators",
+          "n": 18,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.7366417349818103,
+          "abs_r": 0.7366417349818103,
+          "r_with_solar": -0.2624996988435634
+        },
+        {
+          "id": "protest.mass_mobilization_repression_count",
+          "name": "Mass Mobilization repressive state response count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6766199068295865,
+          "abs_r": 0.6766199068295865,
+          "r_with_solar": -0.003986236852089676
+        },
+        {
+          "id": "rates.shiller_long_rate_gs10",
+          "name": "Shiller long interest rate GS10",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": -0.6633916177611315,
+          "abs_r": 0.6633916177611315,
+          "r_with_solar": 0.2160311318702674
+        },
+        {
+          "id": "hazard.natural_disaster_damage_costs",
+          "name": "Global damage costs from natural disasters",
+          "source": "EM-DAT / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6498171569193936,
+          "abs_r": 0.6498171569193936,
+          "r_with_solar": -0.2425990908747539
+        },
+        {
+          "id": "agriculture.output_constant_usd",
+          "name": "Agricultural output",
+          "source": "FAO / Our World in Data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6491883094538954,
+          "abs_r": 0.6491883094538954,
+          "r_with_solar": -0.20918541641655686
+        },
+        {
+          "id": "demographics.wdi_urban_share",
+          "name": "WDI urban population share",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6390704845481623,
+          "abs_r": 0.6390704845481623,
+          "r_with_solar": -0.19274494428441138
+        },
+        {
+          "id": "agriculture.wdi_cereal_yield",
+          "name": "WDI cereal yield",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6350481587174531,
+          "abs_r": 0.6350481587174531,
+          "r_with_solar": -0.16394768950325617
+        },
+        {
+          "id": "market.shiller_earnings",
+          "name": "Shiller S&P composite earnings",
+          "source": "Robert J. Shiller, Irrational Exuberance data",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6339615255609372,
+          "abs_r": 0.6339615255609372,
+          "r_with_solar": -0.10366538184204861
+        },
+        {
+          "id": "demographics.wdi_population",
+          "name": "WDI total population",
+          "source": "World Bank World Development Indicators",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6312759819115061,
+          "abs_r": 0.6312759819115061,
+          "r_with_solar": -0.176705179361098
+        },
+        {
+          "id": "protest.mass_mobilization_event_count",
+          "name": "Mass Mobilization protest event count",
+          "source": "Mass Mobilization Project v5.1 / Harvard Dataverse",
+          "n": 23,
+          "years": {
+            "start": 1990,
+            "end": 2012
+          },
+          "r": 0.6241459519190492,
+          "abs_r": 0.6241459519190492,
+          "r_with_solar": -0.025419122056903203
+        }
+      ],
+      "controls_better_than_solar": 40,
+      "incremental_solar_after_top_controls": {
+        "n": 18,
+        "years": {
+          "start": 1990,
+          "end": 2012
+        },
+        "selected_controls": [
+          {
+            "id": "finance.jst_public_debt_gdp_mean",
+            "name": "JST mean public debt-to-GDP",
+            "abs_r": 0.8515733027978929
+          },
+          {
+            "id": "food.daily_caloric_supply",
+            "name": "Daily per-capita caloric supply",
+            "abs_r": 0.7783331805217719
+          },
+          {
+            "id": "communications.wdi_mobile_subscriptions",
+            "name": "WDI mobile subscriptions",
+            "abs_r": 0.7366417349818103
+          },
+          {
+            "id": "protest.mass_mobilization_repression_count",
+            "name": "Mass Mobilization repressive state response count",
+            "abs_r": 0.6766199068295865
+          },
+          {
+            "id": "rates.shiller_long_rate_gs10",
+            "name": "Shiller long interest rate GS10",
+            "abs_r": 0.6633916177611315
+          },
+          {
+            "id": "hazard.natural_disaster_damage_costs",
+            "name": "Global damage costs from natural disasters",
+            "abs_r": 0.6498171569193936
+          }
+        ],
+        "baseline_r2": 0.8886481344829629,
+        "with_solar_r2": 0.9026357346534408,
+        "delta_r2": 0.013987600170477954,
+        "note": "standardized OLS on overlapping annual global series; descriptive screen, not causal identification"
+      }
+    }
+  ],
+  "inputs_most_associated_with_solar": [
+    {
+      "id": "communications.wdi_internet_users",
+      "name": "WDI internet users",
+      "source": "World Bank World Development Indicators",
+      "n": 21,
+      "years": {
+        "start": 2005,
+        "end": 2025
+      },
+      "r": 0.4593068810615157,
+      "abs_r": 0.4593068810615157
+    },
+    {
+      "id": "food.food_price_anomaly",
+      "name": "Food price anomaly index",
+      "source": "FAO / Our World in Data",
+      "n": 14,
+      "years": {
+        "start": 2010,
+        "end": 2023
+      },
+      "r": 0.3389352949762754,
+      "abs_r": 0.3389352949762754
+    },
+    {
+      "id": "labor.wdi_unemployment",
+      "name": "WDI unemployment rate",
+      "source": "World Bank World Development Indicators",
+      "n": 35,
+      "years": {
+        "start": 1991,
+        "end": 2025
+      },
+      "r": -0.3045522290289511,
+      "abs_r": 0.3045522290289511
+    },
+    {
+      "id": "resistance.navco_fatality_proxy",
+      "name": "NAVCO fatality proxy",
+      "source": "NAVCO 3.0 / Harvard Dataverse",
+      "n": 23,
+      "years": {
+        "start": 1990,
+        "end": 2012
+      },
+      "r": -0.2912551207304475,
+      "abs_r": 0.2912551207304475
+    },
+    {
+      "id": "agriculture.wdi_food_production_index",
+      "name": "WDI food production index",
+      "source": "World Bank World Development Indicators",
+      "n": 60,
+      "years": {
+        "start": 1961,
+        "end": 2020
+      },
+      "r": -0.2769975984321615,
+      "abs_r": 0.2769975984321615
+    },
+    {
+      "id": "macro.wdi_inflation_cpi",
+      "name": "WDI inflation, consumer prices",
+      "source": "World Bank World Development Indicators",
+      "n": 45,
+      "years": {
+        "start": 1981,
+        "end": 2025
+      },
+      "r": 0.2675500881726647,
+      "abs_r": 0.2675500881726647
+    },
+    {
+      "id": "communications.wdi_mobile_subscriptions",
+      "name": "WDI mobile subscriptions",
+      "source": "World Bank World Development Indicators",
+      "n": 49,
+      "years": {
+        "start": 1960,
+        "end": 2025
+      },
+      "r": -0.2624996988435634,
+      "abs_r": 0.2624996988435634
+    },
+    {
+      "id": "hazard.natural_disaster_damage_costs",
+      "name": "Global damage costs from natural disasters",
+      "source": "EM-DAT / Our World in Data",
+      "n": 46,
+      "years": {
+        "start": 1980,
+        "end": 2025
+      },
+      "r": -0.2425990908747539,
+      "abs_r": 0.2425990908747539
+    },
+    {
+      "id": "finance.jst_short_rate_mean",
+      "name": "JST mean short-term interest rate",
+      "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+      "n": 151,
+      "years": {
+        "start": 1870,
+        "end": 2020
+      },
+      "r": 0.2343685687584586,
+      "abs_r": 0.2343685687584586
+    },
+    {
+      "id": "conflict.state_based_conflict_deaths",
+      "name": "Deaths in state-based conflicts",
+      "source": "Lacina & Gleditsch / PRIO / Our World in Data",
+      "n": 80,
+      "years": {
+        "start": 1946,
+        "end": 2025
+      },
+      "r": 0.2283576282993059,
+      "abs_r": 0.2283576282993059
+    },
+    {
+      "id": "rates.shiller_long_rate_gs10",
+      "name": "Shiller long interest rate GS10",
+      "source": "Robert J. Shiller, Irrational Exuberance data",
+      "n": 153,
+      "years": {
+        "start": 1871,
+        "end": 2023
+      },
+      "r": 0.2160311318702674,
+      "abs_r": 0.2160311318702674
+    },
+    {
+      "id": "agriculture.output_constant_usd",
+      "name": "Agricultural output",
+      "source": "FAO / Our World in Data",
+      "n": 64,
+      "years": {
+        "start": 1961,
+        "end": 2024
+      },
+      "r": -0.20918541641655686,
+      "abs_r": 0.20918541641655686
+    }
+  ]
+}

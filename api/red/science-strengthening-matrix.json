@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-07-03T13:46:44+00:00",
+  "overall_answer": "No. In the current strengthened study, solar exposure does not improve out-of-sample RED onset prediction overall or in vulnerable country-years after political-economy controls, fixed-effect exposure designs, and shifted-timing placebo checks.",
+  "audit_gate_counts": {
+    "pass": 25,
+    "warn": 0,
+    "fail": 0
+  },
+  "requirements": [
+    {
+      "requirement": "Sharpen causal pathway",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/analysis-specification-registry.json"
+      ],
+      "result": "5 causal-pathway steps define required evidence from solar forcing through predictive validation."
+    },
+    {
+      "requirement": "Use country-specific solar/geomagnetic exposure",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/country-solar-geomagnetic-exposure.json",
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "159 countries and 18285 country-years; controlled event geometry p=0.9516."
+    },
+    {
+      "requirement": "Build RED country-year onset/event-history tests",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "331 onsets in 17950 at-risk country-years; controlled onset geometry p=0.9721."
+    },
+    {
+      "requirement": "Test vulnerability interactions and vulnerable-country prediction",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "Vulnerable held-out subset: n=430, events=17, delta AUC=-0.0104, delta log-loss=0.1843, placebo p=0.5283."
+    },
+    {
+      "requirement": "Use preregistered quantization rules",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/primary-specificity-endpoint.json"
+      ],
+      "result": "24 predeclared rules; selected held-out balanced accuracy=0.5519."
+    },
+    {
+      "requirement": "Add placebo-cycle and shifted-timing tests",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/primary-specificity-endpoint.json",
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "Annual circular specificity p=0.1826; country-year shifted exposure p=0.9391."
+    },
+    {
+      "requirement": "Compare against stronger conventional predictors",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/science-review-comparative-evidence.json",
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "RED annual controls stronger than SILSO: 26; country-year controls include V-Dem, WDI political economy, food production, and battle deaths."
+    },
+    {
+      "requirement": "Use monthly or seasonal timing where possible",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/monthly-timing-diagnostic.json"
+      ],
+      "result": "343 RED episodes have start months; strongest monthly lag=3m, r=0.06143, circular p=0.2898."
+    },
+    {
+      "requirement": "Separate revolution types",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "10 subtype onset screens; strongest subtype=Civil-resistance revolutions, geometry p=0.2065."
+    },
+    {
+      "requirement": "Improve geographic exposure",
+      "status": "documented_non_confirmatory",
+      "evidence_files": [
+        "/api/red/country-solar-geomagnetic-exposure.json",
+        "/api/red/country-panel-solar-model.json"
+      ],
+      "result": "High geomagnetic-sensitivity onset p=0.4629; auroral-proximity onset p=0.9187."
+    },
+    {
+      "requirement": "Report whether solar predicts onset out-of-sample",
+      "status": "answered_no",
+      "evidence_files": [
+        "/api/red/country-panel-solar-model.json",
+        "/api/red/statistical-audit.json"
+      ],
+      "result": "Overall delta AUC=-0.01016, delta log-loss=0.5293; vulnerable delta AUC=-0.0104, vulnerable placebo p=0.5283."
+    }
+  ]
+}

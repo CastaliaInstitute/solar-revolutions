@@ -1,0 +1,23 @@
+{
+  "dataset_id": "beissinger_red_v1",
+  "name": "Revolutionary Episodes Dataset v1.0",
+  "source": "Mark R. Beissinger, Princeton University",
+  "source_url": "https://mbeissinger.scholar.princeton.edu/revolutionary-episodes-dataset",
+  "archive_path": "solar-revolutions/data/revolutionary_episodes_v1.0.zip",
+  "workbook": "Revolutionary episodes_v_1.0.xlsm",
+  "generated_at": "2026-07-03T13:40:16+00:00",
+  "included_episodes_total": 345,
+  "included_episodes_1900_2014": 343,
+  "excluded_cases_total": 131,
+  "browser_files": {
+    "episodes": "/api/red/episodes.json",
+    "annual_summary": "/api/red/annual-summary.json",
+    "annual_by_region": "/api/red/annual-by-region.json",
+    "annual_by_country": "/api/red/annual-by-country.json"
+  },
+  "derived_input_series": [
+    "revolutions.event_count",
+    "revolutions.total_participants_proxy",
+    "revolutions.activity_index"
+  ]
+}

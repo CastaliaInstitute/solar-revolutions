@@ -1,0 +1,90 @@
+{
+  "series_id": "demographics.youth_neet",
+  "unit": "percent",
+  "source": "International Labour Organization / Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/youth-not-in-education-employment-training",
+  "generated_at": "2026-07-03T11:02:20+00:00",
+  "aggregation_note": "world_or_mean",
+  "points": [
+    {
+      "date": "2005-01-01",
+      "value": 22.81
+    },
+    {
+      "date": "2006-01-01",
+      "value": 22.62
+    },
+    {
+      "date": "2007-01-01",
+      "value": 22.33
+    },
+    {
+      "date": "2008-01-01",
+      "value": 22.14
+    },
+    {
+      "date": "2009-01-01",
+      "value": 22.25
+    },
+    {
+      "date": "2010-01-01",
+      "value": 22.0
+    },
+    {
+      "date": "2011-01-01",
+      "value": 21.57
+    },
+    {
+      "date": "2012-01-01",
+      "value": 21.29
+    },
+    {
+      "date": "2013-01-01",
+      "value": 21.3
+    },
+    {
+      "date": "2014-01-01",
+      "value": 21.24
+    },
+    {
+      "date": "2015-01-01",
+      "value": 21.31
+    },
+    {
+      "date": "2016-01-01",
+      "value": 21.46
+    },
+    {
+      "date": "2017-01-01",
+      "value": 21.48
+    },
+    {
+      "date": "2018-01-01",
+      "value": 21.49
+    },
+    {
+      "date": "2019-01-01",
+      "value": 21.41
+    },
+    {
+      "date": "2020-01-01",
+      "value": 23.22
+    },
+    {
+      "date": "2021-01-01",
+      "value": 21.83
+    },
+    {
+      "date": "2022-01-01",
+      "value": 20.95
+    },
+    {
+      "date": "2023-01-01",
+      "value": 20.38
+    },
+    {
+      "date": "2024-01-01",
+      "value": 20.4
+    }
+  ]
+}

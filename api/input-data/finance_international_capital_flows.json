@@ -1,0 +1,130 @@
+{
+  "series_id": "finance.international_capital_flows",
+  "unit": "percent of world GDP",
+  "source": "Lane and Milesi-Ferretti / Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/international-capital-flows",
+  "generated_at": "2026-07-03T11:02:22+00:00",
+  "aggregation_note": "world_or_mean",
+  "points": [
+    {
+      "date": "1872-01-01",
+      "value": 3.6598
+    },
+    {
+      "date": "1877-01-01",
+      "value": 3.3922
+    },
+    {
+      "date": "1882-01-01",
+      "value": 3.4839
+    },
+    {
+      "date": "1887-01-01",
+      "value": 5.0699
+    },
+    {
+      "date": "1892-01-01",
+      "value": 3.3851
+    },
+    {
+      "date": "1897-01-01",
+      "value": 3.51
+    },
+    {
+      "date": "1902-01-01",
+      "value": 3.1467
+    },
+    {
+      "date": "1907-01-01",
+      "value": 4.0448
+    },
+    {
+      "date": "1912-01-01",
+      "value": 4.1165
+    },
+    {
+      "date": "1917-01-01",
+      "value": 6.6153
+    },
+    {
+      "date": "1922-01-01",
+      "value": 5.0517
+    },
+    {
+      "date": "1927-01-01",
+      "value": 2.3875
+    },
+    {
+      "date": "1932-01-01",
+      "value": 2.1108
+    },
+    {
+      "date": "1937-01-01",
+      "value": 1.5019
+    },
+    {
+      "date": "1942-01-01",
+      "value": 3.6394
+    },
+    {
+      "date": "1947-01-01",
+      "value": 3.1734
+    },
+    {
+      "date": "1952-01-01",
+      "value": 2.121
+    },
+    {
+      "date": "1957-01-01",
+      "value": 1.7211
+    },
+    {
+      "date": "1962-01-01",
+      "value": 1.3335
+    },
+    {
+      "date": "1967-01-01",
+      "value": 1.3646
+    },
+    {
+      "date": "1972-01-01",
+      "value": 1.5048
+    },
+    {
+      "date": "1977-01-01",
+      "value": 2.066
+    },
+    {
+      "date": "1982-01-01",
+      "value": 1.9682
+    },
+    {
+      "date": "1987-01-01",
+      "value": 2.4974
+    },
+    {
+      "date": "1992-01-01",
+      "value": 2.3113573
+    },
+    {
+      "date": "1997-01-01",
+      "value": 2.5828714
+    },
+    {
+      "date": "2002-01-01",
+      "value": 4.0544
+    },
+    {
+      "date": "2007-01-01",
+      "value": 4.8286285
+    },
+    {
+      "date": "2012-01-01",
+      "value": 4.3391285
+    },
+    {
+      "date": "2017-01-01",
+      "value": 3.9037285
+    }
+  ]
+}

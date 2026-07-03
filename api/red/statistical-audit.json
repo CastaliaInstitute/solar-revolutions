@@ -1,0 +1,195 @@
+{
+  "generated_at": "2026-07-03T13:44:49+00:00",
+  "scientific_evidence_grade": "Exploratory / non-confirmatory",
+  "review_quality_grade": "Critical statistical review complete",
+  "overall_grade": "Scientific evidence: exploratory / non-confirmatory. Critical review checks complete.",
+  "current_verdict": "The solar-influence hypothesis is not confirmed. The analysis documents a robust high-specificity classification fact, weak sensitivity, weak null-model support, no identified global-SILSO year-FE causal estimate, non-confirmatory country-varying exposure tests, and no out-of-sample onset-prediction gain from solar exposure. Overall onset prediction changes after adding solar: delta AUC=-0.010162936594262595, delta log-loss=0.5292796652084675. Vulnerable-country onset prediction changes: delta AUC=-0.010397379290699282, delta log-loss=0.18425186240661884, shifted-exposure placebo p=0.5283018867924528.",
+  "hypothesis_verdict": "Do not reject the skeptical null standard for causal solar influence on revolutions.",
+  "review_readiness_counts": {
+    "documented": 25,
+    "needs_attention": 0,
+    "missing": 0
+  },
+  "gate_counts": {
+    "pass": 25,
+    "warn": 0,
+    "fail": 0
+  },
+  "gates": [
+    {
+      "key": "red_reproducibility",
+      "label": "RED source ingest and annual reconstruction",
+      "status": "pass",
+      "evidence": "343 included RED episodes between 1900 and 2014; annual summary file: /api/red/annual-summary.json.",
+      "implication": "The paper-style RED annual comparison is reproducible from the local archive."
+    },
+    {
+      "key": "silso_input",
+      "label": "SILSO solar input available",
+      "status": "pass",
+      "evidence": "Catalog contains climate.solar_activity.",
+      "implication": "Solar activity can be aligned with RED; absence would block the replication."
+    },
+    {
+      "key": "broad_controls",
+      "label": "Broad historical and macro-financial controls available",
+      "status": "pass",
+      "evidence": "168 non-RED, non-SILSO catalog series are available for browsing/robustness screens.",
+      "implication": "The analysis can test whether the solar signal is fragile against more direct historical mechanisms."
+    },
+    {
+      "key": "debt_default_controls",
+      "label": "Sovereign-default and crisis controls available",
+      "status": "pass",
+      "evidence": "9 Reinhart-Rogoff/HBS controls, 5 JST controls, and 10 Shiller market/rate controls are cataloged.",
+      "implication": "Debt default, crisis, market, and interest-rate channels are no longer an unmodeled omission at the global annual level."
+    },
+    {
+      "key": "mobilization_and_physical_controls",
+      "label": "Mass protest and physical shock controls available",
+      "status": "pass",
+      "evidence": "4 mass-mobilization controls and 3 volcanic sulfate forcing controls are cataloged.",
+      "implication": "The page can compare solar activity with protest and physical-shock inputs, not only financial variables."
+    },
+    {
+      "key": "expanded_mechanism_and_outcome_targets",
+      "label": "V-Dem, NAVCO, WDI, and food/agriculture inputs available",
+      "status": "pass",
+      "evidence": "6 V-Dem regime/civil-society controls, 6 NAVCO resistance-event series, 11 World Bank WDI macro-development controls, and 6 food/agriculture stressor series are cataloged.",
+      "implication": "The next scientific question can be tested against stronger political-opportunity, mobilization, and political-economy alternatives instead of relying on RED/SILSO alone."
+    },
+    {
+      "key": "solar_incremental_value_screen",
+      "label": "Solar incremental value versus stronger alternatives screened",
+      "status": "pass",
+      "evidence": "RED episodes: SILSO r=0.20138791599212022, 26 non-solar controls stronger, solar delta R2 after top controls=0.02116154571498874. NAVCO events: SILSO r=-0.14832183768094137, 41 non-solar controls stronger, solar delta R2 after top controls=0.018425584425141195.",
+      "implication": "The broad science-review screen asks whether solar adds explanatory value beyond political-economy and mobilization alternatives; current values support caution rather than causal solar language."
+    },
+    {
+      "key": "exploratory_astrology_controls",
+      "label": "Exploratory astrological transit proxies available",
+      "status": "pass",
+      "evidence": "6 synthetic astrological transit proxy series are cataloged as low-confidence contextual inputs.",
+      "implication": "These are available for fun/browsing and multiple-comparison stress testing, not as confirmatory mechanisms."
+    },
+    {
+      "key": "red_geography",
+      "label": "RED geography exposed beyond global totals",
+      "status": "pass",
+      "evidence": "Region file: /api/red/annual-by-region.json; country file: /api/red/annual-by-country.json.",
+      "implication": "Country-year RED browsing is possible; this is necessary for panel diagnostics."
+    },
+    {
+      "key": "country_panel_diagnostic",
+      "label": "Country-year panel diagnostic generated",
+      "status": "pass",
+      "evidence": "159 countries, 115 years, 18285 country-years; dummy-FE event p\u22480.014071540193820953; within-country FE year-clustered p\u22480.06250834186996579.",
+      "implication": "The page now tests whether country-FE/trend panel estimates tell the same story as global annual correlations, using year-clustered uncertainty for the shared annual solar exposure."
+    },
+    {
+      "key": "identified_country_year_fe_exposure",
+      "label": "Identified country + year fixed-effect solar exposure",
+      "status": "pass",
+      "evidence": "159 countries and 18285 country-years use country-varying solar radiation geometry x geomagnetic coupling x SILSO exposure; event p\u22480.7611219244789675.",
+      "implication": "This directly addresses the main identification gap: country and year fixed effects can be included because exposure varies by country-year."
+    },
+    {
+      "key": "geographic_exposure_refinement",
+      "label": "Geomagnetic sensitivity and auroral-proximity exposure screen",
+      "status": "pass",
+      "evidence": "High-sensitivity stratum: countries=53, onsets=78, onset p=0.46291106306178154. Lower-sensitivity stratum: countries=129, onsets=253, onset p=0.8637529737563803. Exposure x high-sensitivity onset p=0.8219620586535878; auroral-proximity onset p=0.9186632549512836.",
+      "implication": "This tests the more geographically specific mechanism: if solar/geomagnetic effects matter, evidence should strengthen in high magnetic-latitude or auroral-proximity exposure screens."
+    },
+    {
+      "key": "nasa_power_surface_radiation_exposure",
+      "label": "NASA POWER surface-radiation robustness exposure",
+      "status": "pass",
+      "evidence": "159 countries and 4929 post-1984 country-years use NASA POWER ALLSKY_SFC_SW_DWN x geomagnetic coupling x SILSO exposure; event p\u22480.3869712383595091.",
+      "implication": "This checks whether the identified country+year FE result survives replacing latitude radiation geometry with observed/reanalysis surface shortwave radiation where POWER coverage exists."
+    },
+    {
+      "key": "controlled_country_year_fe_exposure",
+      "label": "Controlled country + year FE exposure screen",
+      "status": "pass",
+      "evidence": "6 V-Dem/WDI country-year controls are merged into the two-way FE event model. Geometry exposure: n=578, countries=68, beta=0.0010255124449423895, p=0.9515551513769613. NASA POWER exposure: n=578, beta=0.009494525323564035, p=0.5752918759263802.",
+      "implication": "This directly addresses the country-year control concern; current controlled estimates do not support robust causal solar language."
+    },
+    {
+      "key": "event_history_onset_prediction",
+      "label": "RED onset/event-history and out-of-sample prediction screen",
+      "status": "pass",
+      "evidence": "Onset risk set: 17950 country-years, 331 onsets, 9 active continuation years excluded. Controlled two-way FE onset p-values: geometry=0.9720610438455987, NASA POWER=0.6542646804102217. Out-of-sample geometry delta AUC=-0.010162936594262595, delta log-loss=0.5292796652084675, placebo p=0.25925925925925924. Vulnerable-country test: n=430, events=17, delta AUC=-0.010397379290699282, delta log-loss=0.18425186240661884, placebo p=0.5283018867924528. NASA POWER delta AUC=None.",
+      "implication": "This addresses the main event-history concern by modeling new revolution onset rather than active-year counts and asking whether solar exposure improves predictive validation beyond conventional controls."
+    },
+    {
+      "key": "revolution_type_heterogeneity",
+      "label": "RED revolution-type heterogeneity screen",
+      "status": "pass",
+      "evidence": "10 RED subtype onset screens were estimated from goal/form/outcome fields. Strongest unadjusted subtype=Civil-resistance revolutions; geometry p=0.20646531764133313; NASA POWER p=0.22249774296912517; onsets=10.",
+      "implication": "This tests whether any solar association is concentrated in theoretically distinct revolution types. Subtype findings remain exploratory because many subgroup tests are screened."
+    },
+    {
+      "key": "strengthened_mechanism_exploration",
+      "label": "Lag, vulnerability-interaction, quantile, and placebo-timing screens explored",
+      "status": "pass",
+      "evidence": "Geometry lag p-values=[0.9515551513769613, 0.9971337812546472, 0.9748982082153078, 0.8125552530569207]; NASA POWER lag p-values=[0.5752918759263802, 0.827832799099328, 0.8950381468776899, 0.9052464648707734]; best unadjusted interaction=control_wdi_gdp_growth with beta=-0.011492503064308511 and p=0.03677422208519254; geometry shifted-exposure null p=0.9391304347826087; NASA POWER shifted-exposure null p=0.6190476190476191.",
+      "implication": "The stronger-mechanism search found no robust lag or timing evidence. The GDP-growth interaction is exploratory and multiple-comparison vulnerable, so it is a candidate for preregistered follow-up rather than evidence of confirmation."
+    },
+    {
+      "key": "time_structured_null",
+      "label": "Time-structured null model included",
+      "status": "pass",
+      "evidence": "114 circular solar-year shifts; two-sided p=0.2.",
+      "implication": "This is stronger than naive independent-year p-values, though still not a causal identification strategy."
+    },
+    {
+      "key": "primary_specificity_endpoint",
+      "label": "Primary high-revolution specificity endpoint audited",
+      "status": "pass",
+      "evidence": "Exact solar-maximum/top-quartile RED endpoint specificity=0.9358974358974359; balanced accuracy=0.5355162855162855; first-half specificity=0.9302325581395349; second-half specificity=0.9428571428571428; leave-one-cycle-out specificity range=0.927536231884058 to 0.9436619718309859; TP/FP/FN/TN=5/5/32/73; permutation specificity p=0.1888111888111888; random-window specificity p=0.19880119880119881; circular specificity p=0.1826086956521739.",
+      "implication": "This supports a narrow descriptive classification result. It does not, by itself, establish prediction quality or causal influence."
+    },
+    {
+      "key": "preregistered_quantization_sensitivity",
+      "label": "Preregistered threshold grid and train/test quantization screen",
+      "status": "pass",
+      "evidence": "24 predeclared quantile/window rules are reported. First-half-selected rule: q=0.9, threshold=5.0, radius=1; held-out specificity=0.8181818181818182, sensitivity=0.2857142857142857, balanced accuracy=0.551948051948052. Fixed primary p75/exact held-out specificity=0.95, sensitivity=0.07894736842105263, balanced accuracy=0.5144736842105263.",
+      "implication": "This directly addresses threshold cherry-picking risk by showing the whole quantization grid and evaluating a threshold chosen on earlier years against later years."
+    },
+    {
+      "key": "shape_synchrony_diagnostics",
+      "label": "Visual overlay tested with shape-aware synchrony diagnostics",
+      "status": "pass",
+      "evidence": "5-year smoothed Pearson=0.1558000792039528; circular-shift p=0.46956521739130436; best lag=8y with r=0.2818857498735187; peak-distance null p=0.5344655344655345.",
+      "implication": "The graph overlay is now quantified with smoothed co-movement, lag search, peak proximity, phase counts, and event-study diagnostics; current values should be read as visual-context checks, not confirmatory synchrony."
+    },
+    {
+      "key": "monthly_timing_sensitivity",
+      "label": "Monthly RED onset timing and lagged SILSO screen",
+      "status": "pass",
+      "evidence": "343 RED episodes have known start months; strongest monthly lag=3 months with r=0.06143324426133216 and circular-shift p=0.289760348583878.",
+      "implication": "This addresses timing sensitivity beyond annual aggregation. Current monthly timing must beat circular-shift SILSO timing before annual overlays can be read as mechanistic evidence."
+    },
+    {
+      "key": "specification_registry",
+      "label": "Pre-analysis/specification registry published",
+      "status": "pass",
+      "evidence": "Registry declares primary outcome, exposure, nulls, robustness checks, controls, multiple-comparison policy, and causal-identification rule.",
+      "implication": "Readers can distinguish confirmatory requirements from exploratory browsing and post-hoc model selection."
+    },
+    {
+      "key": "year_fixed_effect_identification",
+      "label": "Global SILSO non-identification under country + year fixed effects documented",
+      "status": "pass",
+      "evidence": "Solar activity is identical for every country in a given year, so year fixed effects absorb all solar variation. The page therefore reports identified country-varying solar-exposure models instead of pretending plain global SILSO can be estimated with year fixed effects.",
+      "implication": "The review now treats the year-FE absorption problem as an explicit identification constraint and uses country-varying exposure as the estimable robustness design."
+    },
+    {
+      "key": "confirmatory_claim",
+      "label": "Causal/predictive claim appropriately constrained",
+      "status": "pass",
+      "evidence": "The implemented diagnostics still rely on observational annual alignment; remaining confounding and model-selection risk are material, so the page states exploratory association/stress test rather than causal confirmation.",
+      "implication": "This is a scientific limitation, not a positive result for the hypothesis: the public conclusion is limited to what the evidence can support."
+    }
+  ]
+}

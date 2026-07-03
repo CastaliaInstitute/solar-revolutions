@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-07-03T13:40:17+00:00",
+  "scope": "RED episode start months, 1900-2014, aligned to monthly SILSO sunspot numbers",
+  "coverage": {
+    "episodes_1900_2014_with_start_month": 343,
+    "episodes_1900_2014_missing_start_month": 0,
+    "months": 1380,
+    "monthly_onset_months": 291,
+    "total_monthly_onsets": 343
+  },
+  "monthly_lag_correlations": [
+    {
+      "lag_months": 0,
+      "exposure": "same-month SILSO",
+      "n_months": 1380,
+      "pearson_r": 0.05301516096119696,
+      "circular_shift_null": {
+        "shifts": 1379,
+        "p_two_sided": 0.35144927536231885,
+        "null_min": -0.09424204135646849,
+        "null_max": 0.1507689906567285,
+        "null_abs_median": 0.04104785124438246
+      }
+    },
+    {
+      "lag_months": 1,
+      "exposure": "mean SILSO over current and prior 1 months",
+      "n_months": 1379,
+      "pearson_r": 0.0568558900022998,
+      "circular_shift_null": {
+        "shifts": 1378,
+        "p_two_sided": 0.32777374909354606,
+        "null_min": -0.08827011770670005,
+        "null_max": 0.14636932701526031,
+        "null_abs_median": 0.041807108787002105
+      }
+    },
+    {
+      "lag_months": 3,
+      "exposure": "mean SILSO over current and prior 3 months",
+      "n_months": 1377,
+      "pearson_r": 0.06143324426133216,
+      "circular_shift_null": {
+        "shifts": 1376,
+        "p_two_sided": 0.289760348583878,
+        "null_min": -0.08794235656983573,
+        "null_max": 0.14182054434649255,
+        "null_abs_median": 0.043467031001855616
+      }
+    },
+    {
+      "lag_months": 6,
+      "exposure": "mean SILSO over current and prior 6 months",
+      "n_months": 1374,
+      "pearson_r": 0.05788636473360237,
+      "circular_shift_null": {
+        "shifts": 1373,
+        "p_two_sided": 0.3435225618631732,
+        "null_min": -0.08616918474510932,
+        "null_max": 0.14465072155273673,
+        "null_abs_median": 0.04402679716693544
+      }
+    },
+    {
+      "lag_months": 12,
+      "exposure": "mean SILSO over current and prior 12 months",
+      "n_months": 1368,
+      "pearson_r": 0.0495338714218145,
+      "circular_shift_null": {
+        "shifts": 1367,
+        "p_two_sided": 0.4502923976608187,
+        "null_min": -0.08610175792860691,
+        "null_max": 0.14488251502393149,
+        "null_abs_median": 0.044959403831579356
+      }
+    },
+    {
+      "lag_months": 24,
+      "exposure": "mean SILSO over current and prior 24 months",
+      "n_months": 1356,
+      "pearson_r": 0.029932857327730378,
+      "circular_shift_null": {
+        "shifts": 1355,
+        "p_two_sided": 0.6533923303834809,
+        "null_min": -0.09272032532685986,
+        "null_max": 0.14162641195469788,
+        "null_abs_median": 0.04569569683689527
+      }
+    }
+  ],
+  "calendar_month_distribution": [
+    {
+      "month": 1,
+      "onsets": 40,
+      "share_of_known_month_onsets": 0.11661807580174927
+    },
+    {
+      "month": 2,
+      "onsets": 29,
+      "share_of_known_month_onsets": 0.08454810495626822
+    },
+    {
+      "month": 3,
+      "onsets": 40,
+      "share_of_known_month_onsets": 0.11661807580174927
+    },
+    {
+      "month": 4,
+      "onsets": 31,
+      "share_of_known_month_onsets": 0.09037900874635568
+    },
+    {
+      "month": 5,
+      "onsets": 33,
+      "share_of_known_month_onsets": 0.09620991253644315
+    },
+    {
+      "month": 6,
+      "onsets": 32,
+      "share_of_known_month_onsets": 0.09329446064139942
+    },
+    {
+      "month": 7,
+      "onsets": 23,
+      "share_of_known_month_onsets": 0.06705539358600583
+    },
+    {
+      "month": 8,
+      "onsets": 22,
+      "share_of_known_month_onsets": 0.0641399416909621
+    },
+    {
+      "month": 9,
+      "onsets": 18,
+      "share_of_known_month_onsets": 0.052478134110787174
+    },
+    {
+      "month": 10,
+      "onsets": 23,
+      "share_of_known_month_onsets": 0.06705539358600583
+    },
+    {
+      "month": 11,
+      "onsets": 22,
+      "share_of_known_month_onsets": 0.0641399416909621
+    },
+    {
+      "month": 12,
+      "onsets": 30,
+      "share_of_known_month_onsets": 0.08746355685131195
+    }
+  ],
+  "interpretation": "Monthly timing is a sensitivity check for annual aggregation. A robust mechanism should show stronger same-month or lagged monthly association than circularly shifted SILSO timing; otherwise annual visual alignment is weak timing evidence."
+}

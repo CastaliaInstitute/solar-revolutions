@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-07-03T13:41:28+00:00",
+  "purpose": "Separate confirmatory scientific evidence requirements from exploratory browsing for the RED/SILSO solar-revolutions analysis.",
+  "verdict_rule": "The page may call the paper causally/predictively confirmed only if every confirmatory scientific requirement is favorable. If any confirmatory requirement is unfavorable or unestimated, the public conclusion must remain exploratory/stress-test language.",
+  "confirmatory_specification": {
+    "dataset": "RED 1.0 included revolutionary episodes, start years 1900-2014, aligned to annualized SILSO monthly mean total sunspot number.",
+    "primary_outcome": "RED annual episode count by start year.",
+    "secondary_outcomes": [
+      "RED participant proxy by start year",
+      "constructed RED activity index",
+      "country-year RED event indicator"
+    ],
+    "primary_solar_exposure": "Annual mean SILSO sunspot number.",
+    "primary_association_test": "Pearson correlation on aligned annual global series, reported with Fisher interval and effective-sample-size caveat.",
+    "required_nulls": [
+      "Permutation null for random annual overlap",
+      "Circular-shift null preserving temporal clustering"
+    ],
+    "required_robustness": [
+      "RED measure sensitivity across episode count, participant proxy, and activity index",
+      "Transform sensitivity across raw, log1p, winsor95, and log1p+winsor95",
+      "Event-window sensitivity across +/-1, +/-2, and +/-3 years",
+      "Threshold sensitivity across any-event, top-quartile, and z-score definitions",
+      "One-control and multivariate global annual controls",
+      "RED world-region leave-one-out robustness",
+      "Country-panel diagnostic with explicit fixed-effect identification warning"
+    ],
+    "required_controls": [
+      "Shiller market, inflation, and long-rate controls",
+      "JST financial crisis, public-debt, private-credit, and short-rate controls",
+      "Reinhart-Rogoff/HBS sovereign default and crisis controls",
+      "OWID conflict, food-price, regime, demographic, communications, capital-flow, and disaster controls",
+      "Mass Mobilization protest controls",
+      "Physical volcanic sulfate forcing controls"
+    ],
+    "multiple_comparison_policy": [
+      "Broad input scans must report Benjamini-Hochberg q-values.",
+      "Specification curves must report support rate, not only the strongest cherry-picked model.",
+      "Lag correlations are exploratory unless separately pre-registered and multiplicity-adjusted."
+    ],
+    "causal_identification_rule": "A country + year fixed-effects model cannot estimate a SILSO coefficient because SILSO is global and varies only by year. Therefore country-panel diagnostics cannot rescue a causal claim unless a geographically varying exposure or independent identification design is added.",
+    "causal_pathway": [
+      {
+        "step": "Solar forcing",
+        "claim": "SILSO solar activity or solar-cycle phase changes the relevant geophysical environment.",
+        "required_evidence": "Monthly and annual SILSO variation must show timing structure stronger than circular-shift placebo timing."
+      },
+      {
+        "step": "Local exposure",
+        "claim": "The global solar signal translates into country-varying radiation, geomagnetic, or auroral-proximity exposure.",
+        "required_evidence": "Country-specific geometry, NASA POWER radiation, magnetic-latitude, or auroral-proximity exposure must remain estimable with country and year fixed effects."
+      },
+      {
+        "step": "Intermediate stress",
+        "claim": "Exposure affects plausible mediators such as food stress, conflict, communications, institutional instability, or macroeconomic stress.",
+        "required_evidence": "Solar variables should predict intermediary datasets or interact with vulnerability measures in predeclared directions."
+      },
+      {
+        "step": "Revolution onset",
+        "claim": "Exposure increases new revolutionary onset in at-risk country-years, not merely active-year counts or visual annual overlays.",
+        "required_evidence": "Country-year onset/event-history models must show a stable positive exposure effect after political-economy, conflict, food/agriculture, and fixed-effect controls."
+      },
+      {
+        "step": "Predictive validation",
+        "claim": "Solar exposure adds useful signal beyond conventional predictors.",
+        "required_evidence": "Out-of-sample AUC, Brier score, log loss, and calibration must improve versus controls-only baselines and shifted-exposure placebo cycles."
+      }
+    ]
+  },
+  "exploratory_features": [
+    {
+      "feature": "Interactive RED measure, transform, threshold, and event-window controls",
+      "status": "exploratory",
+      "reason": "Useful for robustness browsing, but post-hoc selection would inflate evidence."
+    },
+    {
+      "feature": "Solar correlation browser across all input datasets",
+      "status": "exploratory with FDR q-values",
+      "reason": "Broad scans are hypothesis-generating and must be interpreted with multiple-comparison corrections."
+    },
+    {
+      "feature": "Lag +/-1 and +/-2 correlations",
+      "status": "exploratory",
+      "reason": "Lag choice is not a pre-registered primary endpoint."
+    },
+    {
+      "feature": "Solar widget/current solar weather",
+      "status": "contextual",
+      "reason": "Current solar weather is not evidence for historical RED/SILSO association."
+    },
+    {
+      "feature": "Astrological transit proxy inputs",
+      "status": "exploratory/contextual",
+      "reason": "Approximate orbital-period aspect proxies are included for playful comparison and broad browsing, not confirmatory inference."
+    }
+  ],
+  "known_failure_modes": [
+    "Autocorrelation reduces effective independent years.",
+    "Solar cycle maxima recur often, so wide event windows can inflate apparent hit rates.",
+    "RED participant estimates are heavy-tailed and historically uncertain.",
+    "RED measures are mechanically related and are not independent validation.",
+    "Global annual controls cannot fully address country-specific political mechanisms.",
+    "A global solar exposure is collinear with year fixed effects in country-year panel models.",
+    "Astrological transit proxies add many low-prior exploratory comparisons and must not be treated as pre-registered mechanisms."
+  ]
+}
