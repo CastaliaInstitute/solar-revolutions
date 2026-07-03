@@ -14,6 +14,7 @@ This repository separates three scopes:
 - Revolutions Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb>
 - Solar-inflation mechanisms Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_inflation_mechanisms_colab.ipynb>
 - Astrology-input correlation Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/astrology_input_correlations_colab.ipynb>
+- All-vs-all input correlation Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/all_vs_all_input_correlations_colab.ipynb>
 - Data artifacts: [`api/`](api/)
 
 ## Key data files
@@ -46,3 +47,8 @@ The `astrology_input_correlations_colab.ipynb` notebook answers whether catalog 
 
 
 Current astrology-correlation readout: 528 same-year pairs were screened. The strongest raw pair was Uranus-Pluto hard-aspect proximity vs NAVCO injury proxy (`r=0.637`, `n=23`), but it did not beat its own circular-shift placebo at `p<0.05`. Seven of the top 25 raw pairs did beat circular-shift placebo; these are exploratory candidates only.
+
+
+## All-vs-all correlation screen
+
+The `all_vs_all_input_correlations_colab.ipynb` notebook computes pairwise correlations across all usable input series. Current run: 93 usable annual series and 4,030 same-year pairs. The raw leaders are mostly duplicate or same-construct measurements, so the notebook includes a deduplicated cross-module view for discovery.
