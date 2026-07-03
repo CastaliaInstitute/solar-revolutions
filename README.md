@@ -51,4 +51,4 @@ Current astrology-correlation readout: 528 same-year pairs were screened. The st
 
 ## All-vs-all correlation screen
 
-The `all_vs_all_input_correlations_colab.ipynb` notebook computes pairwise correlations across all usable input series. Current run: 93 usable annual series and 4,030 same-year pairs. The raw leaders are mostly duplicate or same-construct measurements, so the notebook includes a deduplicated cross-module view for discovery.
+The `all_vs_all_input_correlations_colab.ipynb` notebook computes pairwise correlations across all usable input series. Current run: 93 usable annual series and 4,030 same-year pairs. The raw leaders are mostly duplicate or same-construct measurements, and deduped level correlations are still dominated by broad modernization trends. The notebook now includes both a deduplicated cross-module view and a first-difference view for year-to-year co-movement discovery.
