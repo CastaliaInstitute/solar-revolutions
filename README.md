@@ -22,7 +22,12 @@ This repository separates three scopes:
 - `api/red/solar-shape-synchrony.json`: RED/SILSO shape, lag, phase, and event-study diagnostics.
 - `api/red/country-panel-solar-model.json`: country-year exposure and fixed-effect diagnostics.
 - `api/red/science-review-comparative-evidence.json`: expanded-input comparison against alternative predictors.
+- `api/red/pca-ml-prediction.json`: PCA/ridge screens for all-input RED prediction and SILSO predicting each non-solar input.
 
 ## Current conclusion
 
 The paper-style RED/SILSO relationship is reproducible and browsable, and the narrow exact-solar-maximum rule has high specificity. It is not sufficient evidence of causal solar influence or operational prediction. Stronger country-year and expanded-input tests remain exploratory / non-confirmatory.
+
+## Exploratory SILSO-to-input finding
+
+In the current one-predictor screen, SILSO solar activity most usefully predicts Shiller annual inflation among the displayed inputs: held-out `r ≈ +0.501`, held-out `R² ≈ +0.234`, and same-year `r ≈ +0.274`. This is a mechanism/confounding candidate, not causal proof. It should be followed up with lag tests, inflation controls in revolution models, placebo cycles, and non-U.S. price series before it is used to support the solar-revolution hypothesis.

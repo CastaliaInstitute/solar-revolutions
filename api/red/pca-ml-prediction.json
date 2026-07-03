@@ -1,0 +1,2330 @@
+{
+  "generated_at": "2026-07-03T14:39:57+00:00",
+  "scope": "Extended follow-on research: annual RED episode counts predicted from all available annual input series except direct revolution outcomes.",
+  "method": "Chronological 70/30 train/test split over 1900-2014. Inputs are annualized, standardized on the training period, mean-imputed after standardization, decomposed by PCA, and evaluated with ridge baselines. This is predictive screening, not causal identification.",
+  "outcome": {
+    "id": "red_episodes",
+    "label": "RED annual episode count",
+    "years": {
+      "start": 1900,
+      "end": 2014,
+      "n": 115
+    }
+  },
+  "features": {
+    "candidate_series": 90,
+    "retained_series": 55,
+    "minimum_train_coverage": 0.25
+  },
+  "split": {
+    "train": {
+      "start": 1900,
+      "end": 1979,
+      "n": 80
+    },
+    "test": {
+      "start": 1980,
+      "end": 2014,
+      "n": 35
+    },
+    "high_outcome_threshold_from_train": 4.0,
+    "high_revolution_threshold_from_train": 4.0
+  },
+  "models": [
+    {
+      "id": "mean_only",
+      "label": "mean only",
+      "regression": {
+        "rmse": 2.8361033378311773,
+        "mae": 1.8721428571428569,
+        "r2": -0.28699916731975006,
+        "pearson": 5.075388119585239e-18
+      },
+      "high_outcome_classification": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 14,
+        "TN": 21,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "high_revolution_classification": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 14,
+        "TN": 21,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      }
+    },
+    {
+      "id": "all_inputs_ridge",
+      "label": "all inputs ridge",
+      "regression": {
+        "rmse": 4.353015846153522,
+        "mae": 3.8193499267889046,
+        "r2": -2.031898513865987,
+        "pearson": -0.08880098758737837
+      },
+      "high_outcome_classification": {
+        "TP": 11,
+        "FP": 15,
+        "FN": 3,
+        "TN": 6,
+        "sensitivity": 0.7857142857142857,
+        "specificity": 0.2857142857142857,
+        "balanced_accuracy": 0.5357142857142857
+      },
+      "high_revolution_classification": {
+        "TP": 11,
+        "FP": 15,
+        "FN": 3,
+        "TN": 6,
+        "sensitivity": 0.7857142857142857,
+        "specificity": 0.2857142857142857,
+        "balanced_accuracy": 0.5357142857142857
+      }
+    },
+    {
+      "id": "pca_5_ridge",
+      "label": "pca 5 ridge",
+      "regression": {
+        "rmse": 2.611949285960351,
+        "mae": 1.9537049450355823,
+        "r2": -0.0916002956798938,
+        "pearson": -0.019968345222906615
+      },
+      "high_outcome_classification": {
+        "TP": 6,
+        "FP": 9,
+        "FN": 8,
+        "TN": 12,
+        "sensitivity": 0.42857142857142855,
+        "specificity": 0.5714285714285714,
+        "balanced_accuracy": 0.5
+      },
+      "high_revolution_classification": {
+        "TP": 6,
+        "FP": 9,
+        "FN": 8,
+        "TN": 12,
+        "sensitivity": 0.42857142857142855,
+        "specificity": 0.5714285714285714,
+        "balanced_accuracy": 0.5
+      }
+    },
+    {
+      "id": "pca_10_ridge",
+      "label": "pca 10 ridge",
+      "regression": {
+        "rmse": 3.1312119644416927,
+        "mae": 2.202869185351874,
+        "r2": -0.56876936372413,
+        "pearson": 0.003127796871083104
+      },
+      "high_outcome_classification": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 13,
+        "TN": 21,
+        "sensitivity": 0.07142857142857142,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5357142857142857
+      },
+      "high_revolution_classification": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 13,
+        "TN": 21,
+        "sensitivity": 0.07142857142857142,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5357142857142857
+      }
+    },
+    {
+      "id": "solar_only_ridge",
+      "label": "solar only ridge",
+      "regression": {
+        "rmse": 2.7784335528738446,
+        "mae": 1.8407655690516322,
+        "r2": -0.23519121401196363,
+        "pearson": 0.3681114083474868
+      },
+      "high_outcome_classification": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 14,
+        "TN": 21,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      },
+      "high_revolution_classification": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 14,
+        "TN": 21,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.5
+      }
+    }
+  ],
+  "pca": {
+    "components": [
+      {
+        "component": 1,
+        "explained_variance_ratio": 0.3249895710882354,
+        "cumulative_explained_variance_ratio": 0.3249895710882354,
+        "top_loadings": [
+          {
+            "id": "market.shiller_sp_composite",
+            "name": "Shiller S&P composite price",
+            "loading": -0.2414219994590882,
+            "abs_loading": 0.2414219994590882
+          },
+          {
+            "id": "market.shiller_dividend",
+            "name": "Shiller S&P composite dividend",
+            "loading": -0.2379796286517278,
+            "abs_loading": 0.2379796286517278
+          },
+          {
+            "id": "climate.co2_per_capita",
+            "name": "Per-capita CO\u2082 emissions",
+            "loading": -0.23713748745364738,
+            "abs_loading": 0.23713748745364738
+          },
+          {
+            "id": "climate.co2_total",
+            "name": "Annual CO\u2082 emissions",
+            "loading": -0.23698630356936246,
+            "abs_loading": 0.23698630356936246
+          },
+          {
+            "id": "market.shiller_real_total_return_price",
+            "name": "Shiller real total return stock price",
+            "loading": -0.23557976781771492,
+            "abs_loading": 0.23557976781771492
+          },
+          {
+            "id": "regime.civil_society_participation_vdem",
+            "name": "Civil society participation index",
+            "loading": -0.23153327068245666,
+            "abs_loading": 0.23153327068245666
+          },
+          {
+            "id": "regime.participatory_democracy_vdem",
+            "name": "Participatory democracy index",
+            "loading": -0.2305055092038667,
+            "abs_loading": 0.2305055092038667
+          },
+          {
+            "id": "market.shiller_earnings",
+            "name": "Shiller S&P composite earnings",
+            "loading": -0.22917267470579997,
+            "abs_loading": 0.22917267470579997
+          },
+          {
+            "id": "regime.electoral_democracy_vdem",
+            "name": "Electoral democracy index",
+            "loading": -0.22886247008765373,
+            "abs_loading": 0.22886247008765373
+          },
+          {
+            "id": "regime.liberal_democracy_vdem",
+            "name": "Liberal democracy index",
+            "loading": -0.22625490969271086,
+            "abs_loading": 0.22625490969271086
+          },
+          {
+            "id": "inflation.shiller_cpi",
+            "name": "Shiller consumer price index",
+            "loading": -0.2257984955146871,
+            "abs_loading": 0.2257984955146871
+          },
+          {
+            "id": "regime.democracy_lexical_mean",
+            "name": "Mean lexical democracy indicator",
+            "loading": -0.21514273306077392,
+            "abs_loading": 0.21514273306077392
+          }
+        ]
+      },
+      {
+        "component": 2,
+        "explained_variance_ratio": 0.1343359500342815,
+        "cumulative_explained_variance_ratio": 0.4593255211225169,
+        "top_loadings": [
+          {
+            "id": "finance.rr_gdp_weighted_default_mean",
+            "name": "Reinhart-Rogoff GDP-weighted sovereign default intensity",
+            "loading": 0.3369019097616484,
+            "abs_loading": 0.3369019097616484
+          },
+          {
+            "id": "finance.rr_domestic_debt_default_count",
+            "name": "Reinhart-Rogoff domestic debt default country count",
+            "loading": 0.3237209326050859,
+            "abs_loading": 0.3237209326050859
+          },
+          {
+            "id": "finance.rr_domestic_debt_default_share",
+            "name": "Reinhart-Rogoff domestic debt default country share",
+            "loading": 0.3237209326050859,
+            "abs_loading": 0.3237209326050859
+          },
+          {
+            "id": "market.shiller_real_drawdown",
+            "name": "Shiller real stock-market drawdown",
+            "loading": 0.2900540247375075,
+            "abs_loading": 0.2900540247375075
+          },
+          {
+            "id": "finance.rr_external_debt_default_incl_official_count",
+            "name": "Reinhart-Rogoff external debt default count, including post-1975 official creditors",
+            "loading": 0.27964018509581506,
+            "abs_loading": 0.27964018509581506
+          },
+          {
+            "id": "finance.rr_external_debt_default_ex_official_count",
+            "name": "Reinhart-Rogoff external debt default count, excluding post-1975 official creditors",
+            "loading": 0.2782644672419847,
+            "abs_loading": 0.2782644672419847
+          },
+          {
+            "id": "climate.temperature_anomaly",
+            "name": "Global temperature anomaly",
+            "loading": 0.24736947734313264,
+            "abs_loading": 0.24736947734313264
+          },
+          {
+            "id": "finance.rr_inflation_crisis_count",
+            "name": "Reinhart-Rogoff inflation crisis country count",
+            "loading": 0.24318863084571796,
+            "abs_loading": 0.24318863084571796
+          },
+          {
+            "id": "finance.rr_currency_crisis_count",
+            "name": "Reinhart-Rogoff currency crisis country count",
+            "loading": 0.23082616666947153,
+            "abs_loading": 0.23082616666947153
+          },
+          {
+            "id": "finance.jst_public_debt_gdp_mean",
+            "name": "JST mean public debt-to-GDP",
+            "loading": 0.1986975157812359,
+            "abs_loading": 0.1986975157812359
+          },
+          {
+            "id": "market.shiller_cape",
+            "name": "Shiller cyclically adjusted P/E",
+            "loading": -0.16144320178145308,
+            "abs_loading": 0.16144320178145308
+          },
+          {
+            "id": "regime.democracy_polity_mean",
+            "name": "Mean polity democracy indicator",
+            "loading": -0.15913538377573114,
+            "abs_loading": 0.15913538377573114
+          }
+        ]
+      },
+      {
+        "component": 3,
+        "explained_variance_ratio": 0.10718268303111154,
+        "cumulative_explained_variance_ratio": 0.5665082041536285,
+        "top_loadings": [
+          {
+            "id": "finance.rr_banking_crisis_count",
+            "name": "Reinhart-Rogoff banking crisis country count",
+            "loading": 0.3589425157478905,
+            "abs_loading": 0.3589425157478905
+          },
+          {
+            "id": "finance.rr_systemic_crisis_count",
+            "name": "Reinhart-Rogoff systemic crisis country count",
+            "loading": 0.33584132876013495,
+            "abs_loading": 0.33584132876013495
+          },
+          {
+            "id": "finance.jst_systemic_financial_crisis_count",
+            "name": "JST systemic financial crisis country count",
+            "loading": 0.3210878651160166,
+            "abs_loading": 0.3210878651160166
+          },
+          {
+            "id": "finance.jst_systemic_financial_crisis_share",
+            "name": "JST systemic financial crisis country share",
+            "loading": 0.31973546162885347,
+            "abs_loading": 0.31973546162885347
+          },
+          {
+            "id": "food.long_term_food_price_index",
+            "name": "Long-term global food commodity price index",
+            "loading": -0.25625488185083,
+            "abs_loading": 0.25625488185083
+          },
+          {
+            "id": "finance.jst_private_credit_gdp_mean",
+            "name": "JST mean private credit-to-GDP proxy",
+            "loading": 0.2447423748601008,
+            "abs_loading": 0.2447423748601008
+          },
+          {
+            "id": "finance.jst_short_rate_mean",
+            "name": "JST mean short-term interest rate",
+            "loading": 0.23225351943428227,
+            "abs_loading": 0.23225351943428227
+          },
+          {
+            "id": "astrology.outer_planet_hard_aspect_stack",
+            "name": "Astrological proxy: outer-planet hard-aspect stack",
+            "loading": 0.22091682424014453,
+            "abs_loading": 0.22091682424014453
+          },
+          {
+            "id": "rates.shiller_long_rate_gs10",
+            "name": "Shiller long interest rate GS10",
+            "loading": 0.18765238014336796,
+            "abs_loading": 0.18765238014336796
+          },
+          {
+            "id": "market.shiller_cape",
+            "name": "Shiller cyclically adjusted P/E",
+            "loading": -0.1820855184359343,
+            "abs_loading": 0.1820855184359343
+          },
+          {
+            "id": "rates.shiller_real_long_rate",
+            "name": "Shiller real long interest rate proxy",
+            "loading": 0.1457531022674378,
+            "abs_loading": 0.1457531022674378
+          },
+          {
+            "id": "market.shiller_real_drawdown",
+            "name": "Shiller real stock-market drawdown",
+            "loading": 0.1453628205758942,
+            "abs_loading": 0.1453628205758942
+          }
+        ]
+      },
+      {
+        "component": 4,
+        "explained_variance_ratio": 0.08042946932134507,
+        "cumulative_explained_variance_ratio": 0.6469376734749736,
+        "top_loadings": [
+          {
+            "id": "inflation.shiller_annual_pct",
+            "name": "Shiller CPI inflation rate",
+            "loading": -0.39214476988075353,
+            "abs_loading": 0.39214476988075353
+          },
+          {
+            "id": "rates.shiller_real_long_rate",
+            "name": "Shiller real long interest rate proxy",
+            "loading": 0.3685753626200088,
+            "abs_loading": 0.3685753626200088
+          },
+          {
+            "id": "astrology.uranus_pluto_hard_aspect_proximity",
+            "name": "Astrological proxy: Uranus-Pluto hard-aspect proximity",
+            "loading": -0.25601634114585137,
+            "abs_loading": 0.25601634114585137
+          },
+          {
+            "id": "finance.rr_inflation_crisis_count",
+            "name": "Reinhart-Rogoff inflation crisis country count",
+            "loading": -0.23630438221256608,
+            "abs_loading": 0.23630438221256608
+          },
+          {
+            "id": "market.shiller_cape",
+            "name": "Shiller cyclically adjusted P/E",
+            "loading": 0.2117350960633863,
+            "abs_loading": 0.2117350960633863
+          },
+          {
+            "id": "finance.rr_systemic_crisis_count",
+            "name": "Reinhart-Rogoff systemic crisis country count",
+            "loading": 0.1950603757936238,
+            "abs_loading": 0.1950603757936238
+          },
+          {
+            "id": "finance.jst_systemic_financial_crisis_count",
+            "name": "JST systemic financial crisis country count",
+            "loading": 0.1865144617400123,
+            "abs_loading": 0.1865144617400123
+          },
+          {
+            "id": "finance.jst_systemic_financial_crisis_share",
+            "name": "JST systemic financial crisis country share",
+            "loading": 0.18472169081606762,
+            "abs_loading": 0.18472169081606762
+          },
+          {
+            "id": "regime.democracy_lexical_mean",
+            "name": "Mean lexical democracy indicator",
+            "loading": 0.15553851068919328,
+            "abs_loading": 0.15553851068919328
+          },
+          {
+            "id": "finance.rr_banking_crisis_count",
+            "name": "Reinhart-Rogoff banking crisis country count",
+            "loading": 0.155311014028416,
+            "abs_loading": 0.155311014028416
+          },
+          {
+            "id": "regime.political_corruption_vdem",
+            "name": "Political corruption index",
+            "loading": -0.155268018330256,
+            "abs_loading": 0.155268018330256
+          },
+          {
+            "id": "climate.temperature_anomaly",
+            "name": "Global temperature anomaly",
+            "loading": 0.15372799563365674,
+            "abs_loading": 0.15372799563365674
+          }
+        ]
+      },
+      {
+        "component": 5,
+        "explained_variance_ratio": 0.047382111951479206,
+        "cumulative_explained_variance_ratio": 0.6943197854264528,
+        "top_loadings": [
+          {
+            "id": "hazard.volcanic_sulfate_injection_global",
+            "name": "Global stratospheric volcanic sulfate injection",
+            "loading": -0.6178260547083504,
+            "abs_loading": 0.6178260547083504
+          },
+          {
+            "id": "hazard.volcanic_sulfate_injection_nh",
+            "name": "Northern Hemisphere volcanic sulfate injection",
+            "loading": -0.5496441847896493,
+            "abs_loading": 0.5496441847896493
+          },
+          {
+            "id": "hazard.volcanic_sulfate_injection_sh",
+            "name": "Southern Hemisphere volcanic sulfate injection",
+            "loading": -0.4253756037383506,
+            "abs_loading": 0.4253756037383506
+          },
+          {
+            "id": "climate.solar_activity",
+            "name": "Solar activity (monthly mean total sunspot number)",
+            "loading": 0.23718584393010544,
+            "abs_loading": 0.23718584393010544
+          },
+          {
+            "id": "astrology.mars_jupiter_hard_aspect_proximity",
+            "name": "Astrological proxy: Mars-Jupiter hard-aspect proximity",
+            "loading": 0.13343855648121028,
+            "abs_loading": 0.13343855648121028
+          },
+          {
+            "id": "market.shiller_real_return_annual",
+            "name": "Shiller real stock return",
+            "loading": -0.10869753594577902,
+            "abs_loading": 0.10869753594577902
+          },
+          {
+            "id": "astrology.jupiter_saturn_square_proximity",
+            "name": "Astrological proxy: Jupiter-Saturn square/opposition proximity",
+            "loading": 0.10305978927259496,
+            "abs_loading": 0.10305978927259496
+          },
+          {
+            "id": "astrology.uranus_pluto_hard_aspect_proximity",
+            "name": "Astrological proxy: Uranus-Pluto hard-aspect proximity",
+            "loading": -0.08622465975651385,
+            "abs_loading": 0.08622465975651385
+          },
+          {
+            "id": "market.shiller_cape",
+            "name": "Shiller cyclically adjusted P/E",
+            "loading": 0.0589142322519042,
+            "abs_loading": 0.0589142322519042
+          },
+          {
+            "id": "astrology.saturn_uranus_hard_aspect_proximity",
+            "name": "Astrological proxy: Saturn-Uranus hard-aspect proximity",
+            "loading": -0.050875584320265045,
+            "abs_loading": 0.050875584320265045
+          },
+          {
+            "id": "market.shiller_real_drawdown",
+            "name": "Shiller real stock-market drawdown",
+            "loading": -0.04847206584714942,
+            "abs_loading": 0.04847206584714942
+          },
+          {
+            "id": "finance.jst_private_credit_gdp_mean",
+            "name": "JST mean private credit-to-GDP proxy",
+            "loading": -0.046887456695924416,
+            "abs_loading": 0.046887456695924416
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "If all-input or PCA models do not beat mean-only and solar-only baselines out of sample, expanded inputs are not yet operationally predictive. If they do, the result identifies predictive structure to investigate, not causal proof.",
+  "silso_predicts_inputs": {
+    "scope": "Extended follow-on research: SILSO solar activity used as the sole predictor for each available non-solar, non-revolution input series.",
+    "method": "Each input is treated as a separate annual outcome. SILSO is standardized on the training period and fit with one-variable ridge regression using a chronological 70/30 split over 1900-2014 where enough overlap exists. Rankings are exploratory and mostly diagnose shared cycles or spurious time structure, not causal influence.",
+    "predictor": {
+      "id": "climate.solar_activity",
+      "label": "Annualized SILSO solar activity"
+    },
+    "split": {
+      "train": {
+        "start": 1900,
+        "end": 1979,
+        "n": 80
+      },
+      "test": {
+        "start": 1980,
+        "end": 2014,
+        "n": 35
+      }
+    },
+    "features": {
+      "candidate_series": 64,
+      "ranked_series": 64
+    },
+    "ranked_outcomes": [
+      {
+        "id": "inflation.shiller_annual_pct",
+        "name": "Shiller CPI inflation rate",
+        "module_id": "APOC.Market",
+        "source": "Derived from Robert J. Shiller CPI",
+        "unit": "percent year-over-year",
+        "overlap": {
+          "n": 115,
+          "r": 0.274174714003787
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1.9594436300043032,
+          "mae": 1.5087780947722151,
+          "r2": 0.23358225384204268,
+          "pearson": 0.501394857301199
+        },
+        "mean_only": {
+          "rmse": 2.249806479005547,
+          "mae": 1.3855274274866558,
+          "r2": -0.010393003545093649,
+          "pearson": 1.3605465973422572e-16
+        },
+        "delta_r2_vs_mean": 0.24397525738713632,
+        "score": 0.501394857301199
+      },
+      {
+        "id": "astrology.jupiter_saturn_conjunction_proximity",
+        "name": "Astrological proxy: Jupiter-Saturn conjunction proximity",
+        "module_id": "APOC.Context",
+        "source": "Approximate orbital-period astrological transit proxies generated by Apocalypso",
+        "unit": "0-1 proximity score",
+        "overlap": {
+          "n": 115,
+          "r": -0.02230416549539383
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.10304235887510689,
+          "mae": 0.062380987199077115,
+          "r2": -0.2713743235273056,
+          "pearson": -0.4474689702983242
+        },
+        "mean_only": {
+          "rmse": 0.09183192584839132,
+          "mae": 0.05650799035714286,
+          "r2": -0.009785746994845024,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.2615885765324606,
+        "score": 0.4474689702983242
+      },
+      {
+        "id": "finance.jst_short_rate_mean",
+        "name": "JST mean short-term interest rate",
+        "module_id": "APOC.Market",
+        "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+        "unit": "percent/year",
+        "overlap": {
+          "n": 115,
+          "r": 0.18510651998119018
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 4.331811910389889,
+          "mae": 3.545730147429239,
+          "r2": -0.13913431550525224,
+          "pearson": -0.4230253693317142
+        },
+        "mean_only": {
+          "rmse": 4.306237488270687,
+          "mae": 3.5318746545048447,
+          "r2": -0.12572343585379198,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.013410879651460261,
+        "score": 0.4230253693317142
+      },
+      {
+        "id": "finance.jst_public_debt_gdp_mean",
+        "name": "JST mean public debt-to-GDP",
+        "module_id": "APOC.Market",
+        "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+        "unit": "mean debt/GDP ratio",
+        "overlap": {
+          "n": 115,
+          "r": -0.08060315490238135
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.16374162516406068,
+          "mae": 0.1340353017552836,
+          "r2": -0.90240936153577,
+          "pearson": -0.4091797999176455
+        },
+        "mean_only": {
+          "rmse": 0.16360516465163688,
+          "mae": 0.133927250620204,
+          "r2": -0.8992397877567948,
+          "pearson": -3.2063898286549696e-16
+        },
+        "delta_r2_vs_mean": -0.0031695737789751988,
+        "score": 0.4091797999176455
+      },
+      {
+        "id": "rates.shiller_long_rate_gs10",
+        "name": "Shiller long interest rate GS10",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "percent",
+        "overlap": {
+          "n": 115,
+          "r": 0.161405416281588
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 4.0428599218246335,
+          "mae": 3.033607855703836,
+          "r2": -0.6562032373817013,
+          "pearson": 0.36378483193388117
+        },
+        "mean_only": {
+          "rmse": 4.044528547007302,
+          "mae": 3.0348265624999997,
+          "r2": -0.6575706618262698,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.001367424444568499,
+        "score": 0.36378483193388117
+      },
+      {
+        "id": "inflation.shiller_cpi",
+        "name": "Shiller consumer price index",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "CPI index",
+        "overlap": {
+          "n": 115,
+          "r": -0.006487355142064228
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 145.2674762448521,
+          "mae": 137.72302559267652,
+          "r2": -9.324816676664542,
+          "pearson": -0.3543038926682708
+        },
+        "mean_only": {
+          "rmse": 145.16951072902262,
+          "mae": 137.95039457712605,
+          "r2": -9.31089566753022,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.013921009134321594,
+        "score": 0.3543038926682708
+      },
+      {
+        "id": "agriculture.output_constant_usd",
+        "name": "Agricultural output",
+        "module_id": "APOC.State",
+        "source": "FAO / Our World in Data",
+        "unit": "constant 2015 US$",
+        "overlap": {
+          "n": 54,
+          "r": -0.13361688018202406
+        },
+        "train_n": 19,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1628421611003.1812,
+          "mae": 1427360766399.4954,
+          "r2": -3.4898189313965275,
+          "pearson": -0.35343032950844194
+        },
+        "mean_only": {
+          "rmse": 1626035583442.5256,
+          "mae": 1432960625421.053,
+          "r2": -3.476671251202908,
+          "pearson": 0.0
+        },
+        "delta_r2_vs_mean": -0.01314768019361967,
+        "score": 0.35343032950844194
+      },
+      {
+        "id": "finance.rr_inflation_crisis_count",
+        "name": "Reinhart-Rogoff inflation crisis country count",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in inflation crisis",
+        "overlap": {
+          "n": 115,
+          "r": 0.23078126666797427
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 9.448869611728364,
+          "mae": 7.8530694686122455,
+          "r2": -0.3888882324285494,
+          "pearson": 0.35338475803317626
+        },
+        "mean_only": {
+          "rmse": 9.705639698870225,
+          "mae": 8.216071428571428,
+          "r2": -0.46539908574721256,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.07651085331866314,
+        "score": 0.35338475803317626
+      },
+      {
+        "id": "hazard.volcanic_sulfate_injection_nh",
+        "name": "Northern Hemisphere volcanic sulfate injection",
+        "module_id": "APOC.Climate",
+        "source": "Gao et al. IVI2 volcanic stratospheric sulfate injection / NOAA NCEI Paleoclimatology",
+        "unit": "Tg sulfate/year",
+        "overlap": {
+          "n": 101,
+          "r": 0.01734770946616569
+        },
+        "train_n": 80,
+        "test_n": 21,
+        "silso_ridge": {
+          "rmse": 4.142108893003695,
+          "mae": 1.6931917900344111,
+          "r2": -0.12900193561089912,
+          "pearson": -0.35281066783477577
+        },
+        "mean_only": {
+          "rmse": 3.970919624805653,
+          "mae": 1.6499047619047618,
+          "r2": -0.037609300285150304,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.09139263532574882,
+        "score": 0.35281066783477577
+      },
+      {
+        "id": "hazard.volcanic_sulfate_injection_global",
+        "name": "Global stratospheric volcanic sulfate injection",
+        "module_id": "APOC.Climate",
+        "source": "Gao et al. IVI2 volcanic stratospheric sulfate injection / NOAA NCEI Paleoclimatology",
+        "unit": "Tg sulfate/year",
+        "overlap": {
+          "n": 101,
+          "r": 0.04813484861213718
+        },
+        "train_n": 80,
+        "test_n": 21,
+        "silso_ridge": {
+          "rmse": 7.312522041441866,
+          "mae": 2.7145802288524132,
+          "r2": -0.11247528307711097,
+          "pearson": -0.3519294577053221
+        },
+        "mean_only": {
+          "rmse": 7.077215098984321,
+          "mae": 2.649363095238095,
+          "r2": -0.04203135001300273,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.07044393306410823,
+        "score": 0.3519294577053221
+      },
+      {
+        "id": "finance.jst_private_credit_gdp_mean",
+        "name": "JST mean private credit-to-GDP proxy",
+        "module_id": "APOC.Market",
+        "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+        "unit": "mean loans/GDP ratio",
+        "overlap": {
+          "n": 115,
+          "r": -0.12988410447417062
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.4161995489959704,
+          "mae": 0.37874603081616015,
+          "r2": -4.422141508495739,
+          "pearson": 0.3483506844527398
+        },
+        "mean_only": {
+          "rmse": 0.41716133990859133,
+          "mae": 0.3769302531218979,
+          "r2": -4.447230396969529,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.025088888473789872,
+        "score": 0.3483506844527398
+      },
+      {
+        "id": "communications.fixed_phone_subscriptions_per_100",
+        "name": "Fixed telephone subscriptions per 100 people",
+        "module_id": "APOC.State",
+        "source": "World Bank / ITU / Our World in Data",
+        "unit": "subscriptions per 100 people",
+        "overlap": {
+          "n": 48,
+          "r": -0.23151533510469088
+        },
+        "train_n": 13,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 8.449733234134037,
+          "mae": 7.382072773581126,
+          "r2": -3.236827657088864,
+          "pearson": -0.34718988724999345
+        },
+        "mean_only": {
+          "rmse": 8.446280351583834,
+          "mae": 7.38159158989011,
+          "r2": -3.2333657065533297,
+          "pearson": 6.181723468711082e-17
+        },
+        "delta_r2_vs_mean": -0.0034619505355344415,
+        "score": 0.34718988724999345
+      },
+      {
+        "id": "climate.primary_energy_consumption",
+        "name": "Primary energy consumption",
+        "module_id": "APOC.Climate",
+        "source": "OWID energy",
+        "unit": "TWh",
+        "overlap": {
+          "n": 50,
+          "r": -0.19088798482492303
+        },
+        "train_n": 15,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 53316.34661936223,
+          "mae": 48189.96017454,
+          "r2": -4.531125997551753,
+          "pearson": -0.34660732874215067
+        },
+        "mean_only": {
+          "rmse": 53252.87506152355,
+          "mae": 48186.45933779762,
+          "r2": -4.517964547561478,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.013161449990274576,
+        "score": 0.34660732874215067
+      },
+      {
+        "id": "demographics.population",
+        "name": "World population",
+        "module_id": "reference",
+        "source": "OWID / UN",
+        "unit": "people",
+        "overlap": {
+          "n": 55,
+          "r": -0.10744912194734273
+        },
+        "train_n": 20,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 2400921421.473547,
+          "mae": 2232818597.279468,
+          "r2": -6.672853639911295,
+          "pearson": -0.3447481340230106
+        },
+        "mean_only": {
+          "rmse": 2398422086.053193,
+          "mae": 2236325877.5714283,
+          "r2": -6.656887225388682,
+          "pearson": -9.430914501256033e-17
+        },
+        "delta_r2_vs_mean": -0.01596641452261327,
+        "score": 0.3447481340230106
+      },
+      {
+        "id": "demographics.wdi_population",
+        "name": "WDI total population",
+        "module_id": "APOC.State",
+        "source": "World Bank World Development Indicators",
+        "unit": "people",
+        "overlap": {
+          "n": 55,
+          "r": -0.10744912194734273
+        },
+        "train_n": 20,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 2400921421.473547,
+          "mae": 2232818597.279468,
+          "r2": -6.672853639911295,
+          "pearson": -0.3447481340230106
+        },
+        "mean_only": {
+          "rmse": 2398422086.053193,
+          "mae": 2236325877.5714283,
+          "r2": -6.656887225388682,
+          "pearson": -9.430914501256033e-17
+        },
+        "delta_r2_vs_mean": -0.01596641452261327,
+        "score": 0.3447481340230106
+      },
+      {
+        "id": "demographics.wdi_urban_share",
+        "name": "WDI urban population share",
+        "module_id": "APOC.State",
+        "source": "World Bank World Development Indicators",
+        "unit": "percent",
+        "overlap": {
+          "n": 55,
+          "r": -0.12337430228344679
+        },
+        "train_n": 20,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 10.539351479744367,
+          "mae": 9.594864186186022,
+          "r2": -5.038666991098605,
+          "pearson": -0.3414286452365492
+        },
+        "mean_only": {
+          "rmse": 10.524549631734308,
+          "mae": 9.61101969914285,
+          "r2": -5.021717055518827,
+          "pearson": 9.940268291620515e-16
+        },
+        "delta_r2_vs_mean": -0.01694993557977842,
+        "score": 0.3414286452365492
+      },
+      {
+        "id": "demographics.urban_population_share",
+        "name": "Share of population living in urban areas",
+        "module_id": "APOC.State",
+        "source": "UN World Urbanization Prospects / HYDE / Our World in Data",
+        "unit": "percent",
+        "overlap": {
+          "n": 70,
+          "r": -0.025859492549186635
+        },
+        "train_n": 35,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 14.219005541678028,
+          "mae": 13.41643141479244,
+          "r2": -9.970707828051454,
+          "pearson": -0.34104914999774943
+        },
+        "mean_only": {
+          "rmse": 14.053609250582534,
+          "mae": 13.38188502857142,
+          "r2": -9.716968406927412,
+          "pearson": -1.7024437102521671e-15
+        },
+        "delta_r2_vs_mean": -0.2537394211240418,
+        "score": 0.34104914999774943
+      },
+      {
+        "id": "regime.participatory_democracy_vdem",
+        "name": "Participatory democracy index",
+        "module_id": "APOC.State",
+        "source": "V-Dem / Our World in Data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": 0.028850242132612402
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.17036333592129702,
+          "mae": 0.16028501826031943,
+          "r2": -8.609234933398634,
+          "pearson": -0.3373553297803581
+        },
+        "mean_only": {
+          "rmse": 0.17002347156310305,
+          "mae": 0.16089620210357147,
+          "r2": -8.570933512796934,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.03830142060169983,
+        "score": 0.3373553297803581
+      },
+      {
+        "id": "regime.liberal_democracy_vdem",
+        "name": "Liberal democracy index",
+        "module_id": "APOC.State",
+        "source": "V-Dem / Our World in Data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": 0.03200112708493482
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.18530750109469488,
+          "mae": 0.17438142902763776,
+          "r2": -8.697427047456504,
+          "pearson": -0.33729549846334866
+        },
+        "mean_only": {
+          "rmse": 0.18491552480296136,
+          "mae": 0.1750791888214286,
+          "r2": -8.656444990924708,
+          "pearson": 1.3326541471766395e-16
+        },
+        "delta_r2_vs_mean": -0.04098205653179576,
+        "score": 0.33729549846334866
+      },
+      {
+        "id": "regime.electoral_democracy_vdem",
+        "name": "Electoral democracy index",
+        "module_id": "APOC.State",
+        "source": "V-Dem / Our World in Data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": 0.048595193897817475
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.2523235968104421,
+          "mae": 0.2384989635654472,
+          "r2": -9.764991508044158,
+          "pearson": -0.33694945571635543
+        },
+        "mean_only": {
+          "rmse": 0.2516916100802323,
+          "mae": 0.23965471912499997,
+          "r2": -9.711133590453002,
+          "pearson": 4.537157440041943e-16
+        },
+        "delta_r2_vs_mean": -0.05385791759115577,
+        "score": 0.33694945571635543
+      },
+      {
+        "id": "demographics.dependency_youth_under25_share",
+        "name": "Under-25 share of population",
+        "module_id": "APOC.State",
+        "source": "UN World Population Prospects / Our World in Data",
+        "unit": "share of total population",
+        "overlap": {
+          "n": 65,
+          "r": 0.1861255924609469
+        },
+        "train_n": 30,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.0640197517517393,
+          "mae": 0.05390098144875662,
+          "r2": -2.4908286423562096,
+          "pearson": -0.33498847871506543
+        },
+        "mean_only": {
+          "rmse": 0.06375251702785535,
+          "mae": 0.053761498253224425,
+          "r2": -2.461746255021707,
+          "pearson": -2.9161040687365042e-15
+        },
+        "delta_r2_vs_mean": -0.029082387334502524,
+        "score": 0.33498847871506543
+      },
+      {
+        "id": "agriculture.wdi_cereal_yield",
+        "name": "WDI cereal yield",
+        "module_id": "APOC.State",
+        "source": "World Bank World Development Indicators",
+        "unit": "kg/hectare",
+        "overlap": {
+          "n": 54,
+          "r": -0.04506277764555553
+        },
+        "train_n": 19,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1241.6633298907218,
+          "mae": 1162.352218578727,
+          "r2": -8.20977716047354,
+          "pearson": -0.33255270296338024
+        },
+        "mean_only": {
+          "rmse": 1241.1260890821663,
+          "mae": 1171.7477376572658,
+          "r2": -8.201809142748315,
+          "pearson": -4.445809759811555e-16
+        },
+        "delta_r2_vs_mean": -0.00796801772522393,
+        "score": 0.33255270296338024
+      },
+      {
+        "id": "food.daily_caloric_supply",
+        "name": "Daily per-capita caloric supply",
+        "module_id": "APOC.State",
+        "source": "FAO / Our World in Data",
+        "unit": "kcal/person/day",
+        "overlap": {
+          "n": 54,
+          "r": -0.02921074326272063
+        },
+        "train_n": 19,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 332.36749929513064,
+          "mae": 312.80304472538234,
+          "r2": -9.382058340927601,
+          "pearson": -0.33160181915200104
+        },
+        "mean_only": {
+          "rmse": 332.238300816662,
+          "mae": 315.8195598496245,
+          "r2": -9.373988445774494,
+          "pearson": 1.2595787246651445e-16
+        },
+        "delta_r2_vs_mean": -0.008069895153107964,
+        "score": 0.33160181915200104
+      },
+      {
+        "id": "regime.democracy_lexical_mean",
+        "name": "Mean lexical democracy indicator",
+        "module_id": "APOC.State",
+        "source": "Lexical Index of Electoral Democracy / Our World in Data",
+        "unit": "mean country score/category",
+        "overlap": {
+          "n": 115,
+          "r": 0.03711953684838688
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 2.508032693731775,
+          "mae": 2.3439016492066957,
+          "r2": -7.820945301782096,
+          "pearson": -0.331453801362523
+        },
+        "mean_only": {
+          "rmse": 2.5013169988263275,
+          "mae": 2.3544607407574585,
+          "r2": -7.773769308826539,
+          "pearson": 4.507625245490765e-16
+        },
+        "delta_r2_vs_mean": -0.04717599295555708,
+        "score": 0.331453801362523
+      },
+      {
+        "id": "climate.fossil_share",
+        "name": "Fossil fuel share of energy",
+        "module_id": "APOC.Climate",
+        "source": "OWID energy",
+        "unit": "fraction",
+        "overlap": {
+          "n": 50,
+          "r": 0.10476924318386752
+        },
+        "train_n": 15,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.05936328907571259,
+          "mae": 0.058000972263756015,
+          "r2": -21.395069410834214,
+          "pearson": -0.33071735130714525
+        },
+        "mean_only": {
+          "rmse": 0.059339437738110574,
+          "mae": 0.057998386201404246,
+          "r2": -21.377076976048773,
+          "pearson": -4.8045646036542854e-15
+        },
+        "delta_r2_vs_mean": -0.01799243478544099,
+        "score": 0.33071735130714525
+      },
+      {
+        "id": "hazard.volcanic_sulfate_injection_sh",
+        "name": "Southern Hemisphere volcanic sulfate injection",
+        "module_id": "APOC.Climate",
+        "source": "Gao et al. IVI2 volcanic stratospheric sulfate injection / NOAA NCEI Paleoclimatology",
+        "unit": "Tg sulfate/year",
+        "overlap": {
+          "n": 101,
+          "r": 0.07882501392523775
+        },
+        "train_n": 80,
+        "test_n": 21,
+        "silso_ridge": {
+          "rmse": 3.3601775924456017,
+          "mae": 1.0215844356060397,
+          "r2": -0.08183904050848145,
+          "pearson": -0.3295297025105666
+        },
+        "mean_only": {
+          "rmse": 3.298392116970277,
+          "mae": 0.9994583333333334,
+          "r2": -0.04242004700974089,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.03941899349874056,
+        "score": 0.3295297025105666
+      },
+      {
+        "id": "regime.political_corruption_vdem",
+        "name": "Political corruption index",
+        "module_id": "APOC.State",
+        "source": "V-Dem / Our World in Data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": -0.027872978950718667
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.11184094815384962,
+          "mae": 0.10932674342995179,
+          "r2": -20.63076696344009,
+          "pearson": 0.3287922868030884
+        },
+        "mean_only": {
+          "rmse": 0.11180860231196389,
+          "mae": 0.10919200863441303,
+          "r2": -20.61825698022735,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.012509983212741105,
+        "score": 0.3287922868030884
+      },
+      {
+        "id": "climate.co2_total",
+        "name": "Annual CO\u2082 emissions",
+        "module_id": "APOC.Climate",
+        "source": "OWID CO2 / Global Carbon Project",
+        "unit": "Mt CO2",
+        "overlap": {
+          "n": 115,
+          "r": 0.03610356655797363
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 19655.702494847308,
+          "mae": 18875.029292828167,
+          "r2": -13.293141731680034,
+          "pearson": -0.32827972660098537
+        },
+        "mean_only": {
+          "rmse": 19639.272286345044,
+          "mae": 18938.606196812223,
+          "r2": -13.269256434500758,
+          "pearson": -1.5994010890701746e-16
+        },
+        "delta_r2_vs_mean": -0.023885297179276677,
+        "score": 0.32827972660098537
+      },
+      {
+        "id": "astrology.outer_planet_hard_aspect_stack",
+        "name": "Astrological proxy: outer-planet hard-aspect stack",
+        "module_id": "APOC.Context",
+        "source": "Approximate orbital-period astrological transit proxies generated by Apocalypso",
+        "unit": "mean 0-1 proximity score",
+        "overlap": {
+          "n": 115,
+          "r": -0.3000101236316352
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.10400503531417025,
+          "mae": 0.08391032980812888,
+          "r2": -0.11704701218784064,
+          "pearson": 0.3267720209257706
+        },
+        "mean_only": {
+          "rmse": 0.11000407118508068,
+          "mae": 0.08932273035714283,
+          "r2": -0.2496265291143982,
+          "pearson": -8.058673378143209e-18
+        },
+        "delta_r2_vs_mean": 0.13257951692655756,
+        "score": 0.3267720209257706
+      },
+      {
+        "id": "agriculture.wdi_food_production_index",
+        "name": "WDI food production index",
+        "module_id": "APOC.State",
+        "source": "World Bank World Development Indicators",
+        "unit": "index 2014-2016=100",
+        "overlap": {
+          "n": 54,
+          "r": -0.16731658225528226
+        },
+        "train_n": 19,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 55.47794001366794,
+          "mae": 43.680064611680805,
+          "r2": -1.6557542432423658,
+          "pearson": -0.3176124747189407
+        },
+        "mean_only": {
+          "rmse": 55.432927510985515,
+          "mae": 43.74804326754015,
+          "r2": -1.651446453544486,
+          "pearson": 2.3853700723866807e-17
+        },
+        "delta_r2_vs_mean": -0.004307789697879816,
+        "score": 0.3176124747189407
+      },
+      {
+        "id": "market.shiller_dividend",
+        "name": "Shiller S&P composite dividend",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "index dividend",
+        "overlap": {
+          "n": 115,
+          "r": -0.04275553309637458
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 16.94990711665909,
+          "mae": 14.89501797780166,
+          "r2": -3.464972498030358,
+          "pearson": -0.31632913234306187
+        },
+        "mean_only": {
+          "rmse": 16.933399462246175,
+          "mae": 14.912909223065478,
+          "r2": -3.4562797859223515,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.008692712108006262,
+        "score": 0.31632913234306187
+      },
+      {
+        "id": "macro.wdi_gdp_per_capita_growth",
+        "name": "WDI GDP per-capita growth",
+        "module_id": "APOC.State",
+        "source": "World Bank World Development Indicators",
+        "unit": "annual percent",
+        "overlap": {
+          "n": 54,
+          "r": -0.22063727432374106
+        },
+        "train_n": 19,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1.7248468221144784,
+          "mae": 1.3139636071446208,
+          "r2": -0.7477269194391671,
+          "pearson": -0.3133788054421579
+        },
+        "mean_only": {
+          "rmse": 1.7233140077851834,
+          "mae": 1.3127863526693135,
+          "r2": -0.7446220054393817,
+          "pearson": -5.834984168507433e-17
+        },
+        "delta_r2_vs_mean": -0.003104913999785408,
+        "score": 0.3133788054421579
+      },
+      {
+        "id": "regime.civil_society_participation_vdem",
+        "name": "Civil society participation index",
+        "module_id": "APOC.State",
+        "source": "V-Dem / Our World in Data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": 0.014139115105378486
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.27991734520134565,
+          "mae": 0.26110083383605315,
+          "r2": -7.184374701911635,
+          "pearson": -0.3092745208689623
+        },
+        "mean_only": {
+          "rmse": 0.2795410260377656,
+          "mae": 0.2618579974642856,
+          "r2": -7.162383447916337,
+          "pearson": -9.7258234520031e-17
+        },
+        "delta_r2_vs_mean": -0.021991253995297555,
+        "score": 0.3092745208689623
+      },
+      {
+        "id": "regime.human_rights_vdem",
+        "name": "Human rights index",
+        "module_id": "APOC.State",
+        "source": "V-Dem / Our World in Data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": -0.01702429865446879
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.21724387424141345,
+          "mae": 0.19755556842611466,
+          "r2": -4.945783262861795,
+          "pearson": -0.3046809822592945
+        },
+        "mean_only": {
+          "rmse": 0.2170261456541539,
+          "mae": 0.19789594862499996,
+          "r2": -4.933871136300961,
+          "pearson": 1.780201602500629e-16
+        },
+        "delta_r2_vs_mean": -0.011912126560834402,
+        "score": 0.3046809822592945
+      },
+      {
+        "id": "astrology.uranus_pluto_hard_aspect_proximity",
+        "name": "Astrological proxy: Uranus-Pluto hard-aspect proximity",
+        "module_id": "APOC.Context",
+        "source": "Approximate orbital-period astrological transit proxies generated by Apocalypso",
+        "unit": "0-1 proximity score",
+        "overlap": {
+          "n": 115,
+          "r": -0.09774005715107179
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.25814289725692935,
+          "mae": 0.20333507294509598,
+          "r2": 0.0060309041551374065,
+          "pearson": 0.3035794591517734
+        },
+        "mean_only": {
+          "rmse": 0.25926779286891455,
+          "mae": 0.20405668321428572,
+          "r2": -0.002650703232140117,
+          "pearson": -5.51291072980124e-17
+        },
+        "delta_r2_vs_mean": 0.008681607387277523,
+        "score": 0.3035794591517734
+      },
+      {
+        "id": "finance.international_capital_flows",
+        "name": "International capital flows",
+        "module_id": "APOC.State",
+        "source": "Lane and Milesi-Ferretti / Our World in Data",
+        "unit": "percent of world GDP",
+        "overlap": {
+          "n": 23,
+          "r": -0.13781733082253084
+        },
+        "train_n": 16,
+        "test_n": 7,
+        "silso_ridge": {
+          "rmse": 1.0944462897188694,
+          "mae": 0.9611797720469725,
+          "r2": -0.06718548912472833,
+          "pearson": 0.26852496363092027
+        },
+        "mean_only": {
+          "rmse": 1.1180671798613637,
+          "mae": 0.9615736857142858,
+          "r2": -0.11374765652456142,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.0465621673998331,
+        "score": 0.26852496363092027
+      },
+      {
+        "id": "macro.wdi_gdp_growth",
+        "name": "WDI GDP growth",
+        "module_id": "APOC.State",
+        "source": "World Bank World Development Indicators",
+        "unit": "annual percent",
+        "overlap": {
+          "n": 54,
+          "r": -0.18371975235926494
+        },
+        "train_n": 19,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 2.0506278331074688,
+          "mae": 1.6073956904786877,
+          "r2": -1.5691805455999481,
+          "pearson": -0.26598306931715193
+        },
+        "mean_only": {
+          "rmse": 2.0483312706274046,
+          "mae": 1.6060897879437719,
+          "r2": -1.5634291561045992,
+          "pearson": -3.967095293365052e-17
+        },
+        "delta_r2_vs_mean": -0.005751389495348924,
+        "score": 0.26598306931715193
+      },
+      {
+        "id": "regime.democracy_polity_mean",
+        "name": "Mean polity democracy indicator",
+        "module_id": "APOC.State",
+        "source": "Polity 5 / Our World in Data",
+        "unit": "mean country score/category",
+        "overlap": {
+          "n": 115,
+          "r": -0.12254337715368667
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.4709899241350998,
+          "mae": 0.4150106726557293,
+          "r2": -1.5124723682034467,
+          "pearson": 0.2601797482776179
+        },
+        "mean_only": {
+          "rmse": 0.47261665193657465,
+          "mae": 0.4158164261133844,
+          "r2": -1.5298577370568256,
+          "pearson": -1.2810393261481923e-16
+        },
+        "delta_r2_vs_mean": 0.017385368853378935,
+        "score": 0.2601797482776179
+      },
+      {
+        "id": "finance.rr_currency_crisis_count",
+        "name": "Reinhart-Rogoff currency crisis country count",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in currency crisis",
+        "overlap": {
+          "n": 115,
+          "r": 0.22146241645722353
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 10.102068084433268,
+          "mae": 8.688599001430527,
+          "r2": -0.8083817443742718,
+          "pearson": 0.25447632492801836
+        },
+        "mean_only": {
+          "rmse": 10.309526627625262,
+          "mae": 9.049285714285714,
+          "r2": -0.8834191468971506,
+          "pearson": 2.0268340364198527e-17
+        },
+        "delta_r2_vs_mean": 0.07503740252287883,
+        "score": 0.25447632492801836
+      },
+      {
+        "id": "market.shiller_earnings",
+        "name": "Shiller S&P composite earnings",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "index earnings",
+        "overlap": {
+          "n": 115,
+          "r": -0.039666296940187695
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 45.209139331260275,
+          "mae": 36.8432912817253,
+          "r2": -2.0044178075286894,
+          "pearson": -0.2394267150953825
+        },
+        "mean_only": {
+          "rmse": 45.17455643460812,
+          "mae": 36.884327046428574,
+          "r2": -1.9998230847726783,
+          "pearson": 2.490726619296204e-16
+        },
+        "delta_r2_vs_mean": -0.004594722756011027,
+        "score": 0.2394267150953825
+      },
+      {
+        "id": "astrology.jupiter_saturn_square_proximity",
+        "name": "Astrological proxy: Jupiter-Saturn square/opposition proximity",
+        "module_id": "APOC.Context",
+        "source": "Approximate orbital-period astrological transit proxies generated by Apocalypso",
+        "unit": "0-1 proximity score",
+        "overlap": {
+          "n": 115,
+          "r": -0.037964115933011806
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.15513439492572678,
+          "mae": 0.13027785454101334,
+          "r2": -0.06200914339076369,
+          "pearson": -0.22788596155805282
+        },
+        "mean_only": {
+          "rmse": 0.1542985044473108,
+          "mae": 0.1297636385714286,
+          "r2": -0.05059540462179801,
+          "pearson": -2.1071634143177555e-17
+        },
+        "delta_r2_vs_mean": -0.011413738768965676,
+        "score": 0.22788596155805282
+      },
+      {
+        "id": "climate.co2_per_capita",
+        "name": "Per-capita CO\u2082 emissions",
+        "module_id": "APOC.Climate",
+        "source": "OWID CO2",
+        "unit": "t CO2/capita",
+        "overlap": {
+          "n": 115,
+          "r": 0.1204945834372199
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1.9187416073553236,
+          "mae": 1.8863090073471336,
+          "r2": -49.247052179743285,
+          "pearson": -0.22397847378622227
+        },
+        "mean_only": {
+          "rmse": 1.9203017288412234,
+          "mae": 1.9011284464171951,
+          "r2": -49.328796772475656,
+          "pearson": 1.124999215079859e-15
+        },
+        "delta_r2_vs_mean": 0.08174459273237034,
+        "score": 0.22397847378622227
+      },
+      {
+        "id": "climate.temperature_anomaly",
+        "name": "Global temperature anomaly",
+        "module_id": "APOC.Climate",
+        "source": "OWID / GISS",
+        "unit": "\u00b0C above preindustrial",
+        "overlap": {
+          "n": 115,
+          "r": 0.0778571180011803
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.6080087886957164,
+          "mae": 0.5742220153872691,
+          "r2": -9.429319723998974,
+          "pearson": -0.22256058758190259
+        },
+        "mean_only": {
+          "rmse": 0.6073547404046208,
+          "mae": 0.5774374999999999,
+          "r2": -9.406893699998992,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.022426023999981837,
+        "score": 0.22256058758190259
+      },
+      {
+        "id": "market.shiller_sp_composite",
+        "name": "Shiller S&P composite price",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "index",
+        "overlap": {
+          "n": 115,
+          "r": -0.03570984148360498
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 919.0474780600683,
+          "mae": 759.1177582777442,
+          "r2": -2.1600684064329134,
+          "pearson": -0.21281461387834924
+        },
+        "mean_only": {
+          "rmse": 918.7983077657907,
+          "mae": 759.5408883928573,
+          "r2": -2.158355135997884,
+          "pearson": 1.0052461514115002e-16
+        },
+        "delta_r2_vs_mean": -0.001713270435029557,
+        "score": 0.21281461387834924
+      },
+      {
+        "id": "market.shiller_real_total_return_price",
+        "name": "Shiller real total return stock price",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "real total return index",
+        "overlap": {
+          "n": 115,
+          "r": -0.02440377905547413
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 668674.718938079,
+          "mae": 557603.6105347159,
+          "r2": -2.3038794629592805,
+          "pearson": -0.1994595667251092
+        },
+        "mean_only": {
+          "rmse": 668435.7192904161,
+          "mae": 558097.4085806222,
+          "r2": -2.3015181207700164,
+          "pearson": 0.0
+        },
+        "delta_r2_vs_mean": -0.002361342189264093,
+        "score": 0.1994595667251092
+      },
+      {
+        "id": "demographics.youth_bulge_15_24_share",
+        "name": "Youth bulge: ages 15-24 share of population",
+        "module_id": "APOC.State",
+        "source": "UN World Population Prospects / Our World in Data",
+        "unit": "share of total population",
+        "overlap": {
+          "n": 65,
+          "r": 0.015132304351678044
+        },
+        "train_n": 30,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.009136936610261758,
+          "mae": 0.007040329713882119,
+          "r2": -0.4939321959531955,
+          "pearson": -0.19373326321129986
+        },
+        "mean_only": {
+          "rmse": 0.00904207208295115,
+          "mae": 0.006999102950328707,
+          "r2": -0.46307164270861123,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.030860553244584255,
+        "score": 0.19373326321129986
+      },
+      {
+        "id": "finance.rr_gdp_weighted_default_mean",
+        "name": "Reinhart-Rogoff GDP-weighted sovereign default intensity",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "mean GDP-weighted default value",
+        "overlap": {
+          "n": 115,
+          "r": 0.09780441145055246
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.16489440821316906,
+          "mae": 0.14474063809025764,
+          "r2": -3.147856651554388,
+          "pearson": 0.1846929547121914
+        },
+        "mean_only": {
+          "rmse": 0.16397441584990183,
+          "mae": 0.14259164169164168,
+          "r2": -3.1017016457549094,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.04615500579947884,
+        "score": 0.1846929547121914
+      },
+      {
+        "id": "market.shiller_real_return_annual",
+        "name": "Shiller real stock return",
+        "module_id": "APOC.Market",
+        "source": "Derived from Robert J. Shiller real stock price",
+        "unit": "percent year-over-year",
+        "overlap": {
+          "n": 115,
+          "r": -0.12705862159221787
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 15.685541498056311,
+          "mae": 13.195695431658333,
+          "r2": -0.03860949106634526,
+          "pearson": 0.17551674793438687
+        },
+        "mean_only": {
+          "rmse": 15.861649553414598,
+          "mae": 13.269016835720313,
+          "r2": -0.06206220856375011,
+          "pearson": -5.2760484885650654e-17
+        },
+        "delta_r2_vs_mean": 0.02345271749740485,
+        "score": 0.17551674793438687
+      },
+      {
+        "id": "food.long_term_food_price_index",
+        "name": "Long-term global food commodity price index",
+        "module_id": "APOC.State",
+        "source": "Our World in Data long-term food prices",
+        "unit": "relative real price index",
+        "overlap": {
+          "n": 115,
+          "r": 0.013350416154126628
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 38.12473705264051,
+          "mae": 36.8883196705788,
+          "r2": -14.391711860068256,
+          "pearson": 0.16669018380187678
+        },
+        "mean_only": {
+          "rmse": 38.092361125382354,
+          "mae": 36.83197419642856,
+          "r2": -14.365581353086291,
+          "pearson": -2.1935526545739486e-16
+        },
+        "delta_r2_vs_mean": -0.026130506981964174,
+        "score": 0.16669018380187678
+      },
+      {
+        "id": "market.shiller_real_price",
+        "name": "Shiller real stock price",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "real price index",
+        "overlap": {
+          "n": 115,
+          "r": 0.009153886123078141
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1185.6088435228717,
+          "mae": 978.7396550171707,
+          "r2": -2.168225399338436,
+          "pearson": -0.16192552398867505
+        },
+        "mean_only": {
+          "rmse": 1184.7212987275782,
+          "mae": 979.738580070161,
+          "r2": -2.1634837183509283,
+          "pearson": -1.658011981938652e-16
+        },
+        "delta_r2_vs_mean": -0.004741680987507824,
+        "score": 0.16192552398867505
+      },
+      {
+        "id": "finance.rr_systemic_crisis_count",
+        "name": "Reinhart-Rogoff systemic crisis country count",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in systemic crisis",
+        "overlap": {
+          "n": 115,
+          "r": -0.006023390343785119
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 9.613712768764406,
+          "mae": 8.868552378267994,
+          "r2": -5.767409125545256,
+          "pearson": -0.14909879907134033
+        },
+        "mean_only": {
+          "rmse": 9.532958570514342,
+          "mae": 8.799642857142858,
+          "r2": -5.65419554131799,
+          "pearson": 0.0
+        },
+        "delta_r2_vs_mean": -0.11321358422726568,
+        "score": 0.14909879907134033
+      },
+      {
+        "id": "finance.rr_domestic_debt_default_count",
+        "name": "Reinhart-Rogoff domestic debt default country count",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in domestic debt default",
+        "overlap": {
+          "n": 115,
+          "r": 0.07798798960857327
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1.5141242204463006,
+          "mae": 1.2408933076326008,
+          "r2": -0.09106483675372679,
+          "pearson": 0.13857690977100603
+        },
+        "mean_only": {
+          "rmse": 1.5299101280794243,
+          "mae": 1.2607142857142857,
+          "r2": -0.11393380924630891,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.02286897249258213,
+        "score": 0.13857690977100603
+      },
+      {
+        "id": "finance.rr_domestic_debt_default_share",
+        "name": "Reinhart-Rogoff domestic debt default country share",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "share of covered countries",
+        "overlap": {
+          "n": 115,
+          "r": 0.07788910760324338
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.022639424845085798,
+          "mae": 0.01855734757051399,
+          "r2": -0.08956327317003443,
+          "pearson": 0.13795277244290508
+        },
+        "mean_only": {
+          "rmse": 0.022873781442194707,
+          "mae": 0.01885318306427048,
+          "r2": -0.1122376986473117,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.02267442547727727,
+        "score": 0.13795277244290508
+      },
+      {
+        "id": "finance.jst_systemic_financial_crisis_share",
+        "name": "JST systemic financial crisis country share",
+        "module_id": "APOC.Market",
+        "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+        "unit": "share of covered countries",
+        "overlap": {
+          "n": 115,
+          "r": -0.17202843809207724
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.10735360900191841,
+          "mae": 0.05006617661897388,
+          "r2": 0.009057176243299936,
+          "pearson": 0.12965522020964299
+        },
+        "mean_only": {
+          "rmse": 0.10816055375069117,
+          "mae": 0.05021825396825397,
+          "r2": -0.0058960503381124685,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.014953226581412404,
+        "score": 0.12965522020964299
+      },
+      {
+        "id": "finance.jst_systemic_financial_crisis_count",
+        "name": "JST systemic financial crisis country count",
+        "module_id": "APOC.Market",
+        "source": "Jord\u00e0-Schularick-Taylor Macrohistory Database R6",
+        "unit": "countries in systemic financial crisis",
+        "overlap": {
+          "n": 115,
+          "r": -0.1715080387925523
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 1.9330729007041727,
+          "mae": 0.8972963054804269,
+          "r2": 0.008330962237839468,
+          "pearson": 0.12965522020964293
+        },
+        "mean_only": {
+          "rmse": 1.9475259030003023,
+          "mae": 0.9,
+          "r2": -0.006553292894280416,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.014884255132119883,
+        "score": 0.12965522020964293
+      },
+      {
+        "id": "astrology.saturn_uranus_hard_aspect_proximity",
+        "name": "Astrological proxy: Saturn-Uranus hard-aspect proximity",
+        "module_id": "APOC.Context",
+        "source": "Approximate orbital-period astrological transit proxies generated by Apocalypso",
+        "unit": "0-1 proximity score",
+        "overlap": {
+          "n": 115,
+          "r": -0.2408607854332859
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.2646846123192053,
+          "mae": 0.191421249620725,
+          "r2": -0.010835064255455329,
+          "pearson": 0.12313661018793433
+        },
+        "mean_only": {
+          "rmse": 0.2633115302059478,
+          "mae": 0.19877375785714285,
+          "r2": -0.00037461902200131014,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.010460445233454019,
+        "score": 0.12313661018793433
+      },
+      {
+        "id": "finance.rr_banking_crisis_count",
+        "name": "Reinhart-Rogoff banking crisis country count",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in banking crisis",
+        "overlap": {
+          "n": 115,
+          "r": -0.07164055959723106
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 13.799523011308004,
+          "mae": 12.367529355047617,
+          "r2": -3.9021324190104947,
+          "pearson": 0.12221633164302229
+        },
+        "mean_only": {
+          "rmse": 13.766674953877363,
+          "mae": 12.274999999999999,
+          "r2": -3.8788223558399517,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.02331006317054296,
+        "score": 0.12221633164302229
+      },
+      {
+        "id": "conflict.state_based_conflict_deaths",
+        "name": "Deaths in state-based conflicts",
+        "module_id": "APOC.State",
+        "source": "Lacina & Gleditsch / PRIO / Our World in Data",
+        "unit": "deaths/year",
+        "overlap": {
+          "n": 69,
+          "r": 0.2120677596430574
+        },
+        "train_n": 34,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 112812.56657618364,
+          "mae": 106268.3460484984,
+          "r2": -1.1932016347755776,
+          "pearson": 0.12208921325904028
+        },
+        "mean_only": {
+          "rmse": 117279.28568962376,
+          "mae": 108452.64453781513,
+          "r2": -1.3703158766119525,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.17711424183637492,
+        "score": 0.12208921325904028
+      },
+      {
+        "id": "finance.rr_external_debt_default_ex_official_count",
+        "name": "Reinhart-Rogoff external debt default count, excluding post-1975 official creditors",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in external debt default",
+        "overlap": {
+          "n": 115,
+          "r": 0.06590216327185626
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 8.023668147102667,
+          "mae": 6.161982730287005,
+          "r2": -0.3111318687475757,
+          "pearson": 0.11387675842487933
+        },
+        "mean_only": {
+          "rmse": 8.042160113160785,
+          "mae": 6.182142857142857,
+          "r2": -0.3171823046550293,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": 0.006050435907453577,
+        "score": 0.11387675842487933
+      },
+      {
+        "id": "finance.rr_external_debt_default_incl_official_count",
+        "name": "Reinhart-Rogoff external debt default count, including post-1975 official creditors",
+        "module_id": "APOC.Market",
+        "source": "Reinhart-Rogoff Global Crises Data, Harvard Business School Behavioral Finance and Financial Stability",
+        "unit": "countries in external debt default",
+        "overlap": {
+          "n": 115,
+          "r": 0.05412491041682339
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 7.785343462612322,
+          "mae": 5.46890518998614,
+          "r2": -0.5298383961301256,
+          "pearson": 0.07608919030344198
+        },
+        "mean_only": {
+          "rmse": 7.800343399034248,
+          "mae": 5.49,
+          "r2": -0.5357391210285576,
+          "pearson": -2.9833821958705745e-16
+        },
+        "delta_r2_vs_mean": 0.005900724898431964,
+        "score": 0.07608919030344198
+      },
+      {
+        "id": "astrology.mars_jupiter_hard_aspect_proximity",
+        "name": "Astrological proxy: Mars-Jupiter hard-aspect proximity",
+        "module_id": "APOC.Context",
+        "source": "Approximate orbital-period astrological transit proxies generated by Apocalypso",
+        "unit": "0-1 proximity score",
+        "overlap": {
+          "n": 115,
+          "r": 0.06332108286642295
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 0.2767903536428454,
+          "mae": 0.20134938206458788,
+          "r2": 0.0003600947261273024,
+          "pearson": 0.07348012943822155
+        },
+        "mean_only": {
+          "rmse": 0.277549940793766,
+          "mae": 0.20118868035714282,
+          "r2": -0.005133994919424012,
+          "pearson": 2.8645277638828605e-17
+        },
+        "delta_r2_vs_mean": 0.005494089645551314,
+        "score": 0.07348012943822155
+      },
+      {
+        "id": "market.shiller_cape",
+        "name": "Shiller cyclically adjusted P/E",
+        "module_id": "APOC.Market",
+        "source": "Robert J. Shiller, Irrational Exuberance data",
+        "unit": "ratio",
+        "overlap": {
+          "n": 115,
+          "r": 0.027703520201010315
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 11.022982541537035,
+          "mae": 8.84544061198168,
+          "r2": -0.6547529214368435,
+          "pearson": -0.07132083047383901
+        },
+        "mean_only": {
+          "rmse": 11.017131707660795,
+          "mae": 8.81860988718003,
+          "r2": -0.6529967515496833,
+          "pearson": 3.5537009401404243e-17
+        },
+        "delta_r2_vs_mean": -0.0017561698871602083,
+        "score": 0.07132083047383901
+      },
+      {
+        "id": "market.shiller_real_drawdown",
+        "name": "Shiller real stock-market drawdown",
+        "module_id": "APOC.Market",
+        "source": "Derived from Robert J. Shiller real stock price",
+        "unit": "percent below trailing real-price peak",
+        "overlap": {
+          "n": 115,
+          "r": -0.044273260116072986
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 20.80886179682544,
+          "mae": 17.565470918592926,
+          "r2": -0.34980971487487755,
+          "pearson": -0.05163432919762962
+        },
+        "mean_only": {
+          "rmse": 20.7583194802064,
+          "mae": 17.479554328570494,
+          "r2": -0.3432606149423518,
+          "pearson": null
+        },
+        "delta_r2_vs_mean": -0.006549099932525726,
+        "score": 0.05163432919762962
+      },
+      {
+        "id": "rates.shiller_real_long_rate",
+        "name": "Shiller real long interest rate proxy",
+        "module_id": "APOC.Market",
+        "source": "Derived from Robert J. Shiller GS10 and CPI",
+        "unit": "percent, nominal long rate minus CPI inflation",
+        "overlap": {
+          "n": 115,
+          "r": -0.1908092030154702
+        },
+        "train_n": 80,
+        "test_n": 35,
+        "silso_ridge": {
+          "rmse": 3.3159276015700803,
+          "mae": 2.6978354290186117,
+          "r2": -1.4419912800397356,
+          "pearson": -0.01741736853220246
+        },
+        "mean_only": {
+          "rmse": 2.939986747405273,
+          "mae": 2.313848102114211,
+          "r2": -0.9196620294507714,
+          "pearson": 2.3918237982248293e-17
+        },
+        "delta_r2_vs_mean": -0.5223292505889643,
+        "score": 0.01741736853220246
+      }
+    ],
+    "interpretation": "If SILSO appears to predict an input, treat it as a mechanism candidate only when there is a plausible physical pathway and the relationship survives lag, seasonality, geography, and placebo-cycle checks. Otherwise it is best read as a confounding/spurious-cycle screen."
+  }
+}

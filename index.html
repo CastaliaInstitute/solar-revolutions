@@ -37,6 +37,7 @@
       <a href="https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb">Launch Colab</a>
       <a href="api/red/primary-specificity-endpoint.json">Primary endpoint JSON</a>
       <a href="api/red/country-panel-solar-model.json">Country panel JSON</a>
+      <a href="api/red/pca-ml-prediction.json">PCA/ML JSON</a>
       <a href="api/input-data/climate_solar_activity.json">SILSO JSON</a>
     </div>
   </header>
@@ -66,6 +67,13 @@
     <h2>Country-year and alternative-input diagnostics</h2>
     <div id="expanded"></div>
   </section>
+
+  <section>
+    <span class="kicker">Exploratory finding</span>
+    <h2>SILSO as a predictor of catalog inputs</h2>
+    <p>This screen asks which non-solar input series are most predictable from SILSO solar activity alone. It is a mechanism/confounding screen, not causal proof.</p>
+    <div id="silso-inputs"></div>
+  </section>
 </main>
 <script>
 const COLAB = 'https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb';
@@ -74,15 +82,16 @@ const links = [
   ['Specificity','headline_specificity_code'], ['RED/SILSO correlations','red_silso_correlations_lags'],
   ['Sensitivity grid','threshold_window_sensitivity'], ['Cycle influence','split_cycle_sensitivity'],
   ['Shape tests','shape_synchrony_tests'], ['Expanded inputs','expanded_input_research'], ['Country models','country_panel_models'],
-  ['Alternative predictors','alternative_predictors'], ['Timing tests','monthly_timing_tests'], ['Conclusions','discussion_conclusions']
+  ['Alternative predictors','alternative_predictors'], ['PCA/ML prediction','pca_ml_prediction'], ['Timing tests','monthly_timing_tests'], ['Conclusions','discussion_conclusions']
 ];
 document.getElementById('colab-links').innerHTML = links.map(([label,id]) => `<a href="${COLAB}#scrollTo=${id}">${label}</a>`).join('');
 const fmt = v => v == null || Number.isNaN(v) ? 'n/a' : (v * 100).toFixed(1) + '%';
 Promise.all([
   fetch('api/red/primary-specificity-endpoint.json').then(r=>r.json()),
   fetch('api/red/statistical-audit.json').then(r=>r.json()),
-  fetch('api/red/country-panel-solar-model.json').then(r=>r.json())
-]).then(([primary,audit,country]) => {
+  fetch('api/red/country-panel-solar-model.json').then(r=>r.json()),
+  fetch('api/red/pca-ml-prediction.json').then(r=>r.json())
+]).then(([primary,audit,country,pca]) => {
   const o = primary.observed;
   document.getElementById('metrics').innerHTML = [
     ['Specificity', fmt(o.specificity)], ['Sensitivity', fmt(o.sensitivity)], ['Balanced accuracy', fmt(o.balanced_accuracy)],
@@ -93,6 +102,9 @@ Promise.all([
   document.getElementById('grid-table').innerHTML = `<table><thead><tr><th>Rule</th><th>Window</th><th>Threshold</th><th>Specificity</th><th>Sensitivity</th><th>Balanced accuracy</th></tr></thead><tbody>${rows.map(row => `<tr><td>${row.rule}</td><td>${row.solar_window_radius === 0 ? 'exact' : '±'+row.solar_window_radius+'y'}</td><td>${row.threshold}</td><td>${fmt(row.observed.specificity)}</td><td>${fmt(row.observed.sensitivity)}</td><td>${fmt(row.observed.balanced_accuracy)}</td></tr>`).join('')}</tbody></table>`;
   const model = country.models.event_country_year_fe_solar_geomagnetic_exposure;
   document.getElementById('expanded').innerHTML = `<p>Country + year fixed-effect exposure p-value: <strong>${model.solar_exposure_p_clustered_by_year.toFixed(4)}</strong>. This expanded-input diagnostic does not confirm a robust local solar-exposure effect.</p>`;
+  const silsoRows = (pca.silso_predicts_inputs?.ranked_outcomes || []).slice(0, 8);
+  const inflation = silsoRows.find(row => row.id === 'inflation.shiller_annual_pct') || silsoRows[0];
+  document.getElementById('silso-inputs').innerHTML = `<p>Current top interpretable result: <strong>${inflation.name}</strong>. SILSO-only held-out prediction has r=<strong>${inflation.silso_ridge.pearson.toFixed(3)}</strong>, R²=<strong>${inflation.silso_ridge.r2.toFixed(3)}</strong>, and same-year r=<strong>${inflation.overlap.r.toFixed(3)}</strong>. Because this is a one-predictor screen, the finding should be treated as a possible mediator/confounder candidate for follow-up, not as evidence that solar activity causes inflation or revolutions.</p><table><thead><tr><th>Rank</th><th>Input outcome</th><th>Held-out r</th><th>Held-out R²</th><th>Same-year r</th></tr></thead><tbody>${silsoRows.map((row, i) => `<tr><td>${i+1}</td><td>${row.name}<br><small>${row.id}</small></td><td>${row.silso_ridge.pearson?.toFixed(3) ?? 'n/a'}</td><td>${row.silso_ridge.r2?.toFixed(3) ?? 'n/a'}</td><td>${row.overlap.r?.toFixed(3) ?? 'n/a'}</td></tr>`).join('')}</tbody></table>`;
 });
 </script>
 </body>
