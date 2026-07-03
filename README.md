@@ -11,7 +11,8 @@ This repository separates three scopes:
 ## Use it
 
 - Public page: <https://castaliainstitute.github.io/solar-revolutions/>
-- Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb>
+- Revolutions Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_revolutions_methods_results_colab.ipynb>
+- Solar-inflation mechanisms Colab notebook: <https://colab.research.google.com/github/CastaliaInstitute/solar-revolutions/blob/main/solar_inflation_mechanisms_colab.ipynb>
 - Data artifacts: [`api/`](api/)
 
 ## Key data files
@@ -30,4 +31,4 @@ The paper-style RED/SILSO relationship is reproducible and browsable, and the na
 
 ## Exploratory SILSO-to-input finding
 
-In the current one-predictor screen, SILSO solar activity most usefully predicts Shiller annual inflation among the displayed inputs: held-out `r ≈ +0.501`, held-out `R² ≈ +0.234`, and same-year `r ≈ +0.274`. This is a mechanism/confounding candidate, not causal proof. It should be followed up with lag tests, inflation controls in revolution models, placebo cycles, and non-U.S. price series before it is used to support the solar-revolution hypothesis.
+In the current one-predictor screen, SILSO solar activity most usefully predicts Shiller annual inflation among the displayed inputs: held-out `r ≈ +0.501`, held-out `R² ≈ +0.234`, and same-year `r ≈ +0.274`. This is a mechanism/confounding candidate, not causal proof. It should be followed up with lag tests, inflation controls in revolution models, placebo cycles, and non-U.S. price series before it is used to support the solar-revolution hypothesis. The new `solar_inflation_mechanisms_colab.ipynb` notebook starts that follow-up.
